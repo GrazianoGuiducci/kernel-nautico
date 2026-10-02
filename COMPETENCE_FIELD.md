@@ -102,6 +102,31 @@ Strong inheritance candidates:
 
 Their exact local form must be exercised rather than copied.
 
+## Local nautical operating knowledge
+
+### Nautical Reference Operating Model 0.1
+
+Owner:
+Kernel Nautico.
+
+Source:
+`docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md`.
+
+Function:
+supply a technically credible domain baseline across product intent, engineering,
+industrialization, production, integration, quality, commissioning, delivery,
+vessel-instance activation, service/refit and RETURN.
+
+Status:
+LOCALLY_REPRESENTED knowledge / exercise in progress through V-01.
+
+Use:
+reach only when technical domain structure changes the current movement.
+
+Boundary:
+company-specific organization, logistics, systems, authority and procedures
+override/refine the reference model when owner-native evidence exists.
+
 ## Nautical / company / product field
 
 ### Ferretti Field Capability Formation
