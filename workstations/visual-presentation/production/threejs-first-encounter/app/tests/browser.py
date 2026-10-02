@@ -1,0 +1,89 @@
+"""Actual browser evidence; run against the built local server, never a public URL."""
+import json, os, pathlib, statistics, time
+from playwright.sync_api import sync_playwright
+OUT=pathlib.Path(os.environ.get('KN_EVIDENCE','evidence')); OUT.mkdir(parents=True,exist_ok=True)
+URL='http://127.0.0.1:8876/'
+checks=[]; errors=[]; external=[]; snapshots={}
+def check(name,condition,detail=None):
+    checks.append({'name':name,'pass':bool(condition),'detail':detail})
+    if not condition: raise AssertionError(f'{name}: {detail}')
+def wait_frame(page):
+    page.evaluate('() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))')
+def snap(page): return page.evaluate('window.__KN_DEBUG__.snapshot()')
+def ready(page):
+    page.wait_for_function('window.__KN_DEBUG__?.ready',timeout=90000);wait_frame(page)
+
+with sync_playwright() as p:
+    browser=p.chromium.launch(headless=True,args=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
+    context=browser.new_context(viewport={'width':1440,'height':900},device_scale_factor=1)
+    page=context.new_page()
+    page.on('pageerror',lambda e: errors.append(str(e)))
+    page.on('console',lambda msg: errors.append(msg.text) if msg.type=='error' else None)
+    page.on('request',lambda req: external.append(req.url) if not req.url.startswith(URL) and not req.url.startswith('data:') else None)
+    try:
+        page.goto(URL+'?test=1',wait_until='networkidle',timeout=90000);ready(page)
+        initial=snap(page);check('actual_webgl_not_fallback',not initial['fallback'])
+        root=initial['uuid']; trace=initial['continuityUUID']
+        # Silent captures happen first. Author visual review happens after artifact retrieval.
+        page.evaluate('window.__KN_DEBUG__.silent(true)')
+        for act in ['FORM','BUILD','LIVE','RETURN']:
+            page.evaluate('([a,v]) => window.__KN_DEBUG__.seekAct(a,v)',[act,.90 if act=='RETURN' else .68]);wait_frame(page)
+            snapshots[act]=snap(page)
+            check('same_product_root_'+act,snapshots[act]['uuid']==root)
+            check('same_continuity_root_'+act,snapshots[act]['continuityUUID']==trace)
+            check('act_'+act,snapshots[act]['act']==act)
+            page.screenshot(path=str(OUT/('SILENT_'+act+'.png')))
+        page.evaluate('window.__KN_DEBUG__.silent(false)');wait_frame(page)
+        for act in ['FORM','BUILD','LIVE','RETURN']:
+            page.locator('[data-act="'+act+'"]').click();wait_frame(page)
+            page.screenshot(path=str(OUT/(act+'.png')))
+        check('return_has_qualified_destination',snap(page)['returnStage']=='proposed_design_criterion')
+        check('return_is_not_automatic',snap(page)['returnExample']['automaticApplication'] is False)
+        check('no_fabricated_mesh_separation',snap(page)['manipulatedSubmeshes']==[])
+        check('no_external_runtime_requests',external==[],external)
+        # Rapid reversal must settle on the final requested act, with the same root.
+        page.evaluate("() => { for(const a of ['FORM','RETURN','BUILD','LIVE','FORM'])window.__KN_DEBUG__.seekAct(a); }")
+        wait_frame(page);check('rapid_reversal_final_state',snap(page)['act']=='FORM' and snap(page)['uuid']==root)
+        page.locator('#play').click();time.sleep(2);wait_frame(page)
+        check('play_progresses',snap(page)['playing'] and snap(page)['seconds']>6.8)
+        page.locator('#play').click();before=snap(page)['seconds'];time.sleep(.5);wait_frame(page)
+        check('pause_freezes',snap(page)['seconds']==before)
+        page.locator('#inspect').click();wait_frame(page)
+        check('inspect_pauses_and_is_bounded',snap(page)['inspection'] and not snap(page)['playing'])
+        old_camera=snap(page)['camera'];page.mouse.move(1080,430);page.mouse.down();page.mouse.move(1150,450,steps=5);page.mouse.up();wait_frame(page)
+        check('inspect_drag_changes_camera',snap(page)['camera']!=old_camera)
+        page.locator('#inspect').click();wait_frame(page);check('guided_recovery',not snap(page)['inspection'])
+        page.locator('#replay').click();wait_frame(page);check('replay_returns_form',snap(page)['act']=='FORM')
+        page.locator('#play').click()
+        page.locator('#about').click();check('attribution_visible',page.get_by_text('angelo raffaele catalano',exact=True).is_visible())
+        page.keyboard.press('Escape');check('dialog_returns_focus',page.locator('#about').evaluate('(e)=>document.activeElement===e'))
+        page.locator('[data-act="RETURN"]').focus();page.keyboard.press('Enter');wait_frame(page)
+        check('keyboard_selects_state',snap(page)['act']=='RETURN')
+        page.evaluate('window.__KN_DEBUG__.seek(46)');wait_frame(page);check('end_holds_return',snap(page)['act']=='RETURN' and not snap(page)['playing'])
+        # Geometric bounds, not a claim of real-device usability or general accessibility.
+        for width,height,label in [(1024,768,'TABLET'),(390,844,'MOBILE')]:
+            page.set_viewport_size({'width':width,'height':height});wait_frame(page)
+            for act in ['LIVE','RETURN']:
+                page.locator('[data-act="'+act+'"]').click();wait_frame(page);page.screenshot(path=str(OUT/(label+'_'+act+'.png')))
+            bounds=page.evaluate("[...document.querySelectorAll('footer button,header,.intro')].map(e=>({name:e.id||e.className,left:e.getBoundingClientRect().left,right:e.getBoundingClientRect().right,top:e.getBoundingClientRect().top,bottom:e.getBoundingClientRect().bottom}))")
+            check(label+'_controls_within_viewport',all(b['left']>=0 and b['right']<=width+.5 and b['top']>=0 and b['bottom']<=height+.5 for b in bounds),bounds)
+        page.set_viewport_size({'width':1440,'height':900});wait_frame(page)
+        page.emulate_media(reduced_motion='reduce');page.reload(wait_until='networkidle');ready(page)
+        before=snap(page)['seconds'];time.sleep(.5);check('reduced_motion_no_autoplay',not snap(page)['playing'] and snap(page)['seconds']==before)
+        page.locator('#replay').click();wait_frame(page);check('reduced_replay_no_autoplay',not snap(page)['playing'])
+        page.locator('[data-act="RETURN"]').click();wait_frame(page);page.screenshot(path=str(OUT/'REDUCED_RETURN.png'))
+        check('reduced_motion_preserves_destination',snap(page)['returnStage']=='proposed_design_criterion')
+        check('normal_console_errors_empty',errors==[],errors)
+        # Wrong asset is intercepted locally; it cannot become a new product by accident.
+        bad=context.new_page();bad.route('**/models/yacht.glb',lambda route:route.fulfill(status=200,body='wrong model',content_type='model/gltf-binary'))
+        bad.goto(URL+'?test=1',wait_until='networkidle');ready(bad)
+        check('unverified_asset_falls_back',snap(bad)['fallback'])
+        bad.screenshot(path=str(OUT/'ASSET_FAILURE.png'));bad.close()
+        page.goto(URL+'?test=1&static=1',wait_until='networkidle');ready(page)
+        check('static_fallback_available',snap(page)['fallback'])
+        page.locator('[data-act="RETURN"]').click();wait_frame(page);page.screenshot(path=str(OUT/'STATIC_RETURN.png'))
+        check('static_controls_preserve_relation',snap(page)['currentAct']=='RETURN' and snap(page)['returnStage']=='proposed_design_criterion')
+    finally:
+        (OUT/'browser-evidence.json').write_text(json.dumps({'browser':browser.version,'playwright':'1.57.0','runner':'GitHub Actions ubuntu-latest / software WebGL',
+            'checks':checks,'consoleErrors':errors,'externalRequests':external,'snapshots':snapshots},indent=2),encoding='utf-8')
+        browser.close()

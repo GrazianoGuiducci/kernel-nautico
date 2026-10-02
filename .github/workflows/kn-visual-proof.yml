@@ -1,0 +1,60 @@
+name: KN first encounter browser proof (no deployment)
+on:
+  push:
+    branches: [work/visual-threejs-first-encounter-20261002]
+    paths:
+      - workstations/visual-presentation/production/threejs-first-encounter/app/**
+      - .github/workflows/kn-visual-proof.yml
+permissions:
+  contents: read
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    defaults:
+      run:
+        working-directory: workstations/visual-presentation/production/threejs-first-encounter/app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Clean install, verified carrier, tests and build
+        run: |
+          set -euo pipefail
+          mkdir -p evidence
+          npm ci --ignore-scripts --no-audit --no-fund 2>&1 | tee evidence/install.log
+          npm run assets 2>&1 | tee evidence/assets.log
+          npm test 2>&1 | tee evidence/unit-tests.log
+          npm run build 2>&1 | tee evidence/build.log
+          node --version > evidence/node-version.txt
+          python3 -m pip install playwright==1.57.0
+          python3 -m playwright install --with-deps chromium
+      - name: Actual browser exercise and screenshots
+        run: |
+          node scripts/serve.mjs > evidence/server.log 2>&1 &
+          sleep 1
+          python3 tests/browser.py
+      - name: Package executed sources and offline runtime
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import pathlib, shutil, json, hashlib, os
+          here=pathlib.Path.cwd(); out=pathlib.Path(os.environ['GITHUB_WORKSPACE'])/'kn-proof'
+          out.mkdir(exist_ok=True)
+          for name in ['dist','src','scripts','tests','evidence']:
+            if (here/name).exists(): shutil.copytree(here/name,out/'app'/name,dirs_exist_ok=True,ignore=shutil.ignore_patterns('node_modules','__pycache__'))
+          for name in ['package.json','package-lock.json','index.html','README.md']:
+            if (here/name).exists(): shutil.copy2(here/name,out/'app'/name)
+          files={str(p.relative_to(out)):hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file()}
+          (out/'EXECUTED_SOURCE.json').write_text(json.dumps({'head':os.environ['GITHUB_SHA'],'branch':os.environ['GITHUB_REF_NAME'],'files':files},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kn-threejs-proof
+          path: kn-proof/
+          retention-days: 7
+          if-no-files-found: error

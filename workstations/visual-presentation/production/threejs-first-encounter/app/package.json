@@ -1,0 +1,14 @@
+{
+  "name": "kernel-nautico-first-encounter",
+  "version": "0.1.0-candidate.1",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "assets": "node scripts/acquire-assets.mjs"
+  },
+  "dependencies": {"three": "0.186.1"}
+}

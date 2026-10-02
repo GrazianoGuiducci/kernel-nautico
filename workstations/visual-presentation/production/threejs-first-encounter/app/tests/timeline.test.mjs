@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {frameAt,actTime,createTimeline,DURATION} from '../src/core/timeline.js';
+import {RETURN_EXAMPLE,MODEL} from '../src/data/story.js';
+test('four exact boundaries preserve order',()=>{assert.deepEqual([0,10,20,32,46].map(t=>frameAt(t).currentAct),['FORM','BUILD','LIVE','RETURN','RETURN']);});
+test('all direct selections are deterministic',()=>{for(const id of ['FORM','BUILD','LIVE','RETURN'])assert.equal(frameAt(actTime(id,.5)).currentAct,id);});
+test('end holds RETURN, never silently loops',()=>{const t=createTimeline();t.tick(100);assert.equal(t.seconds,DURATION);assert.equal(t.playing,false);});
+test('pause freezes absolute time and replay resets identity-independent state',()=>{const t=createTimeline();t.tick(5);t.pause();t.tick(8);assert.equal(t.seconds,5);t.replay();assert.equal(t.seconds,0);});
+test('reduced motion has no autoplay or replay autoplay',()=>{const t=createTimeline({reducedMotion:true});t.tick(10);assert.equal(t.seconds,0);t.replay();assert.equal(t.playing,false);});
+test('invalid input fails rather than producing NaN transitions',()=>{assert.throws(()=>frameAt(NaN));assert.throws(()=>actTime('OTHER'));assert.throws(()=>createTimeline().tick(-1));});
+test('RETURN is qualified and illustrative, never a physical or automatic update',()=>{assert.equal(RETURN_EXAMPLE.status,'illustrative_not_observed');assert.equal(RETURN_EXAMPLE.automaticApplication,false);assert.equal(RETURN_EXAMPLE.physicalModification,false);assert.match(RETURN_EXAMPLE.qualifier,/umana/);assert.match(RETURN_EXAMPLE.destination,/FORM/);});
+test('carrier content identity is fixed',()=>{assert.equal(MODEL.identity,'KN_YACHT');assert.match(MODEL.sha256,/^[a-f0-9]{64}$/);});
