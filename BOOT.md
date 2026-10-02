@@ -149,8 +149,16 @@ intent / need / source
 The first traversal selected this relation as the minimum complete nautical
 vertical.
 
+V-01 Exercise 01 has formed the local Lifecycle Return Qualification capability
+from qualified Ferretti lifecycle / Field Failure Report / post-launch evidence.
+
+Current I1 disposition:
+CANDIDATE_PENDING_REENTRY_READBACK.
+
 Next goal:
-exercise V-01 far enough to determine which relations must become native for I1.
+reenter through this Boot and CURRENT, recover V-01 + Lifecycle Return
+Qualification and continue from the changed capability without reconstructing
+creator logic. If that succeeds, mark I1 reached.
 
 R-01 remains a possible bounded carrier of V-01, not the vertical itself and
 not selected product architecture.
@@ -158,6 +166,9 @@ not selected product architecture.
 Read:
 `traversals/V-01_CAUSAL_PRODUCT_CONTINUITY_2026-10-02.md` when V-01 depth is
 material.
+
+For the first exercised RETURN:
+`traversals/V-01_EXERCISE_01_LIFECYCLE_RETURN_2026-10-02.md`.
 
 ## Effect boundary
 
