@@ -235,3 +235,40 @@ No permissive license has been selected in this migration movement.
 
 Future adoption, collaboration, licensing and development-governance relations
 remain Business/Product decisions and must be formed separately.
+
+
+## I2 non-identical nautical source — Wheelyboat 123
+
+~~~text
+MAIB case page:
+  https://www.gov.uk/maib-reports/capsize-of-recreational-craft-wheelyboat-123-with-the-loss-of-2-lives
+
+MAIB publication:
+  https://www.gov.uk/government/news/wheelyboat-123-report-published
+
+event:
+  2022-06-08
+
+report:
+  2024-10-17
+~~~
+
+Qualified source relation:
+
+~~~text
+degraded craft condition / inadequate maintenance
++ water ingress / instability
++ unrecognized wheelchair-user operating risks
++ assumed knowledge across organizations
+-> fatal consequence
+-> recommendations distributed across maintenance/operation,
+   external-activity risk, safe-use guidance and oversight
+~~~
+
+Use:
+non-identical exercise of Lifecycle Return Qualification after Ferretti.
+
+Kernel interpretation:
+the case exposes distributed causal return and owner-interface/oversight gaps.
+This interpretation does not replace MAIB findings, assign legal blame or grant
+Kernel Nautico safety authority.
