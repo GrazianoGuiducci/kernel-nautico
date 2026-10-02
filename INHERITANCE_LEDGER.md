@@ -1,7 +1,7 @@
 # Kernel Nautico — Inheritance Ledger
 
 ~~~text
-version: 0.1.3
+version: 0.1.4
 formed: 2026-10-02
 purpose: track progressive independence without cloning source topology
 ~~~
@@ -99,6 +99,42 @@ non-identical assimilation.
 Strong later readback:
 another materially useful resource outside the initial working set becomes
 pertinent before operator naming in a later non-identical movement.
+
+### MAIOS Project Kernel as generic substrate
+
+State:
+EXTERNAL_BY_DESIGN / ACTIVE_COMPOSITION_SOURCE
+
+Role:
+
+~~~text
+company/project bootstrap
+context + source continuity
+project state / reentry
+generic competence formation
+host adaptation / integration
+project-instance continuity
+~~~
+
+Kernel Nautico does not inherit MPK as a monolithic body.
+
+Instead, real enterprise adoption composes the MPK functions that can change
+the movement. Individual functions can remain external, translate locally or
+become native only after nautical evidence justifies that shift.
+
+Current destination relation:
+
+~~~text
+Kernel Nautico
++ pertinent MPK functions
++ authorized company field
+-> Enterprise Nautical Kernel
+~~~
+
+A later Nautical Project Instance may use MPK project continuity beneath the
+enterprise kernel without making MPK the nautical semantic owner.
+
+---
 
 ### Project Context
 
