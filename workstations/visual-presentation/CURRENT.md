@@ -2,14 +2,39 @@
 
 ~~~text
 updated: 2026-10-02
-state: STORY_ARCHITECTURE_FORMED
+state: KEYFRAME_ARCHITECTURE_FORMED
 master_structure: FORM -> BUILD -> LIVE -> RETURN
 persistent_product_object: original concept yacht
 current_concept_frame: Aqua Mechanica study
 external_effect: none
 render_pipeline: unresolved
-next: keyframe architecture + hero/collaboration visual proof from MARKETING_BRIEF.md
+public_kernel_visual_role: first_pilot
+first_strategic_case: Ferretti / Pershing
+next: render/validate KF-01 -> KF-02 -> KF-03 transformation triptych
 ~~~
+
+## Public-kernel pilot relation
+
+The operator has selected a wider product-presentation rule:
+
+~~~text
+every new public kernel
+-> its own 3D Visual Animation
+-> media presentation + cognitive guide
+-> process / use / evolution / possibility / value made perceptible
+-> investor / prospective-client / partner support
+~~~
+
+Kernel Nautico is the first pilot and Ferretti/Pershing is the first strategic
+company case.
+
+This does not make the nautical grammar a universal template. The reusable
+function is recorded in `PUBLIC_KERNEL_VISUAL_PILOT.md`; the current nine-state
+nautical incarnation is in `KEYFRAME_ARCHITECTURE.md`.
+
+The production method is not yet promoted to a new competence. D-ND Design
+Kernel owns the cross-kernel design relation while real execution determines
+whether a distinct 3D production capability must form.
 
 ## Current resultant
 
