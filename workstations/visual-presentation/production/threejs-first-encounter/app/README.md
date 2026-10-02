@@ -6,7 +6,7 @@ This is a perceptual demonstrator, not an AI runtime, engineering model, bridge 
 ## Run the built delivery (no download needed)
 
 The delivery ZIP includes `dist/` with the verified model, source modules and the required Three.js modules.
-With Node.js 20 or later, from `app/`:
+With Node.js 22 or later, from `app/`:
 
 ```sh
 npm start
@@ -40,7 +40,7 @@ python -m playwright install chromium
 python tests/browser.py
 ```
 
-The test assumes the local server is already running. Evidence is written to `evidence/`, or `KN_EVIDENCE`. Software rendering on a CI runner is not a claim of performance on a real user's GPU.
+The test assumes the local server is already running. Evidence is written to `evidence/`, or `KN_EVIDENCE`. Software rendering on a CI runner is not a claim of performance on a real user's GPU. The strict silent captures remove text and navigation before visual review. The browser recording is an actual autoplay capture, not interpolated keyframes.
 
 ## Replaceable carrier / honest BUILD
 

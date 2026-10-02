@@ -31,13 +31,16 @@ export async function loadCarrier() {
     if (['fiancate','chiglia1','blinn5'].includes(originalName)) color.set('#d3dadb');
     if (originalName === 'phongE2') color.set('#d1c8b7');
     if (originalName === 'blinn2') { color.set('#637781'); metalness = .7; roughness = .26; }
-    if (originalName === 'blinn13') color.set('#102430');
+    if (originalName === 'lambert1') color.set('#102430');
+    if (['blinn6','blinn7','blinn13'].includes(originalName)) { color.set('#1c3545'); metalness=.45; roughness=.20; }
     const material = new T.MeshStandardMaterial({ name: originalName, color, metalness, roughness,
       side: T.DoubleSide, clippingPlanes: [clip] });
     mesh.userData.originalMaterial = originalName;
     mesh.material = material;
-    const wire = new T.LineSegments(new T.EdgesGeometry(mesh.geometry, 28), lineMaterial);
-    wire.name = `${mesh.name}:presentation-edges`; wire.renderOrder = 2; mesh.add(wire); edges.push(wire);
+    if (['fiancate','chiglia1','blinn5','coperta1','blinn6','blinn7'].includes(originalName)) {
+      const wire = new T.LineSegments(new T.EdgesGeometry(mesh.geometry, 32), lineMaterial);
+      wire.name = `${mesh.name}:presentation-edges`; wire.renderOrder = 2; mesh.add(wire); edges.push(wire);
+    }
     records.push({ name: mesh.name, originalMaterial: originalName,
       triangles: (mesh.geometry.index?.count || mesh.geometry.attributes.position.count) / 3 });
     old.dispose();
@@ -49,7 +52,7 @@ export async function loadCarrier() {
     apply(frame) {
       const { index, progress: p } = frame;
       const start = index === 0 ? (.25 + .75 * smooth((p + .04) / .35)) : 1;
-      const wireOpacity = index === 0 ? .65 * start : index === 1 ? .49 : index === 2 ? .035 : .10;
+      const wireOpacity = index === 0 ? .65 * start : index === 1 ? .49 : 0;
       lineMaterial.opacity = wireOpacity;
       for (const edge of edges) edge.visible = wireOpacity > .04;
       // A single plane reveals *existing* geometry; there are no fabricated assemblies.

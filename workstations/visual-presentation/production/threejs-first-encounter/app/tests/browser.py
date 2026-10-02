@@ -3,7 +3,7 @@ import json, os, pathlib, statistics, time
 from playwright.sync_api import sync_playwright
 OUT=pathlib.Path(os.environ.get('KN_EVIDENCE','evidence')); OUT.mkdir(parents=True,exist_ok=True)
 URL='http://127.0.0.1:8876/'
-checks=[]; errors=[]; external=[]; snapshots={}
+checks=[]; errors=[]; external=[]; snapshots={}; performance={}
 def check(name,condition,detail=None):
     checks.append({'name':name,'pass':bool(condition),'detail':detail})
     if not condition: raise AssertionError(f'{name}: {detail}')
@@ -32,12 +32,16 @@ with sync_playwright() as p:
             check('same_product_root_'+act,snapshots[act]['uuid']==root)
             check('same_continuity_root_'+act,snapshots[act]['continuityUUID']==trace)
             check('act_'+act,snapshots[act]['act']==act)
+            b=snapshots[act]['projectedProductBounds'];check('whole_carrier_fits_'+act,b['left']>=0 and b['right']<=1440,b)
             page.screenshot(path=str(OUT/('SILENT_'+act+'.png')))
         page.evaluate('window.__KN_DEBUG__.silent(false)');wait_frame(page)
         for act in ['FORM','BUILD','LIVE','RETURN']:
             page.locator('[data-act="'+act+'"]').click();wait_frame(page)
             page.screenshot(path=str(OUT/(act+'.png')))
         check('return_has_qualified_destination',snap(page)['returnStage']=='proposed_design_criterion')
+        end=page.evaluate("() => {const p=document.getElementById('return-line');const q=p.getPointAtLength(p.getTotalLength());return {x:q.x,y:q.y}}")
+        dest=snap(page)['relationEndpoints']['destination']
+        check('return_lands_on_criterion_anchor',abs(end['x']-dest['x'])<1 and abs(end['y']-dest['y'])<1)
         check('return_is_not_automatic',snap(page)['returnExample']['automaticApplication'] is False)
         check('no_fabricated_mesh_separation',snap(page)['manipulatedSubmeshes']==[])
         check('no_external_runtime_requests',external==[],external)
@@ -46,7 +50,7 @@ with sync_playwright() as p:
         wait_frame(page);check('rapid_reversal_final_state',snap(page)['act']=='FORM' and snap(page)['uuid']==root)
         page.locator('#play').click();time.sleep(2);wait_frame(page)
         check('play_progresses',snap(page)['playing'] and snap(page)['seconds']>6.8)
-        page.locator('#play').click();before=snap(page)['seconds'];time.sleep(.5);wait_frame(page)
+        page.locator('#play').click();performance['FORM']=snap(page)['performanceSamples'];before=snap(page)['seconds'];time.sleep(.5);wait_frame(page)
         check('pause_freezes',snap(page)['seconds']==before)
         page.locator('#inspect').click();wait_frame(page)
         check('inspect_pauses_and_is_bounded',snap(page)['inspection'] and not snap(page)['playing'])
@@ -65,9 +69,19 @@ with sync_playwright() as p:
             page.set_viewport_size({'width':width,'height':height});wait_frame(page)
             for act in ['LIVE','RETURN']:
                 page.locator('[data-act="'+act+'"]').click();wait_frame(page);page.screenshot(path=str(OUT/(label+'_'+act+'.png')))
+                box=snap(page)['projectedProductBounds'];check(label+'_'+act+'_whole_carrier_fits',box['left']>=0 and box['right']<=width,box)
             bounds=page.evaluate("[...document.querySelectorAll('footer button,header,.intro')].map(e=>({name:e.id||e.className,left:e.getBoundingClientRect().left,right:e.getBoundingClientRect().right,top:e.getBoundingClientRect().top,bottom:e.getBoundingClientRect().bottom}))")
             check(label+'_controls_within_viewport',all(b['left']>=0 and b['right']<=width+.5 and b['top']>=0 and b['bottom']<=height+.5 for b in bounds),bounds)
         page.set_viewport_size({'width':1440,'height':900});wait_frame(page)
+        page.locator('[data-act="LIVE"]').click();page.locator('#play').click();time.sleep(3);page.locator('#play').click();wait_frame(page)
+        performance['LIVE']=snap(page)['performanceSamples']
+        # A true real-time browser recording, not interpolated screenshots.
+        video_context=browser.new_context(viewport={'width':1280,'height':800},device_scale_factor=1,record_video_dir=str(OUT/'video'),record_video_size={'width':1280,'height':800})
+        video_page=video_context.new_page();video_page.on('pageerror',lambda e:errors.append(str(e)));video_page.goto(URL,wait_until='networkidle',timeout=90000)
+        video_page.wait_for_function("document.getElementById('loading').hidden",timeout=90000)
+        video_page.wait_for_function("document.getElementById('timeline').value === '46'",timeout=90000)
+        video_page.screenshot(path=str(OUT/'AUTOPLAY_END.png'));video_context.close()
+        check('guided_autoplay_reaches_return',True)
         page.emulate_media(reduced_motion='reduce');page.reload(wait_until='networkidle');ready(page)
         before=snap(page)['seconds'];time.sleep(.5);check('reduced_motion_no_autoplay',not snap(page)['playing'] and snap(page)['seconds']==before)
         page.locator('#replay').click();wait_frame(page);check('reduced_replay_no_autoplay',not snap(page)['playing'])
@@ -85,5 +99,5 @@ with sync_playwright() as p:
         check('static_controls_preserve_relation',snap(page)['currentAct']=='RETURN' and snap(page)['returnStage']=='proposed_design_criterion')
     finally:
         (OUT/'browser-evidence.json').write_text(json.dumps({'browser':browser.version,'playwright':'1.57.0','runner':'GitHub Actions ubuntu-latest / software WebGL',
-            'checks':checks,'consoleErrors':errors,'externalRequests':external,'snapshots':snapshots},indent=2),encoding='utf-8')
+            'performance':performance,'checks':checks,'consoleErrors':errors,'externalRequests':external,'snapshots':snapshots},indent=2),encoding='utf-8')
         browser.close()

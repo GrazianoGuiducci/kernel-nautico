@@ -17,9 +17,9 @@ export function makeEnvironment(scene, renderer) {
     vertexShader:'varying vec3 vP; void main(){vP=position; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
     fragmentShader:`varying vec3 vP; uniform float life;
     void main(){vec3 d=normalize(vP); float h=smoothstep(-.10,.52,d.y);
-      vec3 top=vec3(.018,.042,.072), horizon=mix(vec3(.045,.10,.145),vec3(.235,.235,.245),life);
-      vec3 c=mix(horizon,top,h); float warm=pow(max(0.,dot(d,normalize(vec3(-.65,.075,-1.)))),22.);
-      c+=vec3(.27,.125,.039)*warm*life; gl_FragColor=vec4(c,1.);
+      vec3 top=vec3(.006,.014,.027), horizon=mix(vec3(.018,.044,.068),vec3(.075,.09,.115),life);
+      vec3 c=mix(horizon,top,h); float warm=pow(max(0.,dot(d,normalize(vec3(-.65,.075,-1.)))),40.);
+      c+=vec3(.16,.063,.018)*warm*life; gl_FragColor=vec4(c,1.);
       #include <tonemapping_fragment>
       #include <colorspace_fragment>
     }` });
@@ -36,7 +36,7 @@ export function makeEnvironment(scene, renderer) {
   const water=new Water(new T.PlaneGeometry(350,350),{textureWidth:256,textureHeight:256,
     waterNormals:normals,sunDirection:new T.Vector3(-.65,.3,-1).normalize(),
     sunColor:0xe0bd8c,waterColor:0x071c2b,distortionScale:1.3,alpha:1});
-  water.rotation.x=-Math.PI/2; water.position.y=-.42; water.name='KN_WATER'; group.add(water);
+  water.rotation.x=-Math.PI/2; water.position.y=.20; water.name='KN_WATER';water.material.uniforms.size.value=5; group.add(water);
   const grid=new T.GridHelper(34,34,0x456c7d,0x284554); grid.position.y=-.72;
   grid.material.transparent=true;grid.material.opacity=.36; group.add(grid);
   // Sparse construction bounds ground FORM/BUILD, without dimensions or engineered values.

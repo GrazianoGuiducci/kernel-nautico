@@ -15,13 +15,15 @@ const data=Buffer.from(await response.arrayBuffer());
 if(hash(data)!==MODEL.sourceSha256)throw new Error('Source identity mismatch: refusing the carrier.');
 const original=resolve(directory,'source.tmp.glb'), candidate=resolve(directory,'candidate.tmp.glb');
 await writeFile(original,data);
-const npm=process.platform==='win32'?'npm.cmd':'npm';
+const npm=process.env.npm_execpath?process.execPath:'npm';
+const npmPrefix=process.env.npm_execpath?[process.env.npm_execpath]:[];
+if(process.platform==='win32'&&!process.env.npm_execpath)throw new Error('On Windows, invoke this script with npm run assets.');
 // Asset-build tooling is isolated from runtime dependencies. An exact output hash
 // prevents silent tool/transitive drift even before a resolved tool lock is present.
-try{await readFile(resolve(tools,'package-lock.json'));execFileSync(npm,['ci','--prefix',tools,'--no-audit','--no-fund'],{stdio:'inherit'});}
+try{await readFile(resolve(tools,'package-lock.json'));execFileSync(npm,[...npmPrefix,'ci','--prefix',tools,'--no-audit','--no-fund'],{stdio:'inherit'});}
 catch(error){if(error.code!=='ENOENT')throw error;
  await writeFile(resolve(tools,'package.json'),JSON.stringify({name:'kn-asset-tools',private:true,dependencies:{'@gltf-transform/cli':'4.5.0'}},null,2));
- execFileSync(npm,['install','--prefix',tools,'--no-audit','--no-fund'],{stdio:'inherit'});}
+ execFileSync(npm,[...npmPrefix,'install','--prefix',tools,'--no-audit','--no-fund'],{stdio:'inherit'});}
 try{
  const cliRoot=resolve(tools,'node_modules/@gltf-transform/cli');
  const cliPackage=JSON.parse(await readFile(resolve(cliRoot,'package.json'),'utf8'));

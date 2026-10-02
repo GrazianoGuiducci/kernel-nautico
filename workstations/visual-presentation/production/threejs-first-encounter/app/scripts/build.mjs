@@ -1,5 +1,6 @@
 import { cp, mkdir, readFile, writeFile, access } from 'node:fs/promises';
 import { resolve, dirname, relative } from 'node:path';
+import { isContained } from './path-boundary.mjs';
 import { createHash } from 'node:crypto';
 import { MODEL } from '../src/data/story.js';
 const root=resolve(import.meta.dirname,'..'), out=resolve(root,'dist');
@@ -12,7 +13,8 @@ await cp(resolve(root,'index.html'),resolve(out,'index.html'));
 const pkg=resolve(root,'node_modules/three'), vendor=resolve(out,'vendor/three');
 const visited=new Set();
 async function copyModule(path){
-  const absolute=resolve(pkg,path);if(!absolute.startsWith(pkg+'/'))throw new Error('Invalid dependency path');
+  const absolute=resolve(pkg,path);
+  if(!isContained(pkg,absolute))throw new Error('Invalid dependency path');
   if(visited.has(absolute))return;visited.add(absolute);
   const text=await readFile(absolute,'utf8'), destination=resolve(vendor,relative(pkg,absolute));
   await mkdir(dirname(destination),{recursive:true});await writeFile(destination,text);
