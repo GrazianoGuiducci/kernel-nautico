@@ -165,6 +165,52 @@ Remain distinct from company kernel state.
 The actual technical, privacy, safety, connectivity and authority relations form
 only when real product conditions exist.
 
+## Interaction / operating-surface owners
+
+### Nautical Operational Spatial Surface 0.1
+
+Owner:
+Kernel Nautico.
+
+Body:
+`docs/NAUTICAL_OPERATIONAL_SPATIAL_SURFACE_0_1.md`.
+
+Function:
+project product/vessel identity, lifecycle state, source/configuration/event
+relations and permitted actions into a role-relative navigable surface.
+
+Status:
+LOCALLY_REPRESENTED candidate product architecture / exercise pending.
+
+### D-ND Design Kernel — Interaction Quality
+
+External owner.
+
+Contribution:
+action meaning, state visibility, orientation, focus, interruption/recovery,
+responsive behaviour, accessibility and interaction quality.
+
+### D-ND Design Kernel — Cognitive Motion
+
+External owner.
+
+Contribution:
+semantic continuity while focus, scale, selected object and surface topology
+change.
+
+### MAIOS operating-form / authority relation
+
+External source:
+GrazianoGuiducci/codex / MAIOS interaction and operating-form work.
+
+Contribution:
+current object, workflow state, affected objects, permission classes,
+validation, receipt and recovery.
+
+Boundary:
+Kernel Nautico does not copy MAIOS runtime authority. A receiving enterprise or
+vessel environment supplies its actual identity, policy and effect authority.
+
 ## Visual / narrative owners
 
 External and reachable:
