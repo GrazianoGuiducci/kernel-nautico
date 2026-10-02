@@ -4,14 +4,14 @@
 status: candidate_learning_return
 updated: 2026-10-01
 authority: visual work can expose relations; it does not decide kernel architecture
-target_owner: formation/product-development-kernel
+target_owner: GrazianoGuiducci/kernel-nautico
 ~~~
 
 ## Why this exists
 
 The visual representation is functioning as an epistemic probe.
 
-By trying to make the future nautical kernel visible across one yacht lifecycle,
+By trying to make the Kernel Nautico visible across one yacht lifecycle,
 the workstation has exposed relations that may materially help the kernel
 formation. They are returned here as **candidates**, not architecture decisions.
 
