@@ -1,4 +1,4 @@
-name: KN visual asset acquisition (no deployment)
+name: KN visual carrier inspection (no deployment)
 on:
   push:
     branches: [work/visual-threejs-first-encounter-20261002]
@@ -6,39 +6,58 @@ on:
 permissions:
   contents: read
 jobs:
-  acquire:
+  inspect:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 12
     steps:
-      - name: Acquire pinned candidates for local inspection
-        shell: bash
+      - name: Acquire source with exact identity
         run: |
-          mkdir -p candidate-bundle
+          mkdir -p runtime evidence
+          curl --fail --location --retry 2 'https://raw.githubusercontent.com/bob6664569/open-water/285b6ce32057c70191a7fe16c31d979fa383ac64/site/assets/boats/motoryacht_10.7r.glb' -o runtime/original.glb
+          echo 'f3272a5c660705b0c4c1a0dca4195a7f60822f0d09d290a1a37ff6fa0677985b  runtime/original.glb' | sha256sum -c -
+          npm install --prefix runtime --no-audit --no-fund three@0.186.1 @gltf-transform/cli@4.5.0
+          runtime/node_modules/.bin/gltf-transform simplify runtime/original.glb runtime/yacht.glb --ratio 0.18 --error 0.001 | tee evidence/optimization.txt
+          cp runtime/yacht.glb evidence/
+      - name: Prepare bounded browser inspection
+        run: |
+          python3 -m pip install playwright==1.57.0
+          python3 -m playwright install --with-deps chromium
+          cat > runtime/index.html <<'HTML'
+          <!doctype html><html><head><meta charset="utf-8"><link rel="icon" href="data:,"><style>html,body{margin:0;background:#07131e}canvas{display:block}</style><script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script></head><body><script type="module">
+          import * as T from 'three';import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+          const s=new T.Scene();s.background=new T.Color('#081825');const c=new T.PerspectiveCamera(33,innerWidth/innerHeight,.01,100);c.position.set(4.8,2.7,4.8);c.lookAt(0,.65,0);const r=new T.WebGLRenderer({antialias:true});r.setSize(innerWidth,innerHeight);r.setPixelRatio(1);r.toneMapping=T.ACESFilmicToneMapping;r.toneMappingExposure=1.15;document.body.appendChild(r.domElement);const pm=new T.PMREMGenerator(r);s.environment=pm.fromScene(new RoomEnvironment(),.04).texture;s.add(new T.HemisphereLight(0xffffff,0x354852,2));const l=new T.DirectionalLight(0xffe0ba,3);l.position.set(4,8,3);s.add(l);
+          const q=new URLSearchParams(location.search);const gltf=await new GLTFLoader().loadAsync(q.has('original')?'./original.glb':'./yacht.glb');const o=gltf.scene;s.add(o);o.rotation.y=Math.PI/2;const box=new T.Box3().setFromObject(o);const center=box.getCenter(new T.Vector3());o.position.x-=center.x;o.position.z-=center.z;
+          window.meshes=[];o.traverse(x=>{if(x.isMesh){window.meshes.push({name:x.name,material:x.material.name,triangles:(x.geometry.index?.count||x.geometry.attributes.position.count)/3});if(q.has('adapt')){const m=x.material;let col=m.color.clone();if(['fiancate','chiglia1','blinn5'].includes(m.name))col.set('#d5dadb');if(m.name==='phongE2')col.set('#d9d0ba');x.material=new T.MeshStandardMaterial({color:col,metalness:m.name==='blinn2'?.55:.18,roughness:.32,side:T.DoubleSide});}}});window.ready=true;window.camera=c;window.renderer=r;window.render=()=>r.render(s,c);window.render();
+          </script></body></html>
+          HTML
           python3 - <<'PY'
-          import urllib.request, pathlib, hashlib, json, base64
-          p=pathlib.Path('candidate-bundle')
-          root='https://raw.githubusercontent.com/bob6664569/open-water/285b6ce32057c70191a7fe16c31d979fa383ac64/'
-          targets={
-            'three-0.186.1.tgz':'https://registry.npmjs.org/three/-/three-0.186.1.tgz',
-            'motoryacht_10.7r.glb':root+'site/assets/boats/motoryacht_10.7r.glb',
-            'OPEN_WATER_THIRD_PARTY_NOTICES.md':root+'THIRD_PARTY_NOTICES.md',
-            'OPEN_WATER_README.md':root+'README.md',
-            'OPEN_WATER_LICENSE':root+'LICENSE',
-          }
-          manifest=[]
-          for name,url in targets.items():
-            req=urllib.request.Request(url,headers={'User-Agent':'Kernel-Nautico-bounded-asset-inspection'})
-            with urllib.request.urlopen(req,timeout=60) as r: data=r.read(60*1024*1024)
-            if name=='three-0.186.1.tgz':
-              assert base64.b64encode(hashlib.sha512(data).digest()).decode()=='blFeqb49wRCSGUGj7gtpfnSGHy2lwDk94RhUmS1c/hTby70kvChbWpkJ4Pm1390LqzzvTmzgXKHPEafJwCb8jA=='
-            if name.endswith('.glb'): assert data[:4]==b'glTF'
-            (p/name).write_bytes(data)
-            manifest.append({'file':name,'url':url,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
-          (p/'acquisition.json').write_text(json.dumps({'purpose':'candidate inspection only; carrier not yet selected','files':manifest},indent=2))
+          import pathlib,json,struct,hashlib
+          records=[]
+          for path in [pathlib.Path('runtime/original.glb'),pathlib.Path('runtime/yacht.glb')]:
+            b=path.read_bytes();n=struct.unpack_from('<I',b,12)[0];j=json.loads(b[20:20+n]);records.append({'file':path.name,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest(),'asset':j.get('asset'),'mesh_count':len(j['meshes']),'node_count':len(j['nodes']),'materials':len(j.get('materials',[]))})
+          pathlib.Path('evidence/carrier-stats.json').write_text(json.dumps(records,indent=2))
+          PY
+      - name: Capture actual Chromium carrier evidence
+        run: |
+          python3 -m http.server 8876 --bind 127.0.0.1 --directory runtime >/tmp/kn-http.log 2>&1 &
+          python3 - <<'PY'
+          import json,pathlib
+          from playwright.sync_api import sync_playwright
+          errors=[]
+          with sync_playwright() as p:
+            b=p.chromium.launch(headless=True,args=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
+            pg=b.new_page(viewport={'width':1440,'height':900},device_scale_factor=1)
+            pg.on('pageerror',lambda e:errors.append(str(e)))
+            for name,query in [('CARRIER_ORIGINAL','?original'),('CARRIER_SIMPLIFIED',''),('CARRIER_ADAPTED','?adapt')]:
+              pg.goto('http://127.0.0.1:8876/'+query,wait_until='networkidle',timeout=90000);pg.wait_for_function('window.ready',timeout=90000);pg.screenshot(path='evidence/'+name+'.png')
+              pathlib.Path('evidence/'+name+'.json').write_text(json.dumps(pg.evaluate('window.meshes'),indent=2))
+            pathlib.Path('evidence/browser.json').write_text(json.dumps({'browser':b.version,'runner':'ubuntu-latest GitHub Actions','errors':errors},indent=2));b.close()
+          assert not errors,errors
           PY
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: kn-visual-candidates
-          path: candidate-bundle/
-          retention-days: 1
+          name: kn-visual-carrier-inspection
+          path: evidence/
+          retention-days: 7
           if-no-files-found: error
