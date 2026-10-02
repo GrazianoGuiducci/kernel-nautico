@@ -199,6 +199,55 @@ Its useful contribution is:
 Its current text/specifications are illustrative only and must not be treated as
 naval/product facts.
 
+## Technical depth source — Nautical Reference Operating Model 0.1
+
+The public visual master remains:
+
+~~~text
+FORM -> BUILD -> LIVE -> RETURN
+~~~
+
+Technical realism now comes from:
+
+~~~text
+docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md
+~~~
+
+The model expands the four acts internally across intent, feasibility,
+engineering, industrial planning, primary structure, machinery/systems,
+superstructure, outfitting, quality checks, commissioning, sea trials,
+delivery/product-instance activation, service/refit and RETURN.
+
+Do not expose every internal stage in the hero film.
+
+Use the technical model to choose credible state changes, interfaces, tools,
+component/system views and production environments while preserving a simple
+public movement.
+
+V-01 remains the semantic through-line. R-01 may later become one bounded
+physical carrier.
+
+## Public Kernel Visual Principle candidate
+
+The current workstation now preserves:
+
+~~~text
+PUBLIC_KERNEL_VISUAL_PRINCIPLE.md
+~~~
+
+Current candidate function:
+
+~~~text
+public kernel
+-> kernel-native visual system
+-> media presentation + cognitive guide + product demonstration
+-> reusable hero / deck / one-page / site / social / interactive family
+~~~
+
+Kernel Nautico is the first real exercise. Do not generalize into a Design
+competence until the KN master and at least one non-identical kernel provide
+behavioral evidence.
+
 ## Open decisions
 
 - final visual identity for the nautical kernel presentation;
