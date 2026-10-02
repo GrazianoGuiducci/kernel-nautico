@@ -167,14 +167,21 @@ It evolved Lifecycle Return Qualification from a single-owner return assumption
 to v0.2 distributed multi-owner causal return.
 
 Current I2 disposition:
-CANDIDATE_PENDING_REENTRY_READBACK.
+REACHED_OWNER_NATIVE_REENTRY_FUNCTION.
 
 Read:
 `traversals/I2_EXERCISE_01_WHEELYBOAT_DISTRIBUTED_RETURN_2026-10-02.md`.
 
-Next movement:
-recover v0.2 through BOOT -> CURRENT -> I2 Exercise 01 and preserve
-multi-owner source/authority boundaries without Ferretti-specific reconstruction.
+Owner-native reentry recovered Lifecycle Return Qualification v0.2 and its
+multi-owner source/authority distinctions without Ferretti-specific
+reconstruction.
+
+Kernel Nautico now has an I2 nautical domain nucleus at repository/reentry
+function level. Independent fresh-receiver behavioural evidence remains a
+stronger separate claim.
+
+Next movement comes from a real company incarnation, Business/adoption
+formation or another material domain consequence; do not replay I2 by ritual.
 
 R-01 remains a possible bounded carrier of V-01, not the vertical itself and
 not selected product architecture.
