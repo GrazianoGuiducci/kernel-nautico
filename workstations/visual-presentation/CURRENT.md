@@ -2,15 +2,16 @@
 
 ~~~text
 updated: 2026-10-02
-state: KEYFRAME_ARCHITECTURE_FORMED
+state: THREEJS_FIRST_ENCOUNTER_SELECTED
 master_structure: FORM -> BUILD -> LIVE -> RETURN
-persistent_product_object: original concept yacht
+persistent_product_object: original concept yacht / replaceable licensed GLB carrier for first proof
 current_concept_frame: Aqua Mechanica study
 external_effect: none
-render_pipeline: unresolved
+render_pipeline: Three.js-first browser demonstrator
 public_kernel_visual_role: first_pilot
 first_strategic_case: Ferretti / Pershing
-next: render/validate KF-01 -> KF-02 -> KF-03 transformation triptych
+execution_field: workstations/visual-presentation/production/threejs-first-encounter/
+next: execute first coherent Three.js FORM -> BUILD -> LIVE -> RETURN demonstrator; operational UI deferred
 ~~~
 
 ## Public-kernel pilot relation
@@ -248,15 +249,54 @@ Kernel Nautico is the first real exercise. Do not generalize into a Design
 competence until the KN master and at least one non-identical kernel provide
 behavioral evidence.
 
+## Three.js first-encounter execution selection — 2026-10-02
+
+The operator has selected a lower-latency first implementation path:
+
+~~~text
+current need
+  comprehension + strong first encounter + resource/collaboration potential
+
+selected now
+  Three.js browser-native demonstrator
+  -> one persistent yacht
+  -> FORM -> BUILD -> LIVE -> RETURN
+  -> cinematic/guided comprehension
+  -> semantic/state architecture that can survive into later UI work
+
+deferred until a real field makes it material
+  operational Spatial UI
+  CAD/PLM/company-data integration
+  Blender/industrial 3D pipeline
+  production-grade proprietary yacht asset
+~~~
+
+This does not reject Blender/CAD depth. It changes the order of realization:
+the current visual is a presentation/cognitive surface first. The operational
+surface should be formed later from real company/project requirements rather
+than anticipated now.
+
+Canonical execution field:
+
+`workstations/visual-presentation/production/threejs-first-encounter/`
+
+That folder owns the current implementation packet, source map, external code
+references, zero-context receiver correction, asset/provenance boundary and GPT
+Pro execution prompt.
+
+The first web implementation may use a legally reusable, replaceable yacht GLB
+carrier. That carrier is not Kernel Nautico identity and must preserve exact
+license/attribution. No non-commercial-only asset is acceptable for the current
+company/funding encounter path.
+
 ## Open decisions
 
 - final visual identity for the nautical kernel presentation;
-- whether the persistent yacht becomes a coherent reusable 3D asset or remains
-  a storyboard proxy;
+- final proprietary/persistent yacht asset after the first browser proof;
 - which real subsystem, if any, replaces R-01 for a collaboration version;
 - whether a partner version names Ferretti/Pershing or remains company-neutral;
 - final master duration and sound/voice strategy;
-- exact 3D production stack;
+- whether later real adoption makes Blender/CAD or a richer asset pipeline material;
 - whether execution exposes a reusable industrial-3D competence gap.
 
 ## Marketing / collaboration source
@@ -282,20 +322,20 @@ pacing around the same product/kernel truth.
 
 ## Next movement
 
-Form the first keyframe architecture from STORYBOARD_MASTER.md:
+Enter:
+
+`workstations/visual-presentation/production/threejs-first-encounter/README.md`
+
+Then execute the Three.js demonstrator packet on a dedicated work branch.
+
+The first implementation must prove that one recognizable yacht plus one
+continuity relation can carry the compressed causal movement:
 
 ~~~text
-KF-01  first line / product intent
-KF-02  concept geometry
-KF-03  engineering opening / R-01
-KF-04  materialization
-KF-05  assembly / commissioning
-KF-06  sea / LIVE transition
-KF-07  vessel-kernel relation
-KF-08  service consequence
-KF-09  return / next product seed
+FORM -> BUILD -> LIVE -> RETURN
 ~~~
 
-The first visual test should prove whether the same yacht and one continuity
-relation can carry the full causal movement before a renderer/toolchain is
-selected.
+for a receiver with zero internal context.
+
+Do not build the operational Spatial UI in this movement. Do not restart the
+nine-keyframe architecture; it remains depth for later master-film expansion.
