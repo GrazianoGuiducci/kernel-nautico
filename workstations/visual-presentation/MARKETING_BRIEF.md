@@ -10,6 +10,69 @@ render_pipeline: unresolved
 external_publication_effect: not selected by this brief
 ~~~
 
+## Public-kernel presentation role
+
+Kernel Nautico is the first pilot of a wider operator-selected relation:
+
+~~~text
+each new public kernel
+-> one kernel-native 3D visual animation system
+-> media presentation + cognitive guide
+-> investor / prospective-client / partner comprehension
+~~~
+
+The reusable function is shared; the visual morphology is not. Kernel Nautico
+uses the yacht/lifecycle field because that is its real object.
+
+The master must therefore support two jobs simultaneously:
+
+1. make **Kernel Nautico** intelligible as a public domain kernel;
+2. provide reusable material for a serious collaboration conversation such as
+   the first Ferretti/Pershing case.
+
+Neither job authorizes external contact or converts illustrative capability into
+a company claim.
+
+## Value planes the visual should be able to expose
+
+Do not render "value" as one generic benefit cloud.
+
+Keep these relations distinguishable and select only those material to the
+receiver:
+
+~~~text
+understanding value
+  what the kernel is / why it differs from a generic assistant
+
+operating value
+  participation in sources, decisions, configuration and process
+
+continuity value
+  meaningful relations remain reachable across state changes
+
+competence value
+  experience can become reusable later capability
+
+integration value
+  public domain kernel can form a company-situated incarnation
+
+lifecycle value
+  delivery does not terminate the product's knowledge/service field
+
+stewardship value
+  continuing evolution can preserve and deepen situated capability
+
+strategic possibility value
+  current capability can open larger product/company horizons without
+  presenting them as already deployed
+
+economic / collaboration value
+  deeper integration/co-development can become valuable when real work proves it
+~~~
+
+Investor and client cuts should reveal value through the causal transformation,
+not by stacking claims or invented ROI.
+
 ## Goal
 
 Create one master visual system able to support:
