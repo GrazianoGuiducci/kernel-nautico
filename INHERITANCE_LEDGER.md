@@ -1,7 +1,7 @@
 # Kernel Nautico — Inheritance Ledger
 
 ~~~text
-version: 0.1.1
+version: 0.1.2
 formed: 2026-10-02
 purpose: track progressive independence without cloning source topology
 ~~~
@@ -150,6 +150,32 @@ lifecycle consequence
 
 Next proof:
 exercise the RETURN step in one complete V-01 movement.
+
+### Nautical Reference Operating Model
+
+State:
+LOCALLY_REPRESENTED
+
+Owner:
+Kernel Nautico.
+
+Body:
+`docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md`
+
+Formation evidence:
+qualified Pershing/Ferretti, RINA and EU source relations have been recomposed
+into a domain baseline with production profiles, quality gates, product-state
+transition, lifecycle and company-overlay relation.
+
+Exercise:
+active through V-01; later company and non-identical nautical cases must refine
+or invalidate it where necessary.
+
+Assimilation:
+not yet claimed. A later fresh case should use the model without reconstructing
+the formation research and correct it when the real field differs.
+
+---
 
 ### Start Existing Project
 
