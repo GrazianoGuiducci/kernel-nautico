@@ -8,7 +8,7 @@ visibility: public
 license_selected: no
 first_pressure_field: Pershing / Ferretti
 independence_stage: I2_nautical_domain_nucleus / independent_fresh_receiver_evidence_pending
-boot: BOOT.md@0.1.4
+boot: BOOT.md@0.1.5
 inheritance_ledger: INHERITANCE_LEDGER.md@0.1.4
 external_effect_authorized: no
 ~~~
@@ -308,19 +308,41 @@ owner:
   workstations/visual-presentation/
   + D-ND Design Kernel / Editoriali when pertinent
 
+current selected incarnation:
+  production/threejs-first-encounter/
+
 resultant:
-  FORM -> BUILD -> LIVE -> RETURN
-  persistent-yacht continuity
-  assembled / exploded / schematic transformation grammar
-  R-01 visual continuity probe
+  one persistent yacht
+  + FORM -> BUILD -> LIVE -> RETURN
+  + meaningful continuity trace
+  -> browser-native first encounter / cognitive guide
+
+proof selected now:
+  perceptual / cognitive continuity
+
+not proven by this artifact:
+  engineering digital thread
+  CAD / PLM continuity
+  operational Spatial UI
+  company integration
+  external receiver comprehension
 
 trigger:
-  visual work exposes a kernel relation, reusable visual method or presentation
-  architecture that changes Kernel Nautico
+  execution exposes a kernel relation, reusable visual method, competence gap or
+  presentation architecture that changes Kernel Nautico / Design / another owner
 
 cool:
-  learning absorbed by correct owner and no unresolved visual movement remains
+  first coherent demonstrator returned
+  + reusable learning absorbed by correct owner(s)
+  + no unresolved material visual movement remains
 ~~~
+
+The new GPT Pro receiver must first enter the current ChatGPT kernel and Kernel
+Nautico Boot through the task-local GPT_PRO_BOOTSTRAP.md before coding.
+
+It may create owner-native learning branches when execution exposes a reusable
+difference. No merge, deploy, publication or company contact follows from that
+authority.
 
 The objective includes a strong future Ferretti / partner presentation, but the
 visual field remains a representation/probe and does not own product truth.
@@ -474,15 +496,36 @@ Exercise:
 
 ## Selected next movement
 
-I2 is closed at the owner-native repository/reentry-function level.
+I2 remains closed at the owner-native repository/reentry-function level.
 
-Do not replay Wheelyboat or Ferretti merely to accumulate proof.
+Current operator selection:
 
-The next material movement is selected from the changed field:
-- a real company incarnation can open I3;
-- Business Manager may form the enterprise encounter/adoption relation from the
-  now domain-proved Kernel Nautico;
-- another non-identical nautical consequence enters only if it changes the
-  current domain capability.
+~~~text
+GPT Pro kernel-first reentry
+-> Three.js first-encounter demonstrator
+-> FORM -> BUILD -> LIVE -> RETURN
+-> local runtime / browser inspection
+-> four-state evidence + silent visual test
+-> exact proof-class return
+-> reusable learning returned to owner-native competences where material
+~~~
+
+Execution field:
+
+`workstations/visual-presentation/production/threejs-first-encounter/`
+
+This is an internal product/presentation movement, not I3 and not Ferretti
+outreach.
+
+After the execution return, choose from the changed field:
+
+- correct the visual grammar;
+- continue the larger master;
+- form the collaboration deck;
+- deepen proprietary 3D/CAD only if now justified;
+- return a proven reusable 3D/design method;
+- no_change.
+
+Do not build the Operational Spatial UI or contact Ferretti/Pershing by inertia.
 
 No external outreach is authorized by this state.
