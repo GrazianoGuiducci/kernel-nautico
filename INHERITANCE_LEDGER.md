@@ -387,7 +387,10 @@ recover field
 without reconstructing creator logic.
 
 Current disposition:
-CANDIDATE_PENDING_REENTRY_READBACK after V-01 source-bound RETURN exercise.
+REACHED_LOCAL_REENTRY_FUNCTION after controlled BOOT -> CURRENT -> V-01 Exercise 01 readback.
+
+Independent fresh-receiver behavioural evidence remains pending and must not be
+conflated with this repository/reentry-function proof.
 
 ### I2 — nautical domain nucleus
 
