@@ -8,8 +8,8 @@ visibility: public
 license_selected: no
 first_pressure_field: Pershing / Ferretti
 independence_stage: I0_to_I1
-boot: BOOT.md@0.1.1
-inheritance_ledger: INHERITANCE_LEDGER.md@0.1.1
+boot: BOOT.md@0.1.2
+inheritance_ledger: INHERITANCE_LEDGER.md@0.1.2
 external_effect_authorized: no
 ~~~
 
