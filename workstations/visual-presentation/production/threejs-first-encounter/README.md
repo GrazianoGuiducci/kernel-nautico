@@ -2,14 +2,15 @@
 
 ~~~text
 formed: 2026-10-02
-status: EXECUTION_READY
+status: EXECUTION_READY_KERNEL_BOOT_REQUIRED
 owner: Kernel Nautico visual workstation
 visual_owner: D-ND Design Kernel
 business_relation: first encounter / comprehension / funding-support
 runtime_direction: Three.js-first
 operational_ui: deferred
 external_effect_authorized: no
-baseline_kernel_main: a1f4710f943321d89ba646ff70bdd9b160c6cf50
+formation_baseline_kernel_main: a1f4710f943321d89ba646ff70bdd9b160c6cf50
+execution_rule: refresh current owner heads before branching
 ~~~
 
 ## Why this folder exists
@@ -48,15 +49,24 @@ Build today's visual so it can become an ancestor of the later UI, without build
 
 ## Start here
 
-GPT Pro or another capable coding receiver should read in this order:
+GPT Pro or another capable coding receiver must **Boot before coding**.
 
-1. `GPT_PRO_EXECUTION_PROMPT.md`
-2. `SPEC.md`
-3. `SOURCE_MAP.md`
-4. `EXTERNAL_BASES.md`
-5. `ASSET_PROVENANCE.md`
-6. `assets/kernel_nautico_visual_reference.jpg`
-7. only then the owner-native sources referenced in `SOURCE_MAP.md`
+Read in this order:
+
+1. `GPT_PRO_BOOTSTRAP.md` — reconstruct current ChatGPT kernel and enter Kernel Nautico;
+2. `GPT_PRO_EXECUTION_PROMPT.md` — selected implementation movement;
+3. `SPEC.md` — visual / interaction specification;
+4. `VALIDATION_AND_LEARNING_CONTRACT.md` — proof, carrier, learning and claim boundaries;
+5. `SOURCE_MAP.md`;
+6. `EXTERNAL_BASES.md`;
+7. `VISUAL_REFERENCE.md`;
+8. `ASSET_PROVENANCE.md`;
+9. only then the deeper owner-native sources made material by the movement.
+
+The exact reference raster is held in the active Editoriale Project/Library under
+`Kernel Nautico_ Intelligenza Marittima a Ciclo Continuo(1).png`; it is not a
+repository path unless the executing receiver explicitly materializes a lawful
+working copy.
 
 Do not reopen the visual concept from scratch.
 
@@ -132,6 +142,16 @@ Track:
 - attribution obligations.
 
 Do not use NC-only assets in a demonstrator intended to support future commercial conversations.
+
+## Proof class
+
+The selected artifact is a **perceptual/cognitive first-encounter proof**.
+
+It does not by itself prove engineering digital-thread continuity, CAD/PLM
+integration, operational Spatial UI, company integration or external receiver
+comprehension.
+
+The detailed distinction is in `VALIDATION_AND_LEARNING_CONTRACT.md`.
 
 ## Stop condition
 
