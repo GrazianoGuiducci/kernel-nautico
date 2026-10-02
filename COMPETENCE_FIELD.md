@@ -289,3 +289,41 @@ Potential field:
 - renderer/export/realtime delivery.
 
 Do not create a new competence until real execution produces reusable method.
+
+
+## Local learned capability — Lifecycle Return Qualification
+
+Owner:
+Kernel Nautico.
+
+Formation event:
+V-01 Exercise 01 using qualified Ferretti after-sales / Field Failure Report /
+post-launch product-development evidence.
+
+Function:
+
+~~~text
+lifecycle evidence
++ product identity / configuration
++ provenance / context / time
++ impact / recurrence
++ causal trace
+-> vessel-local state | corrective relation | reusable difference
+-> closest competent owner changes
+-> later product / process / service movement begins differently
+~~~
+
+Status:
+LOCALLY_REPRESENTED / FIRST_SOURCE_BOUND_EXERCISE_COMPLETE /
+NON_IDENTICAL_USE_PENDING.
+
+The first incarnation remains inside this competence field rather than becoming
+a separate skill body. Later non-identical use will determine whether a deeper
+native morphology is needed.
+
+Boundaries:
+- recurrence strengthens evidence but does not prove a universal cause;
+- Ferretti's company workflow is not imported as a domain law;
+- product, warranty, quality, privacy and safety authority remain
+  receiver/company-native;
+- corrected vessel state is not automatically reusable competence.
