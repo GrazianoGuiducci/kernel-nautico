@@ -1,5 +1,16 @@
 # Kernel Nautico — Three.js First Encounter Visual Field
 
+## Current branch result — 2026-10-02
+
+The first execution is complete as a **reviewable candidate**, not a final premium
+release. Enter [CURRENT.md](CURRENT.md) and [EXECUTION_RETURN.md](EXECUTION_RETURN.md)
+for the exact runtime, evidence, temporary-carrier limits and unmerged Design
+learning. Do not restart implementation from the formation state below.
+The runtime is in `app/`; [ASSET_PROVENANCE.md](ASSET_PROVENANCE.md) records the
+selected carrier. Public deployment and external comprehension remain unselected.
+
+The following formation brief and its observed versions are preserved as genealogy.
+
 ~~~text
 formed: 2026-10-02
 status: EXECUTION_READY_KERNEL_BOOT_REQUIRED
