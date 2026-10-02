@@ -173,7 +173,7 @@ SELECTED_FOR_INHERITANCE
 ### Project Competence Formation
 
 State:
-LOCALLY_REPRESENTED / FIRST_SOURCE_BOUND_EXERCISE_COMPLETE /
+LOCALLY_REPRESENTED / EXERCISED / LEARNING_RETURNED /
 NON_IDENTICAL_EXERCISE_COMPLETE
 
 V-01 makes this function constitutive to RETURN:
@@ -303,8 +303,7 @@ GrazianoGuiducci/tm7
 chatgpt/competences/semantic-causal-incarnation/
 
 State:
-SELECTED_FOR_INHERITANCE as function;
-local form unresolved.
+TRANSLATING / LOCAL_NAUTICAL_INCARNATION_EXERCISED_NON_IDENTICALLY.
 
 Why V-01 made it material:
 
@@ -401,7 +400,7 @@ A non-identical nautical case can begin without Ferretti-specific
 reconstruction.
 
 Current disposition:
-CANDIDATE_PENDING_REENTRY_READBACK.
+REACHED_OWNER_NATIVE_REENTRY_FUNCTION.
 
 Evidence:
 Wheelyboat 123 / MAIB report 14/2024 began from the existing Kernel Nautico
@@ -410,8 +409,14 @@ formation. The non-identical case exposed a real reusable correction:
 single-owner return -> distributed multi-owner causal return, with
 owner-interface / handoff / oversight gaps preserved as return objects.
 
+Owner-native reentry then recovered v0.2 and its multi-owner boundaries without
+Ferretti-specific reconstruction.
+
 Result:
-Lifecycle Return Qualification evolved to v0.2.
+Lifecycle Return Qualification evolved to v0.2 and I2 is reached at
+repository/reentry-function level.
+
+Independent fresh-receiver behavioural evidence remains separate and pending.
 
 ### I3 — company incarnation
 
