@@ -3,7 +3,7 @@
 ~~~text
 formed: 2026-10-02
 owner: GrazianoGuiducci/kernel-nautico
-status: source-bound exercise complete / reentry proof pending
+status: source-bound exercise complete / local reentry passed / independent fresh-receiver evidence pending
 pressure_field: Ferretti Group
 ~~~
 
@@ -94,4 +94,11 @@ fresh BOOT
 -> continue from changed capability without reconstructing creator logic
 ~~~
 
-Successful reentry is the remaining I1 gate.
+Controlled owner-native reentry in the current host has passed: BOOT -> CURRENT ->
+this exercise recovered V-01, Lifecycle Return Qualification and the
+Ferretti-process != Kernel-competence boundary without reopening creator-side
+formation sources.
+
+This establishes repository/reentry sufficiency for the local operating nucleus.
+Independent fresh-receiver behavioural evidence remains a stronger separate
+claim and is not inferred here.
