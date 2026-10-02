@@ -2,11 +2,28 @@
 
 ~~~text
 formed: 2026-10-02
-status: selected production handoff
+status: source packet / prior Blender-neutral proof handoff; current execution redirected to Three.js first encounter
 owner: Kernel Nautico visual workstation
-current_kernel_main: f56b5ecacaf60c72049c810466e0b0982be0f715
+current_kernel_main_at_formation: f56b5ecacaf60c72049c810466e0b0982be0f715
 external_effect_authorized: none
 ~~~
+
+## Current execution redirect — 2026-10-02
+
+The operator has since selected a lower-latency **Three.js-first** path for the
+first encounter because the immediate need is comprehension, collaboration and
+resource formation rather than an industrial 3D pipeline or operational UI.
+
+Current execution field:
+
+`workstations/visual-presentation/production/threejs-first-encounter/`
+
+Use that folder for the current implementation. This document remains useful as
+source depth for persistent-object, zero-context receiver, technical realism,
+claim-boundary and later keyframe/master-film relations.
+
+Do not infer that the current receiver must implement Blender or stop at only
+KF-01 -> KF-03. The current Three.js packet owns execution scope.
 
 ## 0. Do not restart concept formation
 
