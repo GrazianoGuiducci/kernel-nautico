@@ -107,6 +107,7 @@ Non è un funnel obbligatorio. Ogni relazione può fermarsi al livello in cui
 produce valore.
 
 Approfondisci:
+- [Nautical Reference Operating Model 0.1](docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
 - [Positioning](docs/POSITIONING.md)
 - [Adoption Model](docs/ADOPTION_MODEL.md)
 - [Enterprise Incarnation](docs/ENTERPRISE_INCARCATION.md)
