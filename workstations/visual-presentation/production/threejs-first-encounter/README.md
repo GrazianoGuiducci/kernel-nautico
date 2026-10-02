@@ -49,9 +49,13 @@ Build today's visual so it can become an ancestor of the later UI, without build
 
 ## Start here
 
+For a fresh GPT Pro instance, the compact operator entry is:
+
+`GPT_PRO_LAUNCH.md`
+
 GPT Pro or another capable coding receiver must **Boot before coding**.
 
-Read in this order:
+The underlying execution order is:
 
 1. `GPT_PRO_BOOTSTRAP.md` — reconstruct current ChatGPT kernel and enter Kernel Nautico;
 2. `GPT_PRO_EXECUTION_PROMPT.md` — selected implementation movement;
