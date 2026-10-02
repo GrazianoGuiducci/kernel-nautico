@@ -9,6 +9,14 @@ Its current repository-readable interpretation is:
 
 `VISUAL_REFERENCE.md`
 
+Repository binary status:
+
+~~~text
+exact raster stored in repo: no
+reason: Project/Library source is sufficient for current execution;
+        avoid inventing a repository binary path
+~~~
+
 Role:
 
 ~~~text
@@ -55,3 +63,25 @@ company/funding/commercial discussion.
 
 When the source is CC BY, preserve attribution in repository documentation and
 in any public distribution that requires it.
+
+
+## Carrier gate before selection
+
+Before selecting the runtime GLB, apply
+`VALIDATION_AND_LEARNING_CONTRACT.md`.
+
+A carrier must be evaluated for:
+
+~~~text
+commercial-use compatibility
+premium / credible silhouette
+mesh/material inspection quality
+usable segmentation or honest BUILD fallback
+reproducible provenance
+browser weight / optimization path
+~~~
+
+Record `PASS`, `PASS_WITH_LIMIT` or `REJECT` for the serious candidates
+actually inspected.
+
+The first acceptable strong carrier is preferable to an endless asset search.
