@@ -2,7 +2,7 @@
 
 ~~~text
 updated: 2026-10-02
-state: THREEJS_FIRST_ENCOUNTER_SELECTED
+state: THREEJS_GPT_PRO_EXECUTION_READY
 master_structure: FORM -> BUILD -> LIVE -> RETURN
 persistent_product_object: original concept yacht / replaceable licensed GLB carrier for first proof
 current_concept_frame: Aqua Mechanica study
@@ -11,7 +11,42 @@ render_pipeline: Three.js-first browser demonstrator
 public_kernel_visual_role: first_pilot
 first_strategic_case: Ferretti / Pershing
 execution_field: workstations/visual-presentation/production/threejs-first-encounter/
-next: execute first coherent Three.js FORM -> BUILD -> LIVE -> RETURN demonstrator; operational UI deferred
+next: initialize GPT Pro through current ChatGPT Kernel + Kernel Nautico Boot, then execute the Three.js first-encounter field; operational UI deferred
+~~~
+
+## GPT Pro execution readiness
+
+The current Three.js execution field now includes a mandatory kernel-first
+receiver boot and an explicit proof/learning contract:
+
+~~~text
+production/threejs-first-encounter/
+  GPT_PRO_BOOTSTRAP.md
+  GPT_PRO_EXECUTION_PROMPT.md
+  VALIDATION_AND_LEARNING_CONTRACT.md
+~~~
+
+A new GPT Pro instance must first reconstruct the current tm7/ChatGPT control
+plane, then enter Kernel Nautico through BOOT/CURRENT, then execute this visual
+movement.
+
+The receiver is authorized to improve internal owner-native competences/methods
+on dedicated learning branches when real execution exposes a reusable
+difference. It may not merge, deploy, publish, contact Ferretti/Pershing or
+convert source mutation into an assimilation claim.
+
+The proof class is explicitly:
+
+~~~text
+selected now:
+  perceptual / cognitive first-encounter continuity
+
+not established by this artifact:
+  engineering digital-thread continuity
+  CAD / PLM integration
+  Operational Spatial UI
+  company integration
+  external human comprehension
 ~~~
 
 ## Public-kernel pilot relation
