@@ -7,7 +7,7 @@ repository: GrazianoGuiducci/kernel-nautico
 visibility: public
 license_selected: no
 first_pressure_field: Pershing / Ferretti
-independence_stage: I1_candidate_reentry_readback_pending
+independence_stage: I1_local_operating_nucleus / independent_fresh_receiver_evidence_pending
 boot: BOOT.md@0.1.4
 inheritance_ledger: INHERITANCE_LEDGER.md@0.1.4
 external_effect_authorized: no
@@ -114,17 +114,26 @@ lifecycle evidence
 -> later movement begins from changed capability
 ~~~
 
-I1 is now a candidate pending fresh reentry readback.
+Controlled owner-native reentry has now passed in the current host.
 
-Next proof:
+I1 — local operating nucleus is reached at the repository/reentry-function
+level. Independent fresh-receiver behavioural evidence remains separate and
+pending; it is not required to rewrite the local functional result as merely
+hypothetical.
+
+Readback result:
 
 ~~~text
-BOOT -> CURRENT
--> recover V-01 + Lifecycle Return Qualification
--> preserve Ferretti process != Kernel Nautico competence
--> continue without creator reconstruction
--> I1 reached | expose remaining material gap
+BOOT -> CURRENT -> V-01 Exercise 01
+-> V-01 recovered
+-> Lifecycle Return Qualification recovered
+-> Ferretti process != Kernel Nautico competence preserved
+-> no creator-side formation source required for local continuation
 ~~~
+
+Next stronger evidence:
+independent fresh-receiver behavioural reentry, or later non-identical nautical
+use for I2.
 
 ## OPEN — Nautical Reference Operating Model 0.1
 
