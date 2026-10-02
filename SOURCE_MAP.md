@@ -126,6 +126,30 @@ EU Recreational Craft Directive 2013/53/EU where scope applies
 Use these sources to form domain functions. Do not promote one company's
 published process into universal company truth.
 
+## Operational spatial-surface source owners
+
+~~~text
+D-ND Design Kernel
+  GrazianoGuiducci/d-nd-ux-ai-seed
+  DESIGN_KERNEL.md
+  design/skills/interaction-quality/SKILL.md
+  design/references/cognitive-motion.md
+  design/references/public-kernel-3d-visual-presentation.md
+
+MAIOS interaction / operating-form sources
+  GrazianoGuiducci/codex
+  maios/MAIOS_INTERACTION_MODEL_AND_ADAPTIVE_UI_STRATEGY_2026-07-11.md
+  skills/maios-operating-form-orchestrator/SKILL.md
+  maios/MAIOS_LONG_HORIZON_REQUIREMENTS_2026-07-10.md
+~~~
+
+Kernel Nautico owns the nautical product/state/role mapping.
+
+Design Kernel owns reusable perceptual and interaction quality.
+
+The receiving enterprise/vessel runtime owns actual identity, permissions,
+policy, execution authority, validation and recovery.
+
 ## Sibling kernels
 
 ### Social Kernel
