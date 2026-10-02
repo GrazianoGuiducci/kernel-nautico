@@ -1,7 +1,7 @@
 # Nautical Kernel Visual Presentation — Decision Register
 
 ~~~text
-updated: 2026-10-01
+updated: 2026-10-02
 scope: working decisions for the visual presentation workstation
 rule: a working decision does not become product/kernel/company truth
 ~~~
@@ -23,6 +23,11 @@ rule: a working decision does not become product/kernel/company truth
 | V-D013 | OPEN | Select a real R-01 subsystem/use case. | Requires qualified domain/company knowledge; generic placeholder remains until then. |
 | V-D014 | OPEN | Decide the future nautical kernel's public name and identity. | Must emerge from kernel formation / brand work, not this workstation. |
 | V-D015 | OPEN | Determine whether industrial 3D production needs a new reusable competence. | Requires a real execution cycle and learning return first. |
+| V-D016 | ACTIVE | Every new public kernel will have its own 3D Visual Animation as a media presentation and cognitive guide. | Operator-selected cross-kernel product-presentation relation; it must make use, process, evolution, possibility and value perceptible. |
+| V-D017 | ACTIVE | Kernel Nautico is the first public-kernel visual pilot; Ferretti/Pershing is the first strategic company case. | The pilot can learn from a real target field without making the kernel company-specific. |
+| V-D018 | ACTIVE | Share the presentation function across kernels, not the nautical morphology. | Yacht, exploded assembly and FORM/BUILD/LIVE are Kernel Nautico-specific; later kernels form their own visual grammar. |
+| V-D019 | ACTIVE | Use the master as both media presentation and cognitive guide for investors, prospective clients and partners. | The visual must support comprehension and strategic evaluation, not only promotional impact. |
+| V-D020 | ACTIVE | Keep the cross-kernel relation in the D-ND Design Kernel; do not create a new 3D competence before execution proves a residual reusable method. | Product-level decision is stable; production competence still lacks non-identical execution evidence. |
 
 ## Change rule
 
