@@ -8,7 +8,7 @@ visibility: public
 license_selected: no
 first_pressure_field: Pershing / Ferretti
 independence_stage: I0_to_I1
-boot: BOOT.md@0.1.3
+boot: BOOT.md@0.1.4
 inheritance_ledger: INHERITANCE_LEDGER.md@0.1.3
 external_effect_authorized: no
 ~~~
@@ -200,6 +200,51 @@ visual instance needs real navigation/action architecture.
 Boundary:
 no navigation/control, safety-critical, telemetry or autonomous vessel authority
 is inferred by this candidate surface.
+
+## OPEN — Enterprise bootstrap / MPK integration
+
+~~~text
+owner:
+  Kernel Nautico
+
+generic substrate:
+  MAIOS Project Kernel
+
+source:
+  docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md
+
+resultant:
+  Kernel Nautico domain capability
+  + MPK generic project-operating functions where material
+  + company sources / systems / roles / authority
+  -> Enterprise Nautical Kernel
+~~~
+
+Current decision:
+Kernel Nautico remains domain-native. MPK is used as bootstrap/project
+continuity substrate rather than becoming the semantic owner or mandatory
+central runtime.
+
+Enterprise adoption sequence:
+
+~~~text
+E0 domain-ready KN
+-> E1 authorized source/project intake
+-> E2 company overlay
+-> E3 Enterprise Nautical Kernel
+-> project/programme instances
+-> commissioning/acceptance
+-> Vessel Instance
+~~~
+
+High-resolution trigger:
+a real company adoption, V-01 project proof or implementation needs context,
+source, state, competence formation, host adaptation or project-instance
+continuity.
+
+Boundary:
+do not duplicate generic MPK machinery into KN before nautical use proves a
+distinct native form.
 
 ## OPEN — Ferretti / Pershing first pressure field
 
