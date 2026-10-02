@@ -225,6 +225,43 @@ company-situated kernel
 Do not decide in advance whether those incarnations are repositories, profiles,
 packages, databases or another form.
 
+## Operational spatial surface
+
+Kernel Nautico now carries a candidate product/interaction architecture at:
+
+~~~text
+docs/NAUTICAL_OPERATIONAL_SPATIAL_SURFACE_0_1.md
+~~~
+
+The same yacht/product identity can act as a semantic coordinate system across
+design, engineering, production, quality, commissioning, service and later
+vessel use.
+
+~~~text
+product / vessel model
++ lifecycle state
++ semantic relations
++ role
++ task
++ authority
+-> role-relative operational surface
+~~~
+
+The 3D/spatial representation does not own permissions, product truth or
+execution authority. It projects the relevant relation around the selected
+object.
+
+Three surface families are currently useful:
+
+~~~text
+Product Development Surface
+Enterprise Operations Surface
+Vessel / Bridge Surface
+~~~
+
+They may share geometry, identity and visual grammar while keeping different
+state, privacy and authority contracts.
+
 ## Vessel-specific horizon
 
 A vessel instance may later carry legitimate relations such as:
