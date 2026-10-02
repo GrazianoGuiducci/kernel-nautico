@@ -1,7 +1,7 @@
 # Kernel Nautico — Inheritance Ledger
 
 ~~~text
-version: 0.1.0
+version: 0.1.1
 formed: 2026-10-02
 purpose: track progressive independence without cloning source topology
 ~~~
@@ -85,26 +85,49 @@ reconstruction.
 ### System Possibility Awareness
 
 State:
-SELECTED_FOR_INHERITANCE as function
+TRANSLATING
+
+First exercise evidence:
+during V-01 formation, Semantic–Causal Incarnation became materially pertinent
+from outside the initial working set because the selected vertical needed a
+relation that could persist across receiver/product-state changes and return
+event consequence to the semantic field.
+
+This is evidence of emergent resource pertinence, not yet evidence of later
+non-identical assimilation.
 
 Strong later readback:
-a materially useful resource outside the initial working set becomes pertinent
-before operator naming.
+another materially useful resource outside the initial working set becomes
+pertinent before operator naming in a later non-identical movement.
 
 ### Project Context
 
 State:
-SELECTED_FOR_INHERITANCE
+TRANSLATING
+
+V-01 local need:
+recover intent/source, current product state, trajectory and consequence as one
+living context rather than separate phase notes.
 
 ### System Understanding
 
 State:
-SELECTED_FOR_INHERITANCE
+TRANSLATING
+
+V-01 local need:
+preserve identity and meaning while one relation crosses design representation,
+configuration, physical realization, product-instance state and lifecycle event.
 
 ### Knowledge Acquisition
 
 State:
-SELECTED_FOR_INHERITANCE
+TRANSLATING
+
+First exercise:
+qualified Pershing / Ferretti public sources changed V-01 formation and exposed
+the project-to-product/lifecycle relation.
+
+Local form remains unresolved.
 
 ### Possibility Formation
 
@@ -114,10 +137,19 @@ SELECTED_FOR_INHERITANCE
 ### Project Competence Formation
 
 State:
-SELECTED_FOR_INHERITANCE / HIGH_PRIORITY
+TRANSLATING / HIGH_PRIORITY
+
+V-01 makes this function constitutive to RETURN:
+
+~~~text
+lifecycle consequence
+-> distinguish one-off state from reusable difference
+-> closest competence changes
+-> later movement begins from changed capability
+~~~
 
 Next proof:
-first complete owner-native nautical vertical.
+exercise the RETURN step in one complete V-01 movement.
 
 ### Start Existing Project
 
@@ -133,6 +165,35 @@ State:
 REACHABLE
 
 Wait for concrete host/company environment.
+
+### Semantic–Causal Incarnation
+
+Source:
+GrazianoGuiducci/tm7
+chatgpt/competences/semantic-causal-incarnation/
+
+State:
+SELECTED_FOR_INHERITANCE as function;
+local form unresolved.
+
+Why V-01 made it material:
+
+~~~text
+semantic relation / reason
++ changing receiver / product state
+-> operational incarnation
+-> event / consequence
+-> causal readback
+~~~
+
+Kernel Nautico needs to preserve a relation while its carrier changes from
+design reasoning to configuration, physical product and lifecycle state without
+making the carrier the semantic owner.
+
+Do not copy the ChatGPT competence body. Determine the smallest nautical-native
+incarnation through V-01 exercise.
+
+---
 
 ### generate-complete-kernel
 
