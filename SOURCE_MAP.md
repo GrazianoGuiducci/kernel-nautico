@@ -98,6 +98,34 @@ These sources support lifecycle continuity. They do not establish a current
 Ferretti process that returns service consequences into competence formation or
 later design. That RETURN remains a Kernel Nautico capability to form and prove.
 
+## Nautical Reference Operating Model sources
+
+Canonical model:
+
+~~~text
+docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md
+~~~
+
+Qualified public source map:
+
+~~~text
+research/TECHNICAL_SOURCE_MAP_2026-10-02.md
+~~~
+
+The current source family includes:
+
+~~~text
+Pershing GTX Making Of
+Ferretti production centres / Convergence 2026 Digital Production
+Ferretti composite / made-to-measure / superyacht production disclosures
+Ferretti quality-system disclosures
+RINA newbuilding / yacht classification relations
+EU Recreational Craft Directive 2013/53/EU where scope applies
+~~~
+
+Use these sources to form domain functions. Do not promote one company's
+published process into universal company truth.
+
 ## Sibling kernels
 
 ### Social Kernel
