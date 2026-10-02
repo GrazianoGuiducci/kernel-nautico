@@ -1,7 +1,7 @@
 # Kernel Nautico — Boot
 
 ~~~text
-version: 0.1.3
+version: 0.1.4
 formed: 2026-10-02
 status: owner_native_birth
 kernel: Kernel Nautico
@@ -47,10 +47,14 @@ Read in this order only to the depth material to the current movement:
    only when workstation UI, spatial navigation, role/permission projection,
    operational interaction or vessel/bridge surfaces can change the movement
 
-8. LINEAGE.md
+8. docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md
+   only when company adoption, MPK composition, enterprise/project incarnation
+   or cross-kernel topology changes the movement
+
+9. LINEAGE.md
    migration/genealogy only when source history changes the movement
 
-9. workstations/visual-presentation/
+10. workstations/visual-presentation/
    only when visual/presentation work becomes material
 ~~~
 
