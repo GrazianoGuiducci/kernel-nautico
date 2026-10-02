@@ -291,7 +291,7 @@ Potential field:
 Do not create a new competence until real execution produces reusable method.
 
 
-## Local learned capability — Lifecycle Return Qualification
+## Local learned capability — Lifecycle Return Qualification v0.2
 
 Owner:
 Kernel Nautico.
@@ -303,27 +303,45 @@ post-launch product-development evidence.
 Function:
 
 ~~~text
-lifecycle evidence
-+ product identity / configuration
+event / lifecycle consequence
++ product / vessel state
 + provenance / context / time
-+ impact / recurrence
-+ causal trace
--> vessel-local state | corrective relation | reusable difference
--> closest competent owner changes
--> later product / process / service movement begins differently
++ causal factors / impact / recurrence
++ owner / authority map
+-> decompose material return paths
+
+each causal seam:
+  local state | corrective action | reusable difference | retained unknown
+  -> responsible owner(s)
+
+owner-interface / handoff / oversight failure:
+  -> preserved as its own return object
+
+only reusable differences:
+  -> change the competent owner(s) or their relation
+  -> later work begins differently
 ~~~
 
 Status:
-LOCALLY_REPRESENTED / FIRST_SOURCE_BOUND_EXERCISE_COMPLETE /
-NON_IDENTICAL_USE_PENDING.
+LOCALLY_REPRESENTED / FERRETTI_SOURCE_BOUND_EXERCISE_COMPLETE /
+WHEELYBOAT_NON_IDENTICAL_EXERCISE_COMPLETE / REENTRY_READBACK_PENDING.
 
 The first incarnation remains inside this competence field rather than becoming
 a separate skill body. Later non-identical use will determine whether a deeper
 native morphology is needed.
 
+I2 correction:
+Wheelyboat 123 exposed that one nautical consequence can require several
+non-interchangeable return paths. The capability therefore no longer assumes
+one closest owner. It can return different deltas to several owners while
+preserving interface/oversight gaps as first-class causal objects.
+
 Boundaries:
 - recurrence strengthens evidence but does not prove a universal cause;
-- Ferretti's company workflow is not imported as a domain law;
-- product, warranty, quality, privacy and safety authority remain
-  receiver/company-native;
-- corrected vessel state is not automatically reusable competence.
+- source-specific company or operator workflows are not imported as domain law;
+- several owners do not share authority over every corrective action;
+- a missing owner does not authorize Kernel Nautico to assume authority;
+- product, warranty, quality, operational, privacy and safety authority remain
+  receiver/organization-native;
+- corrected state or an external recommendation is not automatically reusable
+  competence.
