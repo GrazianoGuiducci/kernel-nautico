@@ -68,9 +68,10 @@ nautical-kernel narrative.
 - the yacht is not a Ferretti/Pershing design;
 - the image is not evidence of a developed nautical product.
 
-**Repository disposition:** not copied into dnd-business-manager. The migration
-contract states that original yacht assets should belong to the future
-product/visual owner when that owner is formed.
+**Repository disposition:** the binary was not copied automatically during
+Kernel Nautico birth. The repository now owns the visual workstation; the
+original yacht asset should be added only when its provenance/use and the
+selected presentation artifact make that material.
 
 ## A-003 — Operator visual-story source
 
