@@ -5,7 +5,6 @@ status: active_workstation
 formed: 2026-10-01
 parent_field: Kernel Nautico
 repository_owner: GrazianoGuiducci/kernel-nautico
-future_owner: unresolved dedicated Product Development / Nautical Kernel repository
 first_collaboration_pressure: Pershing / Ferretti / shipyard-yacht field
 external_presentation_authorized: no
 public_claim_authorized: no
@@ -14,8 +13,7 @@ render_pipeline_selected: no
 
 ## Purpose
 
-This workstation forms the visual presentation of a future **nautical
-incarnation of the Kernel Nautico**.
+This workstation forms the visual presentation of **Kernel Nautico**.
 
 The immediate use case is a presentation that could later support a possible
 collaboration with Ferretti/Pershing, while remaining reusable for marketing,
@@ -215,6 +213,6 @@ business/collaboration difference
 ~~~
 
 Do not migrate temporary chat residue or third-party reference imagery by
-default. When the future repository is born, transfer the still-causal visual
-contract, original generated assets with suitable provenance, decisions and
-learning; leave this workstation as genealogy or redirect.
+default. The destination repository now exists and owns this workstation.
+Original generated assets move here only when their provenance/use and the
+selected artifact make that material.
