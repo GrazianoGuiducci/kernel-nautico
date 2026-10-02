@@ -8,8 +8,8 @@ visibility: public
 license_selected: no
 first_pressure_field: Pershing / Ferretti
 independence_stage: I0_to_I1
-boot: BOOT.md@0.1.0
-inheritance_ledger: INHERITANCE_LEDGER.md@0.1.0
+boot: BOOT.md@0.1.1
+inheritance_ledger: INHERITANCE_LEDGER.md@0.1.1
 external_effect_authorized: no
 ~~~
 
@@ -29,43 +29,86 @@ Product Development remains genealogy and a source of general method. Kernel
 Nautico owns the live nautical identity, state, reentry and future domain
 competence formation.
 
-## FOCUS — first owner-native complete nautical traversal
+## FOCUS — exercise V-01 Causal Product Continuity
+
+First traversal resultant:
 
 ~~~text
-owner:
-  generate-complete-kernel + Kernel Nautico
+V-01
 
-last faithful resultant:
-  no preselected competence stack;
-  whole resource horizon reachable;
-  reusable emergence evolves the responsible competence before another pass;
-  open fronts remain contextually present
-
-goal:
-  form the smallest coherent complete nautical vertical
-
-I1 threshold:
-  complete one situated nautical movement
-  -> useful correctable result
-  -> consequence readback
-  -> local learning return
-  -> reentry without reconstructing creator logic
+intent / need / source
+-> engineering definition
+-> configuration
+-> physical realization
+-> commissioning / accepted product instance
+-> lifecycle event
+-> consequence
+-> reusable competence
+-> later product / process movement
 ~~~
 
-R-01 remains a candidate continuity probe:
+Why this changed the field:
+
+- the minimum vertical is a continuity relation, not a chosen subsystem;
+- commissioning/acceptance is the candidate boundary from project-configured
+  object to product instance;
+- lifecycle/service can supply events and consequences without proving that the
+  company already turns them into competence;
+- RETURN is therefore a Kernel Nautico capability to form and exercise;
+- enterprise kernel and product instance must remain distinguishable.
+
+Source-bound pressure:
 
 ~~~text
-source / reason
--> design decision
--> configuration lineage
--> engineering / production change
--> installed product state
--> delivery / lifecycle state
--> observed consequence
--> reusable competence / later work
+Pershing GTX Making Of:
+  owner needs / Project TØ
+  -> design + engineering
+  -> physical yachts at Mondolfo
+
+Ferretti Quality Promise:
+  delivered yacht
+  -> engineering / onboard functional systems
+  -> scheduled checks / maintenance
+  -> continuing official service relation
 ~~~
 
-It is not accepted architecture.
+The first relation is publicly evidenced. The RETURN-to-competence step is not
+attributed to Ferretti without evidence.
+
+Traversal record:
+`traversals/V-01_CAUSAL_PRODUCT_CONTINUITY_2026-10-02.md`
+
+R-01 now has this disposition:
+
+~~~text
+R-01
+= possible selected subsystem / relation through which V-01 may be exercised
+!= V-01 itself
+!= selected architecture
+~~~
+
+First resource-horizon readback:
+
+Semantic–Causal Incarnation became pertinent from outside the initial working
+set because V-01 needs a meaningful relation to survive receiver/product-state
+changes and return event consequence to the semantic field.
+
+This is first evidence for System Possibility Awareness / emergent resource
+pertinence. It is not yet assimilation.
+
+I1 is still pending.
+
+Next proof:
+
+~~~text
+exercise V-01
+-> preserve reason across representation/state change
+-> establish product-instance transition
+-> use a qualified lifecycle event
+-> separate one-off state from reusable difference
+-> return learning to the correct competence
+-> reenter from changed local capability
+~~~
 
 ## OPEN — Ferretti / Pershing first pressure field
 
@@ -231,14 +274,21 @@ Kernel Nautico unless the nautical field makes them materially pertinent.
 ## Selected next movement
 
 ~~~text
-generate-complete-kernel
+V-01 Causal Product Continuity
 + Kernel Nautico current field
-+ KA / FDLA
++ qualified nautical/product sources
 + whole reachable resource horizon
--> first owner-native complete nautical traversal
+-> first complete V-01 exercise
+-> local learning return
+-> reentry
 ~~~
+
+Do not select a real subsystem merely to make the exercise concrete.
+
+Use R-01 only if a qualified source or the current product field makes a bounded
+carrier materially useful.
 
 A competence/source/tool becomes pertinent only through what the field exposes.
 
-Stop when another changed-field observation no longer changes a material
-relation of the first vertical.
+Stop the pass when another changed-field observation no longer changes V-01,
+its required native capability or the I1 proof relation.
