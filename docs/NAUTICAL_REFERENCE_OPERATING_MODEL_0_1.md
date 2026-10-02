@@ -268,14 +268,21 @@ Kernel Nautico adds the explicit learning-return relation:
 ~~~text
 event / service / operating consequence
 -> understand what changed and why
--> one-off vessel state | reusable difference
--> reusable difference changes the correct competence
--> later process / design / product movement starts differently
+-> decompose material causal seams
+-> local state | corrective action | reusable difference | retained unknown
+-> route each reusable difference to responsible owner(s)
+-> preserve interface / handoff / oversight gaps when causal
+-> later process / design / operation / service movement starts differently
 ~~~
 
 Do not attribute this complete RETURN mechanism to a company merely because it
 has after-sales or service data. The actual company return process must be
 observed.
+
+I2 non-identical use on MAIB Wheelyboat 123 exposed a domain-wide correction:
+RETURN may be distributed across maintenance, operation, training, risk,
+guidance/design-support and governance owners. A single event therefore does
+not imply a single return owner.
 
 ## Quality-gate reference
 
