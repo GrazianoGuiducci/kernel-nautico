@@ -108,6 +108,44 @@ identity
 The open-front field prevents focus from erasing the wider live field without
 turning every relation into a task.
 
+## First complete vertical — V-01 Causal Product Continuity
+
+The first owner-native traversal selected one complete relation rather than one
+predefined nautical subsystem:
+
+~~~text
+intent / need / source
+-> engineering definition
+-> configuration
+-> physical realization
+-> commissioning / accepted product instance
+-> lifecycle event
+-> consequence
+-> reusable competence
+-> later product / process movement
+~~~
+
+The vertical is the **continuity relation across product-state changes**.
+
+A subsystem, feature or complete yacht can later carry that relation. R-01 is
+only one possible bounded probe.
+
+The project-to-product boundary is material:
+
+~~~text
+project-configured object
+-> commissioning / acceptance
+-> product instance
+-> lifecycle state
+~~~
+
+Keep the enterprise kernel and product-instance field distinguishable while
+allowing explicitly governed relations to cross when the real field requires it.
+
+RETURN is not attributed to a shipyard merely because lifecycle/service exists.
+The kernel must separately establish how a real consequence becomes reusable
+learning and which owner should change.
+
 ## Knowledge and competence
 
 ~~~text
