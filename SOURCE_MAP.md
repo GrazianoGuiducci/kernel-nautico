@@ -91,6 +91,25 @@ Original screenshots/reference binaries were not copied automatically.
 Earlier operator/library sources remain genealogy in the prior incubation owner
 unless a destination-owned asset decision later makes migration material.
 
+## Business / editorial positioning owners
+
+~~~text
+Business:
+  GrazianoGuiducci/dnd-business-manager
+  state/KERNEL_NAUTICO_BUSINESS_MARKETING_2026-10-02.md
+
+Editorial:
+  GrazianoGuiducci/Editoriali
+  programs/maios/kernel-nautico/KERNEL_NAUTICO_PUBLIC_NARRATIVE_2026-10-02.md
+~~~
+
+Kernel Nautico owns product/domain truth.
+
+Business owns value exchange, adoption, collaboration, licensing and economic
+continuation.
+
+Editoriali owns public semantic expression.
+
 ## Public repository / adoption relation
 
 Kernel Nautico is public by operator selection.
