@@ -7,7 +7,7 @@ repository: GrazianoGuiducci/kernel-nautico
 visibility: public
 license_selected: no
 first_pressure_field: Pershing / Ferretti
-independence_stage: I0_to_I1
+independence_stage: I1_candidate_reentry_readback_pending
 boot: BOOT.md@0.1.4
 inheritance_ledger: INHERITANCE_LEDGER.md@0.1.4
 external_effect_authorized: no
@@ -96,18 +96,34 @@ changes and return event consequence to the semantic field.
 This is first evidence for System Possibility Awareness / emergent resource
 pertinence. It is not yet assimilation.
 
-I1 is still pending.
+V-01 Exercise 01 has now exercised the RETURN seam through qualified Ferretti
+lifecycle / Field Failure Report / post-launch evidence.
+
+Local resultant:
+
+~~~text
+Lifecycle Return Qualification
+
+lifecycle evidence
++ product identity / configuration
++ provenance / context / time
++ impact / recurrence
++ causal trace
+-> vessel-local state | corrective relation | reusable difference
+-> closest competent owner changes
+-> later movement begins from changed capability
+~~~
+
+I1 is now a candidate pending fresh reentry readback.
 
 Next proof:
 
 ~~~text
-exercise V-01
--> preserve reason across representation/state change
--> establish product-instance transition
--> use a qualified lifecycle event
--> separate one-off state from reusable difference
--> return learning to the correct competence
--> reenter from changed local capability
+BOOT -> CURRENT
+-> recover V-01 + Lifecycle Return Qualification
+-> preserve Ferretti process != Kernel Nautico competence
+-> continue without creator reconstruction
+-> I1 reached | expose remaining material gap
 ~~~
 
 ## OPEN — Nautical Reference Operating Model 0.1
@@ -393,7 +409,7 @@ resultant:
   source-kernel topology was not cloned
 
 next threshold:
-  I1 local operating nucleus
+  I1 fresh reentry readback from the changed V-01 capability
 
 later horizons:
   I2 nautical domain nucleus
@@ -410,24 +426,17 @@ Kernel Nautico unless the nautical field makes them materially pertinent.
 ## Selected next movement
 
 ~~~text
-V-01 Causal Product Continuity
-+ Nautical Reference Operating Model 0.1
-+ Nautical Operational Spatial Surface 0.1 when interaction/navigation is material
-+ qualified nautical/product sources
-+ whole reachable resource horizon
--> first complete V-01 exercise on a technically credible domain baseline
--> company overlay only when real company evidence exists
--> prove one role-relative navigation path before broad UI expansion
--> local learning return
--> reentry
+fresh Kernel Nautico reentry
+-> BOOT
+-> CURRENT
+-> V-01 Exercise 01
+-> Lifecycle Return Qualification
+-> preserve source/company/kernel boundaries
+-> continue from changed capability without creator reconstruction
+-> I1 reached | expose remaining material gap
 ~~~
 
-Do not select a real subsystem merely to make the exercise concrete.
+Do not add another vertical or subsystem to manufacture proof.
 
-Use R-01 only if a qualified source or the current product field makes a bounded
-carrier materially useful.
-
-A competence/source/tool becomes pertinent only through what the field exposes.
-
-Stop the pass when another changed-field observation no longer changes V-01,
-its required native capability or the I1 proof relation.
+If I1 is reached, select the next movement from the changed field. I2 still
+requires later non-identical nautical use.
