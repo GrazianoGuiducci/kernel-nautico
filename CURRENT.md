@@ -8,8 +8,8 @@ visibility: public
 license_selected: no
 first_pressure_field: Pershing / Ferretti
 independence_stage: I0_to_I1
-boot: BOOT.md@0.1.2
-inheritance_ledger: INHERITANCE_LEDGER.md@0.1.2
+boot: BOOT.md@0.1.3
+inheritance_ledger: INHERITANCE_LEDGER.md@0.1.3
 external_effect_authorized: no
 ~~~
 
@@ -150,6 +150,56 @@ must map its PLM/ERP/MES/QMS/service environment onto the domain baseline.
 Boundary:
 the reference model is not company truth and must not overwrite actual
 organization, logistics, procedures or authority.
+
+## OPEN — Nautical Operational Spatial Surface 0.1
+
+~~~text
+owner:
+  Kernel Nautico
+
+design owner:
+  D-ND Design Kernel
+
+source:
+  docs/NAUTICAL_OPERATIONAL_SPATIAL_SURFACE_0_1.md
+
+resultant:
+  product/vessel model
+  + lifecycle state
+  + semantic relations
+  + role
+  + task
+  + authority / permissions
+  -> role-relative operational surface
+~~~
+
+The same product identity can support product-development workstations,
+enterprise operations and a later vessel/bridge surface without making them
+the same UI or granting the same authority.
+
+Candidate families:
+
+~~~text
+Product Development Surface
+  design / engineering / programme / procurement / production / quality / commissioning
+
+Enterprise Operations Surface
+  company/product/project state + roles + work + decisions + sources + competences
+
+Vessel / Bridge Surface
+  specific vessel instance + authorized onboard/service/crew/owner knowledge
+~~~
+
+The 3D representation is the semantic coordinate system, not the permission
+engine or source of truth.
+
+High-resolution trigger:
+V-01 exercise, technical demonstrator, enterprise-incarnation design or the
+visual instance needs real navigation/action architecture.
+
+Boundary:
+no navigation/control, safety-critical, telemetry or autonomous vessel authority
+is inferred by this candidate surface.
 
 ## OPEN — Ferretti / Pershing first pressure field
 
@@ -317,10 +367,12 @@ Kernel Nautico unless the nautical field makes them materially pertinent.
 ~~~text
 V-01 Causal Product Continuity
 + Nautical Reference Operating Model 0.1
++ Nautical Operational Spatial Surface 0.1 when interaction/navigation is material
 + qualified nautical/product sources
 + whole reachable resource horizon
 -> first complete V-01 exercise on a technically credible domain baseline
 -> company overlay only when real company evidence exists
+-> prove one role-relative navigation path before broad UI expansion
 -> local learning return
 -> reentry
 ~~~
