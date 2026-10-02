@@ -110,6 +110,47 @@ exercise V-01
 -> reenter from changed local capability
 ~~~
 
+## OPEN — Nautical Reference Operating Model 0.1
+
+~~~text
+owner:
+  Kernel Nautico
+
+source:
+  docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md
+  research/TECHNICAL_SOURCE_MAP_2026-10-02.md
+
+resultant:
+  domain baseline
+  + production profile
+  + class/conformity profile
+  + company overlay
+  + vessel instance
+  -> situated operating model
+
+technical compression:
+  N0–N4  -> FORM
+  N5–N9  -> BUILD
+  N10–N12 -> BUILD/LIVE transition and product-instance activation
+  N13    -> LIVE
+  N14    -> RETURN
+~~~
+
+The model is deliberately advanced enough for first useful operation before
+company access, while remaining correctable by the adopting yard.
+
+It includes reference production profiles for composite, made-to-measure
+composite and alloy/full-custom work, a six-gate quality baseline, a digital
+production thread and a neutral Kernel-ready information model.
+
+High-resolution trigger:
+V-01 exercise needs a concrete production/lifecycle relation or a real company
+must map its PLM/ERP/MES/QMS/service environment onto the domain baseline.
+
+Boundary:
+the reference model is not company truth and must not overwrite actual
+organization, logistics, procedures or authority.
+
 ## OPEN — Ferretti / Pershing first pressure field
 
 ~~~text
@@ -275,10 +316,11 @@ Kernel Nautico unless the nautical field makes them materially pertinent.
 
 ~~~text
 V-01 Causal Product Continuity
-+ Kernel Nautico current field
++ Nautical Reference Operating Model 0.1
 + qualified nautical/product sources
 + whole reachable resource horizon
--> first complete V-01 exercise
+-> first complete V-01 exercise on a technically credible domain baseline
+-> company overlay only when real company evidence exists
 -> local learning return
 -> reentry
 ~~~
