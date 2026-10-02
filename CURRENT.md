@@ -9,7 +9,7 @@ license_selected: no
 first_pressure_field: Pershing / Ferretti
 independence_stage: I0_to_I1
 boot: BOOT.md@0.1.4
-inheritance_ledger: INHERITANCE_LEDGER.md@0.1.3
+inheritance_ledger: INHERITANCE_LEDGER.md@0.1.4
 external_effect_authorized: no
 ~~~
 
