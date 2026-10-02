@@ -324,7 +324,7 @@ only reusable differences:
 
 Status:
 LOCALLY_REPRESENTED / FERRETTI_SOURCE_BOUND_EXERCISE_COMPLETE /
-WHEELYBOAT_NON_IDENTICAL_EXERCISE_COMPLETE / REENTRY_READBACK_PENDING.
+WHEELYBOAT_NON_IDENTICAL_EXERCISE_COMPLETE / OWNER_NATIVE_REENTRY_PASSED.
 
 The first incarnation remains inside this competence field rather than becoming
 a separate skill body. Later non-identical use will determine whether a deeper
