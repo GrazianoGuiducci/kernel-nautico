@@ -173,7 +173,7 @@ SELECTED_FOR_INHERITANCE
 ### Project Competence Formation
 
 State:
-TRANSLATING / HIGH_PRIORITY
+LOCALLY_REPRESENTED / FIRST_SOURCE_BOUND_EXERCISE_COMPLETE
 
 V-01 makes this function constitutive to RETURN:
 
@@ -184,8 +184,15 @@ lifecycle consequence
 -> later movement begins from changed capability
 ~~~
 
+First local resultant:
+Lifecycle Return Qualification in COMPETENCE_FIELD.md.
+
+Evidence:
+V-01 Exercise 01 uses qualified Ferretti lifecycle / Field Failure Report /
+post-launch evidence.
+
 Next proof:
-exercise the RETURN step in one complete V-01 movement.
+fresh reentry from the changed local capability, then later non-identical use.
 
 ### Nautical Reference Operating Model
 
@@ -378,6 +385,9 @@ recover field
 ~~~
 
 without reconstructing creator logic.
+
+Current disposition:
+CANDIDATE_PENDING_REENTRY_READBACK after V-01 source-bound RETURN exercise.
 
 ### I2 — nautical domain nucleus
 
