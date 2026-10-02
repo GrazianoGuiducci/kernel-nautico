@@ -1,7 +1,7 @@
 # Kernel Nautico — Boot
 
 ~~~text
-version: 0.1.4
+version: 0.1.5
 formed: 2026-10-02
 status: owner_native_birth
 kernel: Kernel Nautico
@@ -56,6 +56,10 @@ Read in this order only to the depth material to the current movement:
 
 10. workstations/visual-presentation/
    only when visual/presentation work becomes material
+
+11. workstations/visual-presentation/production/threejs-first-encounter/
+   current selected execution field; new GPT Pro receiver must enter through
+   GPT_PRO_BOOTSTRAP.md before coding
 ~~~
 
 Do not preload everything.
@@ -130,68 +134,40 @@ No reusable difference -> no forced mutation.
 
 Continue from CURRENT.md.
 
-Current selected internal movement:
+I2 is closed at the owner-native repository/reentry-function level. Do not
+replay Ferretti or Wheelyboat merely to accumulate proof.
+
+The operator has now selected an **internal visual/product-presentation
+movement** before external encounter:
 
 ~~~text
-V-01 — Causal Product Continuity
-
-intent / need / source
--> engineering definition
--> configuration
--> physical realization
--> commissioning / accepted product instance
--> lifecycle event
--> consequence
--> reusable competence
--> later product / process movement
+new GPT Pro receiver
+-> current tm7 / ChatGPT kernel reentry
+-> Kernel Nautico BOOT / CURRENT
+-> Three.js first-encounter execution field
+-> one persistent yacht
+-> FORM -> BUILD -> LIVE -> RETURN
+-> perceptual/cognitive continuity proof
+-> reusable learning returned to the correct owner(s)
 ~~~
 
-The first traversal selected this relation as the minimum complete nautical
-vertical.
+Current execution entry:
 
-V-01 Exercise 01 has formed the local Lifecycle Return Qualification capability
-from qualified Ferretti lifecycle / Field Failure Report / post-launch evidence.
+`workstations/visual-presentation/production/threejs-first-encounter/GPT_PRO_BOOTSTRAP.md`
 
-Current I1 disposition:
-REACHED_LOCAL_REENTRY_FUNCTION.
+Then:
 
-Controlled owner-native readback recovered V-01 + Lifecycle Return Qualification
-and preserved Ferretti process != Kernel Nautico competence without reopening
-creator-side formation sources.
+`workstations/visual-presentation/production/threejs-first-encounter/GPT_PRO_EXECUTION_PROMPT.md`
 
-Independent fresh-receiver behavioural evidence remains a stronger separate
-claim.
+This movement does **not** claim I3. It creates a strong inspectable public
+encounter artifact that may later support Business/adoption or a real company
+conversation.
 
-A later non-identical nautical case has now occurred: MAIB Wheelyboat 123.
-It evolved Lifecycle Return Qualification from a single-owner return assumption
-to v0.2 distributed multi-owner causal return.
+R-01 remains a possible bounded carrier of V-01, not selected architecture.
 
-Current I2 disposition:
-REACHED_OWNER_NATIVE_REENTRY_FUNCTION.
-
-Read:
-`traversals/I2_EXERCISE_01_WHEELYBOAT_DISTRIBUTED_RETURN_2026-10-02.md`.
-
-Owner-native reentry recovered Lifecycle Return Qualification v0.2 and its
-multi-owner source/authority distinctions without Ferretti-specific
-reconstruction.
-
-Kernel Nautico now has an I2 nautical domain nucleus at repository/reentry
-function level. Independent fresh-receiver behavioural evidence remains a
-stronger separate claim.
-
-Next movement comes from a real company incarnation, Business/adoption
-formation or another material domain consequence; do not replay I2 by ritual.
-
-R-01 remains a possible bounded carrier of V-01, not the vertical itself and
-not selected product architecture.
-
-Read:
-`traversals/V-01_CAUSAL_PRODUCT_CONTINUITY_2026-10-02.md` when V-01 depth is
-material.
-
-For the first exercised RETURN:
-`traversals/V-01_EXERCISE_01_LIFECYCLE_RETURN_2026-10-02.md`.
+The current receiver may evolve internal owner-native methods/competences on
+dedicated branches when real execution exposes reusable learning. Source
+mutation, exercise and assimilation remain distinct.
 
 ## Effect boundary
 
