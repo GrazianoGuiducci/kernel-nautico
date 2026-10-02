@@ -63,7 +63,7 @@ consequence -> later design / capability
 
 ## 4. Visual reference
 
-The included image `assets/kernel_nautico_visual_reference.jpg` is a **visual direction reference only**.
+The exact Project/Library image named `Kernel Nautico_ Intelligenza Marittima a Ciclo Continuo(1).png`, when reachable, and the repository `VISUAL_REFERENCE.md` are **visual direction references only**.
 
 Preserve useful qualities:
 - premium nautical first impression;
@@ -227,7 +227,7 @@ Provide:
 - static/reduced-motion path;
 - no console errors;
 - deterministic state transitions;
-- one screenshot-capable hero state.
+- screenshot-capable FORM, BUILD, LIVE and RETURN states.
 
 Do not trade comprehension for shader complexity.
 
@@ -248,6 +248,7 @@ public/
   models/
   media/
 ASSET_PROVENANCE.md (updated with actual chosen runtime assets)
+FORM.png / BUILD.png / LIVE.png / RETURN.png evidence where runtime capture permits
 EXECUTION_RETURN.md
 ~~~
 
@@ -260,6 +261,51 @@ The demo is ready for review when:
 - all four acts are intelligible;
 - AI is legible through continuity rather than cliché;
 - the first viewport looks like a serious premium nautical system;
-- a zero-context receiver can explain the idea in plain language;
+- the artifact makes the zero-context relation available for later receiver testing; external comprehension is not claimed without an actual receiver;
 - the architecture remains capable of becoming a richer spatial surface later;
 - no unsupported company/product claim is introduced.
+
+
+## 15. Proof and validation contract
+
+`VALIDATION_AND_LEARNING_CONTRACT.md` is part of this specification.
+
+Before closure:
+
+- apply the temporary-yacht carrier gate;
+- capture all four matched states;
+- run the silent visual test before using final copy;
+- validate the same runtime yacht/root across all four acts;
+- state proof claims explicitly;
+- separate perceptual continuity from engineering/data continuity;
+- report actual runtime/browser evidence only.
+
+## 16. Minimum editorial layer
+
+The 3D relation carries the transformation.
+
+The editable HTML/2D layer may orient the receiver with only the minimum needed
+to establish:
+
+~~~text
+AI
+Kernel Nautico
+whole-life nautical product relation
+FORM / BUILD / LIVE / RETURN
+~~~
+
+Editoriali owns consequential wording.
+
+Do not repair weak visual causality by adding explanatory paragraphs.
+
+## 17. Learning return
+
+The execution is allowed to expose and return reusable learning.
+
+Use the owner map in `GPT_PRO_BOOTSTRAP.md`.
+
+A real reusable difference may update an owner-native competence/method on a
+dedicated branch. An API trick, temporary asset workaround or tool preference
+does not automatically become competence.
+
+If existing knowledge was sufficient, return `no_change`.
