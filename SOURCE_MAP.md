@@ -94,9 +94,33 @@ observed relation:
   -> continuing owner relationship after delivery
 ~~~
 
-These sources support lifecycle continuity. They do not establish a current
-Ferretti process that returns service consequences into competence formation or
-later design. That RETURN remains a Kernel Nautico capability to form and prove.
+These sources support lifecycle continuity.
+
+Additional qualified source:
+
+~~~text
+Ferretti Sustainability Report 2025
+https://www.ferrettigroup.com/portals/4/Skins/FerrettiGroup/assets/img/sustainability/2025/FG-Bilancio-sostenibilita%CC%80-2025_EN.pdf
+~~~
+
+Observed relation:
+
+~~~text
+service issue
+-> CRM Field Failure Report
+-> detailed context / priority / components / part-serial identity
+-> product improvement review
+-> corrective | preventive action
+-> effectiveness verification
+-> recurrence linked as "ineffective solution"
+~~~
+
+The 2024 Annual Report also describes analysis of post-launch feedback within
+new product development.
+
+These sources establish a company-specific lifecycle-to-correction/product
+return relation. They do not establish MAIOS-style competence formation.
+Kernel Nautico translates the reusable function while preserving this boundary.
 
 ## Nautical Reference Operating Model sources
 
