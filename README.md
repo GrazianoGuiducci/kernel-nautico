@@ -109,6 +109,7 @@ produce valore.
 Approfondisci:
 - [Nautical Reference Operating Model 0.1](docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
 - [Nautical Operational Spatial Surface 0.1](docs/NAUTICAL_OPERATIONAL_SPATIAL_SURFACE_0_1.md)
+- [Enterprise Bootstrap & Kernel Topology 0.1](docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md)
 - [Positioning](docs/POSITIONING.md)
 - [Adoption Model](docs/ADOPTION_MODEL.md)
 - [Enterprise Incarnation](docs/ENTERPRISE_INCARCATION.md)
