@@ -1,7 +1,7 @@
 # Kernel Nautico — Inheritance Ledger
 
 ~~~text
-version: 0.1.2
+version: 0.1.3
 formed: 2026-10-02
 purpose: track progressive independence without cloning source topology
 ~~~
@@ -174,6 +174,64 @@ or invalidate it where necessary.
 Assimilation:
 not yet claimed. A later fresh case should use the model without reconstructing
 the formation research and correct it when the real field differs.
+
+---
+
+### Nautical Operational Spatial Surface
+
+State:
+LOCALLY_REPRESENTED / EXERCISE_PENDING
+
+Owner:
+Kernel Nautico.
+
+Body:
+`docs/NAUTICAL_OPERATIONAL_SPATIAL_SURFACE_0_1.md`
+
+Local relation:
+
+~~~text
+product / vessel identity
++ lifecycle state
++ role / task / authority
++ source / configuration / event relations
+-> role-relative operational surface
+~~~
+
+External supporting owners:
+- D-ND Design Kernel / Interaction Quality;
+- D-ND Design Kernel / Cognitive Motion;
+- MAIOS operating-form / authority contracts;
+- receiving company/vessel policy owner.
+
+Proof needed:
+one bounded V-01 path should be navigable through the surface with correct
+source/state projection and role-limited information before broader UI
+architecture is claimed.
+
+Do not mark permissions or operational authority assimilated from a visual
+prototype.
+
+---
+
+### Interaction Quality / Cognitive Motion
+
+State:
+EXTERNAL_BY_DESIGN
+
+Why:
+generic interaction/accessibility/focus/motion knowledge remains Design-owned.
+Kernel Nautico consumes it through the receiving surface.
+
+### MAIOS operating-form / authority relation
+
+State:
+REACHABLE / SELECTED_FOR_COMPOSITION
+
+Why:
+the nautical surface needs stable distinctions among current object, action,
+permission, validation, receipt and recovery, but the runtime authority model
+must remain receiver-native.
 
 ---
 
