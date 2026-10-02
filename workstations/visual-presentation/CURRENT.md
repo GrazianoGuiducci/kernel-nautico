@@ -1,14 +1,14 @@
 # Nautical Kernel Visual Presentation — Current
 
 ~~~text
-updated: 2026-10-01
+updated: 2026-10-02
 state: STORY_ARCHITECTURE_FORMED
 master_structure: FORM -> BUILD -> LIVE -> RETURN
 persistent_product_object: original concept yacht
 current_concept_frame: Aqua Mechanica study
 external_effect: none
 render_pipeline: unresolved
-next: keyframe architecture + first transformation frames
+next: keyframe architecture + hero/collaboration visual proof from MARKETING_BRIEF.md
 ~~~
 
 ## Current resultant
@@ -184,6 +184,27 @@ naval/product facts.
 - final master duration and sound/voice strategy;
 - exact 3D production stack;
 - whether execution exposes a reusable industrial-3D competence gap.
+
+## Marketing / collaboration source
+
+Current business/marketing brief:
+
+~~~text
+MARKETING_BRIEF.md
+~~~
+
+The master visual must support the same source relation across:
+
+~~~text
+public GitHub encounter
+60–90 second hero film
+company collaboration presentation
+technical one-page / diagram
+later site / interactive derivative
+~~~
+
+Do not build separate visual ontologies for each surface. Recompose depth and
+pacing around the same product/kernel truth.
 
 ## Next movement
 
