@@ -160,3 +160,66 @@ continue without depending on one conversation.
 
 No external presentation, Ferretti outreach, render pipeline or future-repo
 migration is authorized by this creation.
+
+---
+
+## FL-008 — 2026-10-02 — Public-kernel 3D visual relation selected
+
+**Operator source**
+
+Every new public kernel will have its own 3D Visual Animation used to show how
+it is used, its processes, evolutionary phases, larger possibilities and
+different forms of value.
+
+It will function as both media presentation and cognitive guide for investors,
+potential clients and partners.
+
+**First pilot**
+
+Kernel Nautico.
+
+**First strategic company case**
+
+Ferretti / Pershing.
+
+**Reusable distinction**
+
+~~~text
+shared across kernels:
+  presentation function / cognitive role / artifact family / value field
+
+kernel-native:
+  visual object / metaphor / process grammar / lifecycle / camera language
+~~~
+
+The decision is stable at product-presentation level. The 3D production method
+is not yet promoted to a new competence.
+
+**Return owner**
+
+D-ND Design Kernel for the cross-kernel visual relation.
+
+---
+
+## FL-009 — 2026-10-02 — Nine-state keyframe architecture formed
+
+**Result**
+
+`KEYFRAME_ARCHITECTURE.md` now maps the master into nine stable semantic
+states from first line to returned learning.
+
+**First proof**
+
+~~~text
+KF-01 first line
+-> KF-02 concept
+-> KF-03 engineering opening
+~~~
+
+The triptych tests whether one yacht and one source/reason continuity relation
+can carry increasing complexity without needing a generic AI symbol.
+
+**Next**
+
+Render or otherwise prototype that transformation before allocating the full 3D
+production stack.
