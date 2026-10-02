@@ -72,6 +72,39 @@ COMPANY LEARNING
   -> later project / process / product
 ~~~
 
+## Bootstrap relation with MAIOS Project Kernel
+
+A new shipyard should not receive an empty domain shell and then be asked to
+rebuild generic project continuity from scratch.
+
+Use MPK as a portable bootstrap substrate where its generic capabilities are
+material:
+
+~~~text
+Kernel Nautico domain model / V-01 / nautical competence
++ MPK context / sources / system understanding / acquisition /
+  competence formation / existing-project startup / host integration / reentry
++ authorized company sources
+-> Enterprise Nautical Kernel
+~~~
+
+Typical initial intake can include active programmes, project structures,
+CAD/PLM/PDM, BOM/configuration, ERP/procurement, production/work packages,
+quality/non-conformity, commissioning/trials, manuals/certificates, service/
+refit, roles and authority.
+
+Do not require complete enterprise ingestion before useful work begins.
+
+Once the company overlay is formed, individual programmes or yachts may use
+MPK-like project continuity as **Nautical Project Instances** beneath the
+enterprise kernel.
+
+At commissioning/acceptance, the continuing product relation may transition
+from project instance to Vessel Instance.
+
+MPK remains the generic owner for generic project-operating learning; nautical
+domain learning returns to Kernel Nautico.
+
 ## Operational surface relation
 
 The enterprise incarnation can project a common product identity into different
