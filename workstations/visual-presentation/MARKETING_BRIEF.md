@@ -73,6 +73,36 @@ economic / collaboration value
 Investor and client cuts should reveal value through the causal transformation,
 not by stacking claims or invented ROI.
 
+## Technical realism layer
+
+Source:
+
+~~~text
+docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md
+~~~
+
+The visual master should be simple because the producing competence understands
+more, not because the industrial field is reduced.
+
+Use the reference model to ground:
+
+- engineering representations;
+- composite / structural production states;
+- machinery and systems integration;
+- outfitting / finishing;
+- quality / correct-assembly checks;
+- commissioning / dock trials;
+- launch / sea trials;
+- product-instance handover;
+- service / refit / lifecycle;
+- RETURN to later competence.
+
+For a hero film, these relations are selectively contracted into
+FORM -> BUILD -> LIVE -> RETURN.
+
+For a technical/collaboration cut, more of the internal domain stages can
+become visible.
+
 ## Goal
 
 Create one master visual system able to support:
