@@ -7,7 +7,7 @@ repository: GrazianoGuiducci/kernel-nautico
 visibility: public
 license_selected: no
 first_pressure_field: Pershing / Ferretti
-independence_stage: I1_local_operating_nucleus / independent_fresh_receiver_evidence_pending
+independence_stage: I2_candidate_reentry_readback_pending
 boot: BOOT.md@0.1.4
 inheritance_ledger: INHERITANCE_LEDGER.md@0.1.4
 external_effect_authorized: no
@@ -418,7 +418,7 @@ resultant:
   source-kernel topology was not cloned
 
 next threshold:
-  I1 fresh reentry readback from the changed V-01 capability
+  I2 owner-native reentry from Lifecycle Return Qualification v0.2
 
 later horizons:
   I2 nautical domain nucleus
@@ -432,20 +432,43 @@ later horizons:
 The wider MAIOS/D-ND horizons remain reachable but are not active tasks of
 Kernel Nautico unless the nautical field makes them materially pertinent.
 
+## I2 non-identical use — Wheelyboat 123
+
+Official MAIB evidence supplied a case outside Ferretti and outside a
+company-internal after-sales morphology.
+
+The case exposed:
+- degraded craft condition and maintenance failure;
+- operating/risk-understanding failure;
+- assumed knowledge across organizations;
+- recommendations distributed across maintenance/operation, external-activity
+  risk, safe-use guidance and oversight.
+
+Kernel Nautico therefore evolved Lifecycle Return Qualification to v0.2:
+
+~~~text
+one event
+-> several causal seams
+-> several owner-native return paths
+-> owner-interface / handoff / oversight gap can itself be causal
+-> reusable differences return without collapsing authority
+~~~
+
+I2 is candidate pending owner-native reentry readback.
+
+Exercise:
+`traversals/I2_EXERCISE_01_WHEELYBOAT_DISTRIBUTED_RETURN_2026-10-02.md`.
+
 ## Selected next movement
 
 ~~~text
-fresh Kernel Nautico reentry
+fresh owner-native reentry
 -> BOOT
 -> CURRENT
--> V-01 Exercise 01
--> Lifecycle Return Qualification
--> preserve source/company/kernel boundaries
--> continue from changed capability without creator reconstruction
--> I1 reached | expose remaining material gap
+-> I2 Exercise 01
+-> Lifecycle Return Qualification v0.2
+-> preserve multi-owner source / authority distinctions
+-> I2 reached | expose remaining material gap
 ~~~
 
-Do not add another vertical or subsystem to manufacture proof.
-
-If I1 is reached, select the next movement from the changed field. I2 still
-requires later non-identical nautical use.
+Do not replay Ferretti to prove domain independence.
