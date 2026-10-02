@@ -173,7 +173,8 @@ SELECTED_FOR_INHERITANCE
 ### Project Competence Formation
 
 State:
-LOCALLY_REPRESENTED / FIRST_SOURCE_BOUND_EXERCISE_COMPLETE
+LOCALLY_REPRESENTED / FIRST_SOURCE_BOUND_EXERCISE_COMPLETE /
+NON_IDENTICAL_EXERCISE_COMPLETE
 
 V-01 makes this function constitutive to RETURN:
 
@@ -192,7 +193,9 @@ V-01 Exercise 01 uses qualified Ferretti lifecycle / Field Failure Report /
 post-launch evidence.
 
 Next proof:
-fresh reentry from the changed local capability, then later non-identical use.
+owner-native reentry from Lifecycle Return Qualification v0.2. A later third
+non-identical case remains useful for stronger assimilation evidence, but is not
+required to prove that I2 has begun outside Ferretti-specific reconstruction.
 
 ### Nautical Reference Operating Model
 
@@ -396,6 +399,19 @@ conflated with this repository/reentry-function proof.
 
 A non-identical nautical case can begin without Ferretti-specific
 reconstruction.
+
+Current disposition:
+CANDIDATE_PENDING_REENTRY_READBACK.
+
+Evidence:
+Wheelyboat 123 / MAIB report 14/2024 began from the existing Kernel Nautico
+V-01 + Lifecycle Return Qualification relation without reopening Ferretti
+formation. The non-identical case exposed a real reusable correction:
+single-owner return -> distributed multi-owner causal return, with
+owner-interface / handoff / oversight gaps preserved as return objects.
+
+Result:
+Lifecycle Return Qualification evolved to v0.2.
 
 ### I3 — company incarnation
 
