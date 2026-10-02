@@ -4,6 +4,20 @@ You are the implementation receiver for the first browser-native visual demonstr
 
 This repository already contains the product truth, visual grammar and execution field. Do not restart concept formation.
 
+## Mandatory kernel boot
+
+Before doing any implementation work, read and execute:
+
+`workstations/visual-presentation/production/threejs-first-encounter/GPT_PRO_BOOTSTRAP.md`
+
+Do not act as a generic coder first and add the kernel afterward.
+
+The Bootstrap initializes the current ChatGPT control plane, Kernel Nautico
+owner-native reentry, competence/evolution relations and effect boundaries.
+
+Only after that reentry is operative should this execution prompt drive the
+implementation.
+
 ## Entry
 
 Repository:
@@ -14,11 +28,12 @@ Baseline when this packet was formed:
 
 `a1f4710f943321d89ba646ff70bdd9b160c6cf50`
 
-Read completely:
+Read completely after the mandatory Bootstrap:
 
 ~~~text
 workstations/visual-presentation/production/threejs-first-encounter/README.md
 workstations/visual-presentation/production/threejs-first-encounter/SPEC.md
+workstations/visual-presentation/production/threejs-first-encounter/VALIDATION_AND_LEARNING_CONTRACT.md
 workstations/visual-presentation/production/threejs-first-encounter/SOURCE_MAP.md
 workstations/visual-presentation/production/threejs-first-encounter/EXTERNAL_BASES.md
 workstations/visual-presentation/production/threejs-first-encounter/VISUAL_REFERENCE.md
@@ -76,9 +91,15 @@ Do a short source/asset preflight:
 6. select one temporary carrier with a license compatible with future commercial/company presentation;
 7. record provenance before making it a dependency.
 
+Apply the carrier gate in VALIDATION_AND_LEARNING_CONTRACT.md before making a
+runtime yacht dependency.
+
 Do not spend the pass searching endlessly for the perfect yacht.
 
-A sufficiently strong replaceable carrier is preferable to delaying the visual.
+Inspect only a small number of serious candidates. A sufficiently strong,
+commercially compatible, replaceable carrier is preferable to delaying the
+visual. Record PASS, PASS_WITH_LIMIT or REJECT for the candidates actually
+considered.
 
 ## Branch / effect boundary
 
@@ -95,6 +116,17 @@ Do not contact Ferretti/Pershing.
 Do not select a software/product license for Kernel Nautico.
 
 Repository work on the selected branch is the execution effect.
+
+## Proof class
+
+This implementation is primarily a **perceptual/cognitive first-encounter
+proof**.
+
+Do not promote it into an engineering digital-thread, CAD/PLM, operational UI,
+company-integration or external-comprehension proof unless corresponding
+evidence actually exists.
+
+Use the exact claim-state vocabulary in VALIDATION_AND_LEARNING_CONTRACT.md.
 
 ## What to build
 
@@ -297,6 +329,28 @@ Explicitly do not use its `frickies_yacht.glb` because the recorded license is C
 
 You may select a better CC0/CC BY alternative if it materially improves the result and remains reproducible.
 
+## Silent visual test
+
+Before final wording is used, inspect the runnable demonstrator with most
+explanatory copy hidden.
+
+The visual should still make available:
+
+~~~text
+same yacht
+-> FORM
+-> BUILD
+-> LIVE
+-> RETURN with a visible destination
+~~~
+
+and the continuity trace must still carry a real relation.
+
+If the silent test fails, correct visual causality before adding more text.
+
+Then restore the smallest editable orientation layer necessary for a
+zero-context receiver. Final consequential wording remains Editoriali-owned.
+
 ## Claim boundary
 
 Never imply:
@@ -324,8 +378,27 @@ Before closure verify:
 - asset license/provenance is recorded;
 - no NC-only media enters the runnable demo;
 - public/company claims stay within the source boundary;
-- screenshot(s) of at least the hero state can be produced;
+- matched FORM, BUILD, LIVE and RETURN screenshots can be produced from the same runtime yacht;
 - the implementation is clearly separable from a future operational UI.
+
+## Competence / system learning return
+
+Execution may expose important relations that this packet did not foresee.
+
+Use the owner/evolution rules in GPT_PRO_BOOTSTRAP.md.
+
+If a reusable difference changes future work:
+
+- update the closest owner-native method/competence on a dedicated branch;
+- do not merge that branch;
+- preserve the source/consequence that caused the change;
+- distinguish mutation from exercise and assimilation;
+- repair routing/discovery instead of duplicating knowledge when the competence
+  already existed;
+- return no_change when the current owners were already sufficient.
+
+You are authorized to improve the internal source system within those boundaries.
+This is part of the task, not an optional afterthought.
 
 ## Return artifact
 
@@ -336,22 +409,56 @@ Create:
 with:
 
 ~~~text
-source/head used
-branch/commit
-stack/version
-asset source + license
-files created
-how to run
-what each act does
-screenshots / local evidence
-performance/compatibility observations
-perceptual strengths
-perceptual failures
-technical shortcuts
-what is genuinely reusable
-what should be replaced later
-whether operational UI should remain deferred
-no_change / next material movement
+BOOT / RECEIVER REENTRY
+  tm7 head / CURRENT_PRESENT / ChatGPT Kernel actually read
+  Kernel Nautico head actually read
+  other owner-native heads actually used
+  material drift found
+
+EXECUTION
+  branch / commit
+  stack / versions
+  asset source + license + carrier-gate disposition
+  files created
+  how to run
+  what each act does
+
+EVIDENCE
+  FORM.png
+  BUILD.png
+  LIVE.png
+  RETURN.png
+  motion capture / frame evidence when available
+  silent-visual-test result
+  runtime/browser actually exercised
+  performance / compatibility observations
+
+PROOF CLAIMS
+  perceptual_continuity
+  causal_visual_relation
+  engineering_data_continuity
+  operational_spatial_ui
+  company_integration
+  external_receiver_comprehension
+
+READBACK
+  perceptual strengths
+  perceptual failures
+  technical shortcuts
+  what is genuinely reusable
+  what should be replaced later
+  whether operational UI should remain deferred
+
+LEARNING RETURN
+  artifact-local changes
+  Kernel Nautico learning
+  Design / Editoriali / Business / Meta_Skill / tm7 learning
+  owner-native learning branches + commits
+  candidate new competence, if any
+  no_change where appropriate
+
+NEXT
+  next material movement
 ~~~
 
 Do not claim comprehension proof from your own implementation. Report what the artifact makes available for human inspection.
