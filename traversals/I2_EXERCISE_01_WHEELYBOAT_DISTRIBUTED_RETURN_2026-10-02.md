@@ -3,7 +3,7 @@
 ~~~text
 formed: 2026-10-02
 owner: GrazianoGuiducci/kernel-nautico
-status: non-identical nautical exercise complete / reentry readback pending
+status: non-identical nautical exercise complete / owner-native reentry passed / I2 reached
 case: Wheelyboat 123 / MAIB report 14/2024
 event_date: 2022-06-08
 report_date: 2024-10-17
@@ -126,4 +126,11 @@ Return Qualification without reconstructing Ferretti-specific formation.
 
 The capability changed because the new case exposed multi-owner causal return.
 
-I2 is therefore a candidate pending owner-native reentry readback of v0.2.
+Owner-native readback through BOOT -> CURRENT -> this exercise recovered
+Lifecycle Return Qualification v0.2, the multi-owner causal decomposition and
+the owner-interface/oversight gap without Ferretti-specific reconstruction.
+
+I2 — nautical domain nucleus is reached at repository/reentry-function level.
+
+Independent fresh-receiver behavioural evidence remains a stronger separate
+claim and is not inferred here.
