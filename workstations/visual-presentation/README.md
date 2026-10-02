@@ -118,6 +118,14 @@ FORMATION_LOG.md
 
 DECISION_REGISTER.md
   explicit working decisions, provisional choices and open decisions.
+
+PUBLIC_KERNEL_VISUAL_PILOT.md
+  Kernel Nautico as the first case of the cross-kernel 3D visual presentation
+  relation.
+
+KEYFRAME_ARCHITECTURE.md
+  nine stable semantic states for hero film, deck, one-page and interactive
+  derivatives.
 ~~~
 
 ## Representation invariant
