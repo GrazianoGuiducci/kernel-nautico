@@ -262,6 +262,47 @@ Vessel / Bridge Surface
 They may share geometry, identity and visual grammar while keeping different
 state, privacy and authority contracts.
 
+## Kernel topology and MPK relation
+
+Kernel Nautico is a native nautical-domain kernel inside a wider federated
+semantic field.
+
+~~~text
+shared founding / semantic field
+  D-ND / KA / FDLA / Meta_Skill / SSK
+
+owner-native domain kernels
+  Kernel Nautico
+  Business Kernel
+  Editoriali
+  Design Kernel
+  Social Kernel
+  later kernels
+~~~
+
+These owners compose when pertinent. They are not subordinate satellites of a
+central controller.
+
+MAIOS Project Kernel has a different role:
+
+~~~text
+Kernel Nautico
++ MPK generic context / source / project / competence / reentry functions
++ company-owned field
+-> Enterprise Nautical Kernel
+~~~
+
+MPK is therefore a portable bootstrap/project substrate and source of generic
+operating capabilities, not the nautical semantic owner.
+
+During early adoption, reuse MPK aggressively where it avoids reconstructing
+generic project machinery. Through real nautical work, assimilate into Kernel
+Nautico only the functions whose nautical form becomes materially distinct and
+repeatedly constitutive.
+
+Canonical detail:
+`docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md`.
+
 ## Vessel-specific horizon
 
 A vessel instance may later carry legitimate relations such as:
