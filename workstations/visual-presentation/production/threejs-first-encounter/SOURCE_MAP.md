@@ -1,5 +1,22 @@
 # Source Map — Three.js First Encounter
 
+## ChatGPT host-kernel entry
+
+Before domain execution, the new GPT Pro receiver enters current:
+
+`GrazianoGuiducci/tm7`
+
+through the sequence defined in `GPT_PRO_BOOTSTRAP.md`.
+
+The observed tm7 main when the bootstrap was formed was
+`e3b0bd0b3189af0e3edbd79e5f8484a103be7ce5`, but the executor must refresh
+the live owner before branching.
+
+This host-kernel entry is operative because the task may expose reusable
+competence, routing, reentry or receiver learning. It is not authority to copy
+tm7 topology into Kernel Nautico.
+
+
 ## Primary owner-native sources
 
 Repository: `GrazianoGuiducci/kernel-nautico`
@@ -68,10 +85,21 @@ Use Editoriali only for consequential public wording. Do not let code generation
 
 ## Visual reference
 
-Local:
-`assets/kernel_nautico_visual_reference.jpg`
+Repository-readable interpretation:
 
-This is a user-provided / project-provided visual study compressed for repository reference. It is not a source of technical claims.
+`VISUAL_REFERENCE.md`
+
+Exact active Project/Library raster:
+
+`Kernel Nautico_ Intelligenza Marittima a Ciclo Continuo(1).png`
+
+The raster is **not currently stored in this repository**. If the executing GPT
+Pro instance can access the same Project/Library surface, inspect it directly.
+If not, continue from `VISUAL_REFERENCE.md` without inventing a replacement
+source.
+
+The image is visual-direction evidence only. It is not a source of technical
+claims, yacht geometry or Ferretti/Pershing product truth.
 
 ## Source hierarchy for this execution
 
@@ -86,3 +114,24 @@ current operator determination
 ~~~
 
 If an external example conflicts with Kernel Nautico meaning, preserve the owner-native relation and use the example only for implementation technique.
+
+
+## Evolution / learning owners
+
+When execution produces a reusable difference, use the owner routing in
+`GPT_PRO_BOOTSTRAP.md` and the classification in
+`VALIDATION_AND_LEARNING_CONTRACT.md`.
+
+The main candidate owners are:
+
+~~~text
+Kernel Nautico
+D-ND Design Kernel
+Editoriali
+D-ND Business Manager
+Meta_Skill
+tm7 / ChatGPT receiver-local kernel
+~~~
+
+Do not update an owner merely because it was consulted. Update only the owner
+whose later behavior must change.
