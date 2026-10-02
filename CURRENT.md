@@ -7,7 +7,7 @@ repository: GrazianoGuiducci/kernel-nautico
 visibility: public
 license_selected: no
 first_pressure_field: Pershing / Ferretti
-independence_stage: I2_candidate_reentry_readback_pending
+independence_stage: I2_nautical_domain_nucleus / independent_fresh_receiver_evidence_pending
 boot: BOOT.md@0.1.4
 inheritance_ledger: INHERITANCE_LEDGER.md@0.1.4
 external_effect_authorized: no
@@ -99,19 +99,28 @@ pertinence. It is not yet assimilation.
 V-01 Exercise 01 has now exercised the RETURN seam through qualified Ferretti
 lifecycle / Field Failure Report / post-launch evidence.
 
-Local resultant:
+Current local resultant:
 
 ~~~text
-Lifecycle Return Qualification
+Lifecycle Return Qualification v0.2
 
-lifecycle evidence
-+ product identity / configuration
+event / lifecycle consequence
++ product / vessel state
 + provenance / context / time
-+ impact / recurrence
-+ causal trace
--> vessel-local state | corrective relation | reusable difference
--> closest competent owner changes
--> later movement begins from changed capability
++ causal factors / impact / recurrence
++ owner / authority map
+-> decompose material return paths
+
+each causal seam:
+  local state | corrective action | reusable difference | retained unknown
+  -> responsible owner(s)
+
+owner-interface / handoff / oversight failure:
+  -> preserve as its own return object
+
+only reusable differences:
+  -> change competent owner(s) or their material relation
+  -> later work begins differently
 ~~~
 
 Controlled owner-native reentry has now passed in the current host.
@@ -418,7 +427,7 @@ resultant:
   source-kernel topology was not cloned
 
 next threshold:
-  I2 owner-native reentry from Lifecycle Return Qualification v0.2
+  I3 real company incarnation OR another material domain consequence that changes I2
 
 later horizons:
   I2 nautical domain nucleus
@@ -454,21 +463,26 @@ one event
 -> reusable differences return without collapsing authority
 ~~~
 
-I2 is candidate pending owner-native reentry readback.
+Owner-native reentry recovered v0.2 and its multi-owner source/authority
+boundaries without Ferretti-specific reconstruction.
+
+I2 — nautical domain nucleus is reached at repository/reentry-function level.
+Independent fresh-receiver behavioural evidence remains separate and pending.
 
 Exercise:
 `traversals/I2_EXERCISE_01_WHEELYBOAT_DISTRIBUTED_RETURN_2026-10-02.md`.
 
 ## Selected next movement
 
-~~~text
-fresh owner-native reentry
--> BOOT
--> CURRENT
--> I2 Exercise 01
--> Lifecycle Return Qualification v0.2
--> preserve multi-owner source / authority distinctions
--> I2 reached | expose remaining material gap
-~~~
+I2 is closed at the owner-native repository/reentry-function level.
 
-Do not replay Ferretti to prove domain independence.
+Do not replay Wheelyboat or Ferretti merely to accumulate proof.
+
+The next material movement is selected from the changed field:
+- a real company incarnation can open I3;
+- Business Manager may form the enterprise encounter/adoption relation from the
+  now domain-proved Kernel Nautico;
+- another non-identical nautical consequence enters only if it changes the
+  current domain capability.
+
+No external outreach is authorized by this state.
