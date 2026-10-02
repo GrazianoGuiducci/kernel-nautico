@@ -2,7 +2,7 @@
 
 ~~~text
 status: candidate_learning_return
-updated: 2026-10-01
+updated: 2026-10-02
 authority: visual work can expose relations; it does not decide kernel architecture
 target_owner: GrazianoGuiducci/kernel-nautico
 ~~~
@@ -150,6 +150,48 @@ This does **not** prove that the kernel should be packaged in the same modules.
 
 It does suggest that one source-bound relation can support several
 receiver-relative projections without duplicating the truth owner.
+
+## F-08 — Public simplicity needs a deeper technical substrate
+
+The current lifecycle board works because FORM / BUILD / LIVE / RETURN is a
+useful perceptual compression.
+
+The technical research shows that BUILD alone may contain materially different
+relations:
+
+~~~text
+industrial planning
+primary structure
+machinery / systems
+superstructure
+outfitting
+quality integration
+commissioning
+sea trials
+~~~
+
+Kernel consequence:
+keep the four-act public grammar, but let the internal Nautical Reference
+Operating Model govern what each visual transformation actually means.
+
+This reduces the risk that visual simplification becomes process invention.
+
+## F-09 — Public kernel visual animation may be a cross-kernel product surface
+
+Kernel Nautico has exposed a candidate relation:
+
+~~~text
+kernel truth
++ domain-native visual transformation
+-> cognitive / presentational surface
+-> reusable artifact family
+~~~
+
+The candidate is preserved in PUBLIC_KERNEL_VISUAL_PRINCIPLE.md.
+
+Do not promote it to a shared Design competence from this specimen alone.
+The first proof is the KN master; a second non-identical kernel should test
+whether the relation survives the change of domain.
 
 ## Requested return from kernel formation
 
