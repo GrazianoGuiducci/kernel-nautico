@@ -1,0 +1,44 @@
+name: KN visual asset acquisition (no deployment)
+on:
+  push:
+    branches: [work/visual-threejs-first-encounter-20261002]
+    paths: [.github/workflows/kn-visual-acquire.yml]
+permissions:
+  contents: read
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Acquire pinned candidates for local inspection
+        shell: bash
+        run: |
+          mkdir -p candidate-bundle
+          python3 - <<'PY'
+          import urllib.request, pathlib, hashlib, json, base64
+          p=pathlib.Path('candidate-bundle')
+          root='https://raw.githubusercontent.com/bob6664569/open-water/285b6ce32057c70191a7fe16c31d979fa383ac64/'
+          targets={
+            'three-0.186.1.tgz':'https://registry.npmjs.org/three/-/three-0.186.1.tgz',
+            'motoryacht_10.7r.glb':root+'site/assets/boats/motoryacht_10.7r.glb',
+            'OPEN_WATER_THIRD_PARTY_NOTICES.md':root+'THIRD_PARTY_NOTICES.md',
+            'OPEN_WATER_README.md':root+'README.md',
+            'OPEN_WATER_LICENSE':root+'LICENSE',
+          }
+          manifest=[]
+          for name,url in targets.items():
+            req=urllib.request.Request(url,headers={'User-Agent':'Kernel-Nautico-bounded-asset-inspection'})
+            with urllib.request.urlopen(req,timeout=60) as r: data=r.read(60*1024*1024)
+            if name=='three-0.186.1.tgz':
+              assert base64.b64encode(hashlib.sha512(data).digest()).decode()=='blFeqb49wRCSGUGj7gtpfnSGHy2lwDk94RhUmS1c/hTby70kvChbWpkJ4Pm1390LqzzvTmzgXKHPEafJwCb8jA=='
+            if name.endswith('.glb'): assert data[:4]==b'glTF'
+            (p/name).write_bytes(data)
+            manifest.append({'file':name,'url':url,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+          (p/'acquisition.json').write_text(json.dumps({'purpose':'candidate inspection only; carrier not yet selected','files':manifest},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kn-visual-candidates
+          path: candidate-bundle/
+          retention-days: 1
+          if-no-files-found: error
