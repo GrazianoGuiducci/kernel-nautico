@@ -146,6 +146,34 @@ RETURN is not attributed to a shipyard merely because lifecycle/service exists.
 The kernel must separately establish how a real consequence becomes reusable
 learning and which owner should change.
 
+## Domain reference operating model
+
+Kernel Nautico carries an advanced but revisable nautical reference model at:
+
+~~~text
+docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md
+~~~
+
+Its architecture is:
+
+~~~text
+domain reference model
++ production profile
++ class / conformity profile
++ company overlay
++ vessel instance
+-> situated operating model
+~~~
+
+This gives a new installation enough nautical structure to begin useful work
+without pretending to know a yard's internal organization.
+
+The public visual grammar remains FORM -> BUILD -> LIVE -> RETURN. The reference
+model provides technical depth beneath that compression.
+
+The model is not a frozen ontology. Real company work and later non-identical
+nautical cases may change it.
+
 ## Knowledge and competence
 
 ~~~text
