@@ -66,7 +66,7 @@ present field
 -> material relation emerges
 -> resource able to change that relation becomes pertinent
 -> participation changes the field
--> reusable difference changes the responsible competence
+-> reusable difference changes the responsible competence(s) or their material relation
 -> next passage begins from changed competence + changed field
 ~~~
 
@@ -82,7 +82,7 @@ Repeated passages are cumulative inside the competence.
 ~~~text
 pass N
 -> reusable emergence
--> closest competence changes
+-> responsible competence(s) or owner-interface relation changes
 -> relation with sources / competences / consequences / possibilities is
    recomposed
 -> pass N+1 begins from changed awareness
@@ -144,7 +144,11 @@ allowing explicitly governed relations to cross when the real field requires it.
 
 RETURN is not attributed to a shipyard merely because lifecycle/service exists.
 The kernel must separately establish how a real consequence becomes reusable
-learning and which owner should change.
+learning and which owner(s) or owner-interface relation should change.
+
+A consequence may fan out across several owners. Kernel Nautico preserves each
+owner's source and authority, and can represent a handoff/oversight gap without
+inventing an owner or collapsing all returns into one generic lesson.
 
 ## Domain reference operating model
 
@@ -325,7 +329,10 @@ deeper object.
 
 ## Learning return
 
-A reusable difference returns to the owner that must behave differently later.
+A reusable difference returns to the owner or owners that must behave
+differently later. When the reusable difference is in the relation between
+owners, that interface/handoff relation remains explicit rather than being
+silently assigned to one side.
 
 ~~~text
 nautical/domain learning
