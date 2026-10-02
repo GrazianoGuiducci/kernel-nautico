@@ -8,8 +8,8 @@ rule: a working decision does not become product/kernel/company truth
 
 | ID | Status | Decision | Reason / boundary |
 |---|---|---|---|
-| V-D001 | ACTIVE | Use a dedicated workstation inside `` until the future owner/repository is born. | Preserves continuity without manufacturing the final repository early. |
-| V-D002 | ACTIVE | Present the future nautical incarnation through **FORM -> BUILD -> LIVE -> RETURN**. | Preserves the operator's three-phase intuition while expanding "post-sale" into the full lifecycle and making learning return visible. |
+| V-D001 | SUPERSEDED | The visual workstation was incubated before the dedicated owner existed; it now lives in `GrazianoGuiducci/kernel-nautico`. | Repository birth on 2026-10-02 superseded the temporary-owner decision. |
+| V-D002 | ACTIVE | Present Kernel Nautico through **FORM -> BUILD -> LIVE -> RETURN**. | Preserves the operator's three-phase intuition while expanding "post-sale" into the full lifecycle and making learning return visible. |
 | V-D003 | ACTIVE | Use one original concept yacht as the persistent perceptual object. | The same product must remain recognizable while representation, lifecycle state and information depth change. |
 | V-D004 | ACTIVE | Do not copy a real Ferretti/Pershing yacht for the exploratory master. | Avoids false product representation and keeps the concept reusable. |
 | V-D005 | ACTIVE | Represent AI/Kernel primarily through continuity of meaningful relations, not a glowing brain/network overlay. | Better matches the emerging Kernel relation and avoids generic AI iconography. |
