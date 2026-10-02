@@ -148,6 +148,7 @@ External and reachable:
 - Source-Grounded Storyboard;
 - Source-Grounded Infographic;
 - Cognitive Motion;
+- D-ND Design Kernel / Public Kernel 3D Visual Presentation;
 - Editoriali Product Semantic Narrative;
 - Editoriali Manifesto / Advertising Communication.
 
