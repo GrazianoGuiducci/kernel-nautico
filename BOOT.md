@@ -160,8 +160,21 @@ and preserved Ferretti process != Kernel Nautico competence without reopening
 creator-side formation sources.
 
 Independent fresh-receiver behavioural evidence remains a stronger separate
-claim. Next kernel evolution comes from later non-identical nautical use or a
-new material field consequence, not from replaying this proof.
+claim.
+
+A later non-identical nautical case has now occurred: MAIB Wheelyboat 123.
+It evolved Lifecycle Return Qualification from a single-owner return assumption
+to v0.2 distributed multi-owner causal return.
+
+Current I2 disposition:
+CANDIDATE_PENDING_REENTRY_READBACK.
+
+Read:
+`traversals/I2_EXERCISE_01_WHEELYBOAT_DISTRIBUTED_RETURN_2026-10-02.md`.
+
+Next movement:
+recover v0.2 through BOOT -> CURRENT -> I2 Exercise 01 and preserve
+multi-owner source/authority boundaries without Ferretti-specific reconstruction.
 
 R-01 remains a possible bounded carrier of V-01, not the vertical itself and
 not selected product architecture.
