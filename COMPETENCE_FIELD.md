@@ -88,19 +88,39 @@ a native generator relation is required.
 Reach when receiver-native organization, regenerative inheritance or
 incarnation topology becomes material.
 
-## Portable MPK capabilities
+## MAIOS Project Kernel — bootstrap / project substrate
 
-Strong inheritance candidates:
+MPK is a **portable generic operating substrate** for project/context/source/
+competence continuity.
 
-- MAIOS Project Context;
-- MAIOS System Understanding;
-- MAIOS Knowledge Acquisition;
-- MAIOS Possibility Formation;
-- MAIOS Project Competence Formation;
+Kernel Nautico remains the semantic owner of the nautical domain.
+
+Use MPK functions when they materially accelerate:
+
+- company/project context reconstruction;
+- source continuity;
+- system understanding;
+- knowledge acquisition;
+- possibility formation;
+- competence formation;
 - Start Existing Project;
-- Host Adaptation / Project Integration.
+- host adaptation / integration;
+- project-instance reentry and local state.
 
-Their exact local form must be exercised rather than copied.
+Current relation:
+
+~~~text
+Kernel Nautico domain capability
++ MPK generic project-operating functions
++ company-owned field
+-> Enterprise Nautical Kernel
+~~~
+
+Do not copy MPK wholesale into Kernel Nautico.
+
+A generic MPK function becomes KN-native only when real nautical use repeatedly
+shows a materially different nautical form that later KN operation must recover
+without reconstructing the same translation.
 
 ## Local nautical operating knowledge
 
