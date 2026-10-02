@@ -37,6 +37,15 @@ ENTERPRISE INCARNATION
   integration adapters
   consequence / learning return
 
+        ↓ role-relative projection
+
+OPERATIONAL SURFACES
+  product-development / engineering
+  programme / procurement
+  production / quality / commissioning
+  service / lifecycle
+  role + task + authority determine visible depth and actions
+
         ↓ when material
 
 PRODUCT / VESSEL INSTANCE
@@ -47,6 +56,13 @@ PRODUCT / VESSEL INSTANCE
   service / maintenance relation
   local/private competence and interaction
 
+        ↓ product-local projection
+
+VESSEL / BRIDGE SURFACE
+  vessel-specific semantic navigation
+  authorized crew / owner / service knowledge
+  distinct privacy / authority boundary
+
         ↓ governed return
 
 COMPANY LEARNING
@@ -55,6 +71,26 @@ COMPANY LEARNING
   -> competence
   -> later project / process / product
 ~~~
+
+## Operational surface relation
+
+The enterprise incarnation can project a common product identity into different
+role-relative surfaces without duplicating source truth.
+
+~~~text
+same yacht / project identity
++ current lifecycle state
++ user role / task
++ permission and authority profile
+-> relevant sources / state / actions
+~~~
+
+Candidate source:
+`docs/NAUTICAL_OPERATIONAL_SPATIAL_SURFACE_0_1.md`.
+
+The operational surface is an interaction projection of the enterprise kernel.
+It does not become the source of product configuration, permissions or
+execution authority.
 
 ## Boundaries
 
