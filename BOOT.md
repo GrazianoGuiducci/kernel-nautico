@@ -153,12 +153,15 @@ V-01 Exercise 01 has formed the local Lifecycle Return Qualification capability
 from qualified Ferretti lifecycle / Field Failure Report / post-launch evidence.
 
 Current I1 disposition:
-CANDIDATE_PENDING_REENTRY_READBACK.
+REACHED_LOCAL_REENTRY_FUNCTION.
 
-Next goal:
-reenter through this Boot and CURRENT, recover V-01 + Lifecycle Return
-Qualification and continue from the changed capability without reconstructing
-creator logic. If that succeeds, mark I1 reached.
+Controlled owner-native readback recovered V-01 + Lifecycle Return Qualification
+and preserved Ferretti process != Kernel Nautico competence without reopening
+creator-side formation sources.
+
+Independent fresh-receiver behavioural evidence remains a stronger separate
+claim. Next kernel evolution comes from later non-identical nautical use or a
+new material field consequence, not from replaying this proof.
 
 R-01 remains a possible bounded carrier of V-01, not the vertical itself and
 not selected product architecture.
