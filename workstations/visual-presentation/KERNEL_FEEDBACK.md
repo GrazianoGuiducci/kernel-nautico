@@ -193,6 +193,42 @@ Do not promote it to a shared Design competence from this specimen alone.
 The first proof is the KN master; a second non-identical kernel should test
 whether the relation survives the change of domain.
 
+## F-10 — The 3D product representation may become an operational surface
+
+The current visual work suggests a product relation beyond presentation:
+
+~~~text
+persistent 3D yacht identity
++ semantic tagging / V-01 relations
++ role / task / authority
+-> operational spatial navigation
+~~~
+
+This can support product-development workstations, enterprise operations and a
+later vessel/bridge surface.
+
+Important distinction:
+
+~~~text
+public hero / animation
+!= operational UI
+
+shared geometry / identity / motion grammar
+can inform both
+
+operational state / sources / permissions / actions
+belong only to the operational surface
+~~~
+
+Kernel owner candidate:
+`docs/NAUTICAL_OPERATIONAL_SPATIAL_SURFACE_0_1.md`.
+
+Visual consequence:
+when building reusable 3D assets, preserve stable product identity, meaningful
+component/system segmentation and transformation continuity where doing so does
+not compromise the current visual artifact. Do not burden the hero film with
+operational metadata merely because later reuse is possible.
+
 ## Requested return from kernel formation
 
 When the first generate-complete-kernel traversal advances, return only material
