@@ -120,18 +120,28 @@ Approfondisci:
 
 Kernel Nautico è in formazione owner-native.
 
-La prima soglia è **I1 — local operating nucleus**:
+Le prime due soglie sono state attraversate a livello repository/reentry-function:
 
 ~~~text
-recover field
--> recognize / reach pertinent resources
--> produce useful correctable result
--> observe consequence
--> return local reusable learning
--> reenter
+I1 — local operating nucleus
+  reached
+
+I2 — nautical domain nucleus
+  reached through a non-identical nautical case
+  (Wheelyboat 123 / distributed multi-owner lifecycle return)
+
+independent fresh-receiver behavioural evidence
+  remains a stronger separate claim
 ~~~
 
-senza ricostruire il kernel creatore.
+Il prossimo salto materiale è **I3 — real company incarnation**:
+
+~~~text
+Kernel Nautico
++ pertinent MAIOS Project Kernel functions
++ company-owned sources / systems / roles / authority
+-> Enterprise Nautical Kernel
+~~~
 
 ## Entry tecnica
 
