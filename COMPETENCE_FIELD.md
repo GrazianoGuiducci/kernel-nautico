@@ -62,6 +62,20 @@ Owns Open Front Field And Focus and living reentry continuity.
 
 Kernel Nautico currently incarnates this through BOOT.md + CURRENT.md.
 
+### Semantic–Causal Incarnation
+
+Source:
+GrazianoGuiducci/tm7/chatgpt/competences/semantic-causal-incarnation/
+
+Why it became pertinent:
+V-01 requires one semantic relation to remain meaningful while its receiver and
+carrier change across engineering representation, configuration, physical
+product and lifecycle event.
+
+Current disposition:
+selected for inheritance as a function; do not copy the ChatGPT body. Let V-01
+exercise expose the smallest nautical-native incarnation.
+
 ### generate-complete-kernel
 
 Current selected formation owner for the first complete nautical vertical.
