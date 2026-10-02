@@ -20,8 +20,14 @@ function closeInspection(){inspection=false;document.body.classList.remove('insp
 function selectAct(id){closeInspection();timeline.seek(actTime(id,id==='RETURN'?.90:.68));invalidate();}
 function drawRelation(frame){
   const w=innerWidth,h=innerHeight,mobile=w<600;
-  const point=world?.projectAnchor() || {x:w*(mobile?.70:.72),y:h*.50,visible:true};
-  const note=$('design-note'), rect=note.getBoundingClientRect();
+  // Both carriers project a real visible anchor. A fallback must not detach the
+  // relation from its source by substituting a viewport percentage.
+  const fallbackAnchor = fallback ? $('fallback').querySelector('circle').getBoundingClientRect() : null;
+  const point = world ? world.projectAnchor() : {
+    x: fallbackAnchor.x + fallbackAnchor.width / 2,
+    y: fallbackAnchor.y + fallbackAnchor.height / 2, visible: true
+  };
+  const note=$('design-note');
   const isReturn=frame.index===3, p=frame.progress;
   const opacity=frame.index===0?1:isReturn?smooth(p/.12):frame.index===1?.27:0;
   note.style.opacity=opacity;
@@ -100,6 +106,7 @@ try{
   $('stage').replaceChildren();$('inspect').disabled=true;
   $('inspect').setAttribute('aria-label','Esplorazione 3D non disponibile nella versione statica');
   document.body.classList.add('static-fallback');
+  $('scene-boundary').textContent='SCHEMA ALTERNATIVO · STESSA RELAZIONE';
 }
 ready=true;$('loading').hidden=true;
 if(preference.matches||fallback||params.has('test'))timeline.seek(actTime('FORM'));

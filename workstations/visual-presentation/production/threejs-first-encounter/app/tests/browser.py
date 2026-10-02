@@ -1,5 +1,6 @@
 """Actual browser evidence; run against the built local server, never a public URL."""
-import json, os, pathlib, statistics, time
+import json, os, pathlib, statistics, time, platform
+from importlib.metadata import version
 from playwright.sync_api import sync_playwright
 OUT=pathlib.Path(os.environ.get('KN_EVIDENCE','evidence')); OUT.mkdir(parents=True,exist_ok=True)
 URL='http://127.0.0.1:8876/'
@@ -14,7 +15,7 @@ def ready(page):
     page.wait_for_function('window.__KN_DEBUG__?.ready',timeout=90000);wait_frame(page)
 
 with sync_playwright() as p:
-    browser=p.chromium.launch(headless=True,args=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
+    browser=p.chromium.launch(headless=True,executable_path=os.environ.get('KN_CHROMIUM_PATH') or None,args=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
     context=browser.new_context(viewport={'width':1440,'height':900},device_scale_factor=1)
     page=context.new_page()
     page.on('pageerror',lambda e: errors.append(str(e)))
@@ -97,7 +98,26 @@ with sync_playwright() as p:
         check('static_fallback_available',snap(page)['fallback'])
         page.locator('[data-act="RETURN"]').click();wait_frame(page);page.screenshot(path=str(OUT/'STATIC_RETURN.png'))
         check('static_controls_preserve_relation',snap(page)['currentAct']=='RETURN' and snap(page)['returnStage']=='proposed_design_criterion')
+        # The endpoints are checked against visible source/consumer elements,
+        # not against a second copy of the implementation's chosen coordinates.
+        for width,height,label in [(1440,900,'DESKTOP'),(390,844,'MOBILE')]:
+            page.set_viewport_size({'width':width,'height':height});wait_frame(page)
+            for act in ['FORM','RETURN']:
+                page.locator('[data-act="'+act+'"]').click();wait_frame(page)
+                anchors=page.evaluate('''() => {
+                  const center=e=>{const b=e.getBoundingClientRect();return {x:b.x+b.width/2,y:b.y+b.height/2}};
+                  const path=document.getElementById('return-line');
+                  return {source:center(document.querySelector('#fallback circle')),
+                    destination:center(document.querySelector('#access-diagram circle')),
+                    start:{x:path.getPointAtLength(0).x,y:path.getPointAtLength(0).y},
+                    end:{x:path.getPointAtLength(path.getTotalLength()).x,y:path.getPointAtLength(path.getTotalLength()).y}};
+                }''')
+                for endpoint,target in [('start','source'),('end','destination')]:
+                    check(label+'_static_'+act+'_'+endpoint+'_attached',
+                        abs(anchors[endpoint]['x']-anchors[target]['x'])<1 and abs(anchors[endpoint]['y']-anchors[target]['y'])<1,anchors)
+            page.screenshot(path=str(OUT/(label+'_STATIC_RETURN.png')))
+        check('fallback_does_not_claim_same_geometry',page.locator('#scene-boundary').inner_text()=='SCHEMA ALTERNATIVO · STESSA RELAZIONE')
     finally:
-        (OUT/'browser-evidence.json').write_text(json.dumps({'browser':browser.version,'playwright':'1.57.0','runner':'GitHub Actions ubuntu-latest / software WebGL',
+        (OUT/'browser-evidence.json').write_text(json.dumps({'browser':browser.version,'playwright':version('playwright'),'runner':os.environ.get('KN_RUNNER',platform.platform()+' / software WebGL'),
             'performance':performance,'checks':checks,'consoleErrors':errors,'externalRequests':external,'snapshots':snapshots},indent=2),encoding='utf-8')
         browser.close()
