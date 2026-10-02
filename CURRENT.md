@@ -164,6 +164,48 @@ boundary:
   public repository visibility alone does not determine those terms
 ~~~
 
+## OPEN — public positioning / adoption package
+
+~~~text
+product-owned public sources:
+  README.md
+  docs/POSITIONING.md
+  docs/ADOPTION_MODEL.md
+  docs/ENTERPRISE_INCARCATION.md
+  docs/COLLABORATION_DECK_SOURCE.md
+
+visual source:
+  workstations/visual-presentation/MARKETING_BRIEF.md
+
+external owners:
+  Business Manager
+    state/KERNEL_NAUTICO_BUSINESS_MARKETING_2026-10-02.md
+
+  Editoriali
+    programs/maios/kernel-nautico/KERNEL_NAUTICO_PUBLIC_NARRATIVE_2026-10-02.md
+~~~
+
+Current position:
+
+~~~text
+public domain kernel
+-> enterprise incarnation
+-> integration / co-development
+-> Kernel Stewardship
+-> vessel/product instance where real
+~~~
+
+Defensibility is based on compounding situated capability, integration depth,
+canonical evolution and stewardship — not artificial lock-in.
+
+High-resolution trigger:
+the visual/master package reaches enough coherence for a real company encounter
+or a serious receiver asks for evaluation/adoption.
+
+Boundary:
+public visibility is not a licensing grant and does not by itself authorize
+company outreach or a commercial commitment.
+
 ## OPEN — independence / productization
 
 ~~~text
