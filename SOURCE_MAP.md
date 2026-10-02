@@ -33,6 +33,7 @@ GrazianoGuiducci/codex
 GrazianoGuiducci/tm7
   Kernel Incarnation Design
   System Field Awareness
+  Semantic–Causal Incarnation
   current ChatGPT reentry / control plane
 
 GrazianoGuiducci/maios-project-kernel
@@ -56,6 +57,46 @@ This is the formation field, not the generic kernel perimeter.
 
 Company-specific facts require qualified current sources and, in a real
 collaboration, owner-authorized company knowledge.
+
+## V-01 qualified public pressure sources
+
+The first complete vertical was formed with current public source evidence from
+the first pressure field.
+
+### Pershing GTX development relation
+
+~~~text
+source:
+  https://www.pershing-yacht.com/it-it/yachts/Gtx-series/making-of
+
+observed relation:
+  owner needs / Project TØ
+  -> innovative concept / engineering challenge
+  -> design + engineering
+  -> physical yacht production at Mondolfo
+~~~
+
+Use as source evidence for FORM -> BUILD continuity, not as a complete model of
+Pershing development practice.
+
+### Ferretti lifecycle / service relation
+
+~~~text
+sources:
+  https://www.ferrettigroup.com/it-it/News-and-events/Detail/t/Ferretti-Group-rafforza-la-protezione-degli/y/2026/n/2601
+  https://www.ferrettigroup.com/it-it/News-and-events/Detail/t/La-nuova-stagione-di-Ferretti-Group-comincia-da/y/2026/n/2602
+
+observed relation:
+  delivered yacht
+  -> engineering elements / onboard functional systems
+  -> scheduled checks / maintenance
+  -> official service network
+  -> continuing owner relationship after delivery
+~~~
+
+These sources support lifecycle continuity. They do not establish a current
+Ferretti process that returns service consequences into competence formation or
+later design. That RETURN remains a Kernel Nautico capability to form and prove.
 
 ## Sibling kernels
 
