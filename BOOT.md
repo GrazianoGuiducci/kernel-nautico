@@ -1,7 +1,7 @@
 # Kernel Nautico — Boot
 
 ~~~text
-version: 0.1.0
+version: 0.1.1
 formed: 2026-10-02
 status: owner_native_birth
 kernel: Kernel Nautico
@@ -121,15 +121,31 @@ Continue from CURRENT.md.
 Current selected internal movement:
 
 ~~~text
-generate-complete-kernel
-over Kernel Nautico / first nautical pressure field
+V-01 — Causal Product Continuity
 
-goal:
-  form the first owner-native complete nautical vertical
-  and determine which capabilities must become native for I1
+intent / need / source
+-> engineering definition
+-> configuration
+-> physical realization
+-> commissioning / accepted product instance
+-> lifecycle event
+-> consequence
+-> reusable competence
+-> later product / process movement
 ~~~
 
-R-01 is a candidate probe, not selected architecture.
+The first traversal selected this relation as the minimum complete nautical
+vertical.
+
+Next goal:
+exercise V-01 far enough to determine which relations must become native for I1.
+
+R-01 remains a possible bounded carrier of V-01, not the vertical itself and
+not selected product architecture.
+
+Read:
+`traversals/V-01_CAUSAL_PRODUCT_CONTINUITY_2026-10-02.md` when V-01 depth is
+material.
 
 ## Effect boundary
 
