@@ -1,7 +1,7 @@
-name: KN first encounter browser proof (no deployment)
+name: KN semantic focus browser proof (no deployment)
 on:
   push:
-    branches: [work/visual-threejs-first-encounter-20261002]
+    branches: [work/visual-threejs-first-encounter-20261002, work/semantic-focus-field-20261003]
     paths:
       - workstations/visual-presentation/production/threejs-first-encounter/app/**
       - .github/workflows/kn-visual-proof.yml
@@ -37,6 +37,7 @@ jobs:
           node scripts/serve.mjs > evidence/server.log 2>&1 &
           sleep 1
           python3 tests/browser.py
+          python3 tests/focus-browser.py
       - name: Package executed sources and offline runtime
         if: always()
         run: |
@@ -54,7 +55,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: kn-threejs-proof
+          name: kn-semantic-focus-proof
           path: kn-proof/
           retention-days: 7
           if-no-files-found: error

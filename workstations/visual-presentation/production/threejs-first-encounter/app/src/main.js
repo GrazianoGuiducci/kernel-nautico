@@ -1,3 +1,4 @@
+import { mountFocus } from './focus/panel.js';
 import { createWorld } from './scene/world.js';
 import { createTimeline, DURATION, actTime, smooth, clamp } from './core/timeline.js';
 import { RETURN_EXAMPLE } from './data/story.js';
@@ -7,7 +8,7 @@ const preference=matchMedia('(prefers-reduced-motion: reduce)');
 const timeline=createTimeline({reducedMotion:preference.matches});
 let world=null, pending=false, previous=0, ready=false, fallback=false, inspection=false, lastAct='', lastFrameMS=0;
 const renderSamples=[], phaseButtons=[...document.querySelectorAll('[data-act]')];
-let returnStage='not_active', relationEndpoints=null;
+let returnStage='not_active', relationEndpoints=null, focusUI=null;
 const svgNS='http://www.w3.org/2000/svg';
 const defs=document.createElementNS(svgNS,'defs');
 defs.innerHTML='<marker id="return-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1L9 5 0 9Z" fill="#dbb38b"/></marker>';
@@ -76,6 +77,7 @@ function updateUI(frame){
   $('play').innerHTML=timeline.playing?'Ⅱ <span>Pausa</span>':'▷ <span>Riprendi</span>';
   $('play').setAttribute('aria-label',timeline.playing?'Metti in pausa la presentazione':'Riprendi la presentazione');
   drawRelation(frame);
+  focusUI?.sync();
 }
 function tick(now){pending=false;const start=performance.now();
   const actualInterval=previous?now-previous:0;
@@ -110,6 +112,14 @@ try{
 }
 ready=true;$('loading').hidden=true;
 if(preference.matches||fallback||params.has('test'))timeline.seek(actTime('FORM'));
+focusUI=mountFocus({
+  getState:()=>({act:timeline.frame.currentAct,fallback}),
+  seekAct:selectAct,
+  pause:()=>{closeInspection();timeline.pause();invalidate();},
+  invalidate,
+  isInspect:()=>inspection,
+  projectAnchor:()=>relationEndpoints?.source,
+});
 invalidate();
 // Read-only evidence and deterministic presentation controls, exposed only in test mode.
 if(params.has('test'))window.__KN_DEBUG__={
