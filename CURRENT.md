@@ -1,7 +1,7 @@
 # Kernel Nautico — Current
 
 ~~~text
-updated: 2026-10-02
+updated: 2026-10-03
 state: OWNER_NATIVE_FORMATION
 repository: GrazianoGuiducci/kernel-nautico
 visibility: public
@@ -29,7 +29,25 @@ Product Development remains genealogy and a source of general method. Kernel
 Nautico owns the live nautical identity, state, reentry and future domain
 competence formation.
 
-## FOCUS — exercise V-01 Causal Product Continuity
+## FOCUS — first RETURN semantic access (candidate branch)
+
+Graziano selected Codex continuation on 3 October after source-bound preparation.
+Branch `work/visual-return-semantic-doorway-20261003` continues from the exact
+closed first-encounter base `e35403b`, with app `0.1.0-candidate.3`.
+
+The new public access links the illustrative RETURN scene to Lifecycle Return
+Qualification v0.2 without transferring the competence's exercise state to the
+invented example. Meaning, mechanism and source depths preserve scene/time,
+focus recovery, exact source identity and explicit source access.
+
+Current result: implementation + 18 local unit checks + local build and Codex
+browser exercise; controlled CI proof pending. The
+[execution return](workstations/visual-presentation/production/threejs-first-encounter/RETURN_DOORWAY_EXECUTION_RETURN.md)
+owns behavior, evidence scope, learning dispositions, limits and continuation.
+The next movement qualifies the new runtime and closes the review candidate.
+I2's existing domain result and its evidence remain distinct.
+
+## Domain continuity — V-01 Causal Product Continuity
 
 First traversal resultant:
 
@@ -498,21 +516,25 @@ Exercise:
 
 I2 remains closed at the owner-native repository/reentry-function level.
 
-Current operator selection:
+Current operator selection on this candidate branch:
 
 ~~~text
-GPT Pro kernel-first reentry
--> Three.js first-encounter demonstrator
--> FORM -> BUILD -> LIVE -> RETURN
--> local runtime / browser inspection
--> four-state evidence + silent visual test
--> exact proof-class return
+Codex source-bound reentry
+-> closed first-encounter base e35403b
+-> one RETURN semantic access / meaning + mechanism + source
+-> distinguish exercised knowledge and illustrative projection
+-> scene / time / focus / responsive / static continuity
+-> controlled browser proof at the new runtime identity
+-> reviewable source candidate + exact proof-class return
 -> reusable learning returned to owner-native competences where material
 ~~~
 
 Execution field:
 
 `workstations/visual-presentation/production/threejs-first-encounter/`
+
+Current return: `RETURN_DOORWAY_EXECUTION_RETURN.md` in that field.
+The original `EXECUTION_RETURN.md` preserves the closed predecessor.
 
 This is an internal product/presentation movement, not I3 and not Ferretti
 outreach.

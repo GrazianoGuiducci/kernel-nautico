@@ -1,7 +1,7 @@
 name: KN first encounter browser proof (no deployment)
 on:
   push:
-    branches: [work/visual-threejs-first-encounter-20261002]
+    branches: [work/visual-threejs-first-encounter-20261002, work/visual-return-semantic-doorway-20261003]
     paths:
       - workstations/visual-presentation/production/threejs-first-encounter/app/**
       - .github/workflows/kn-visual-proof.yml

@@ -14,6 +14,54 @@ def snap(page): return page.evaluate('window.__KN_DEBUG__.snapshot()')
 def ready(page):
     page.wait_for_function('window.__KN_DEBUG__?.ready',timeout=90000);wait_frame(page)
 
+def exercise_doorway(page,label):
+    """The actual DOM, focus and viewport can dissent from the data record."""
+    page.locator('[data-act="RETURN"]').click();wait_frame(page)
+    before=snap(page)
+    origin_scroll=page.evaluate('scrollY')
+    static_shape=page.locator('#fallback svg path').get_attribute('d')
+    check(label+'_closed_by_default',not page.locator('#return-doorway').is_visible())
+    page.locator('#understand-return').click();wait_frame(page)
+    opened=snap(page)
+    check(label+'_invoking_time_preserved',opened['seconds']==before['seconds'] and not opened['playing'])
+    check(label+'_same_visible_carrier',
+        (opened['fallback'] and page.locator('#fallback').is_visible() and page.locator('#fallback svg path').get_attribute('d')==static_shape)
+        if before['fallback'] else
+        (not opened['fallback'] and bool(before.get('uuid')) and opened['uuid']==before['uuid'] and opened['continuityUUID']==before['continuityUUID']))
+    check(label+'_ordinary_region_not_modal',page.get_by_role('complementary',name='Quando l’esperienza diventa capacità.').is_visible() and page.locator('dialog[open]').count()==0)
+    check(label+'_meaningful_open_focus',page.evaluate('document.activeElement.id')=='return-doorway-title')
+    check(label+'_states_distinct_in_dom',
+        page.locator('[data-knowledge-state="exercised"]').is_visible() and
+        page.locator('[data-projection-state="illustrative_not_observed"]').is_visible())
+    page.locator('[data-depth="mechanism"]').click();wait_frame(page)
+    check(label+'_mechanism_selected',page.locator('#semantic-depth-title').inner_text()=='Il ritorno conserva ciò che cambia.')
+    page.locator('[data-depth="source"]').click();wait_frame(page)
+    check(label+'_one_depth_and_matching_content',
+        page.locator('[data-depth][aria-pressed="true"]').count()==1 and
+        page.locator('[data-depth="source"]').get_attribute('aria-pressed')=='true' and
+        page.locator('#semantic-depth-title').inner_text()=='Il sapere dietro RETURN.')
+    links=page.locator('.semantic-sources a').evaluate_all('(elements)=>elements.map(e=>({href:e.href,target:e.target,rel:e.rel}))')
+    check(label+'_commit_bound_sources',len(links)==2 and all('/blob/e35403bcc9213a6805a03c77ca9889adbef4ecc4/' in x['href'] and x['target']=='_blank' and 'noopener' in x['rel'] for x in links),links)
+    check(label+'_depth_changes_freeze_time',snap(page)['seconds']==opened['seconds'])
+    geometry=page.evaluate('''() => {
+      const box=id=>{const b=document.getElementById(id).getBoundingClientRect();return {left:b.left,right:b.right,top:b.top,bottom:b.bottom}};
+      return {scene:box('experience'),rail:box('return-doorway'),width:innerWidth,
+        overflow:document.documentElement.scrollWidth>innerWidth+1};
+    }''')
+    check(label+'_layout_preserves_scene_space',
+        (geometry['scene']['right']<=geometry['rail']['left']+1 if geometry['width']>=1100
+         else geometry['rail']['top']>=geometry['scene']['bottom']-1) and not geometry['overflow'],geometry)
+    page.screenshot(path=str(OUT/(label+'_SOURCE.png')),full_page=geometry['width']<1100)
+    page.locator('[data-depth="source"]').press('Escape');wait_frame(page)
+    check(label+'_escape_restores_focus_and_scroll',not page.locator('#return-doorway').is_visible() and
+        page.evaluate('document.activeElement.id')=='understand-return' and abs(page.evaluate('scrollY')-origin_scroll)<1)
+    check(label+'_close_keeps_paused_time',snap(page)['seconds']==before['seconds'] and not snap(page)['playing'])
+    page.locator('#understand-return').click();wait_frame(page)
+    check(label+'_reopen_recovers_meaning',page.locator('[data-depth="meaning"]').get_attribute('aria-pressed')=='true')
+    page.screenshot(path=str(OUT/(label+'_MEANING.png')),full_page=geometry['width']<1100)
+    page.locator('#close-return').click();wait_frame(page)
+    check(label+'_button_close_restores_opener',page.evaluate('document.activeElement.id')=='understand-return')
+
 with sync_playwright() as p:
     browser=p.chromium.launch(headless=True,executable_path=os.environ.get('KN_CHROMIUM_PATH') or None,args=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
     context=browser.new_context(viewport={'width':1440,'height':900},device_scale_factor=1)
@@ -65,6 +113,43 @@ with sync_playwright() as p:
         page.locator('[data-act="RETURN"]').focus();page.keyboard.press('Enter');wait_frame(page)
         check('keyboard_selects_state',snap(page)['act']=='RETURN')
         page.evaluate('window.__KN_DEBUG__.seek(46)');wait_frame(page);check('end_holds_return',snap(page)['act']=='RETURN' and not snap(page)['playing'])
+        exercise_doorway(page,'DESKTOP_RETURN')
+        # Public commands replace the semantic view coherently; it never owns time.
+        page.locator('#understand-return').click();page.locator('[data-act="LIVE"]').click();wait_frame(page)
+        check('phase_change_closes_doorway',not page.locator('#return-doorway').is_visible() and snap(page)['act']=='LIVE' and not page.locator('#understand-return').is_visible())
+        page.locator('[data-act="RETURN"]').click();page.locator('#understand-return').click()
+        page.locator('#timeline').press('Home');wait_frame(page)
+        check('keyboard_scrub_closes_doorway',not page.locator('#return-doorway').is_visible() and snap(page)['act']=='FORM')
+        page.locator('[data-act="RETURN"]').click();page.locator('#understand-return').click();page.locator('#play').click();wait_frame(page)
+        check('explicit_play_closes_and_resumes',not page.locator('#return-doorway').is_visible() and snap(page)['playing'])
+        page.locator('#understand-return').click();wait_frame(page)
+        playing_open=snap(page);time.sleep(.15);wait_frame(page)
+        check('opening_from_playback_pauses_current_frame',not playing_open['playing'] and snap(page)['seconds']==playing_open['seconds'])
+        page.locator('#inspect').click();wait_frame(page)
+        check('inspection_replaces_doorway',not page.locator('#return-doorway').is_visible() and snap(page)['inspection'] and not page.locator('#understand-return').is_visible())
+        page.locator('#inspect').click();wait_frame(page)
+        page.locator('#understand-return').click();page.locator('#about').click();wait_frame(page)
+        check('source_dialog_replaces_doorway',page.locator('#details').is_visible() and not page.locator('#return-doorway').is_visible())
+        page.keyboard.press('Escape');check('source_dialog_focus_still_recovers',page.evaluate('document.activeElement.id')=='about')
+        page.locator('#understand-return').click();page.locator('#replay').click();wait_frame(page)
+        check('replay_replaces_doorway_with_form',not page.locator('#return-doorway').is_visible() and snap(page)['act']=='FORM')
+        page.locator('[data-act="RETURN"]').click()
+        page.evaluate('''() => {
+          const click=s=>document.querySelector(s).click();
+          click('#understand-return');click('[data-depth="source"]');click('#close-return');
+          click('#understand-return');click('[data-depth="mechanism"]');click('[data-act="LIVE"]');
+          click('[data-act="RETURN"]');
+        }''');wait_frame(page)
+        page.locator('#understand-return').click();page.locator('[data-depth="source"]').click();wait_frame(page)
+        check('rapid_public_commands_settle_on_last_depth',snap(page)['act']=='RETURN' and
+            page.locator('[data-depth][aria-pressed="true"]').count()==1 and
+            page.locator('[data-depth="source"]').get_attribute('aria-pressed')=='true')
+        page.keyboard.press('Escape');wait_frame(page)
+        for width,height,label in [(1440,600,'LOW_DESKTOP_RETURN'),(1024,768,'TABLET_RETURN'),(390,844,'MOBILE_RETURN'),(320,568,'SMALL_MOBILE_RETURN')]:
+            page.set_viewport_size({'width':width,'height':height});wait_frame(page)
+            exercise_doorway(page,label)
+        page.set_viewport_size({'width':1440,'height':900});wait_frame(page)
+        check('doorway_no_implicit_external_requests',external==[],external)
         # Geometric bounds, not a claim of real-device usability or general accessibility.
         for width,height,label in [(1024,768,'TABLET'),(390,844,'MOBILE')]:
             page.set_viewport_size({'width':width,'height':height});wait_frame(page)
@@ -88,6 +173,7 @@ with sync_playwright() as p:
         page.locator('#replay').click();wait_frame(page);check('reduced_replay_no_autoplay',not snap(page)['playing'])
         page.locator('[data-act="RETURN"]').click();wait_frame(page);page.screenshot(path=str(OUT/'REDUCED_RETURN.png'))
         check('reduced_motion_preserves_destination',snap(page)['returnStage']=='proposed_design_criterion')
+        exercise_doorway(page,'REDUCED_RETURN_DOORWAY')
         check('normal_console_errors_empty',errors==[],errors)
         # Wrong asset is intercepted locally; it cannot become a new product by accident.
         bad=context.new_page();bad.route('**/models/yacht.glb',lambda route:route.fulfill(status=200,body='wrong model',content_type='model/gltf-binary'))
@@ -98,6 +184,10 @@ with sync_playwright() as p:
         check('static_fallback_available',snap(page)['fallback'])
         page.locator('[data-act="RETURN"]').click();wait_frame(page);page.screenshot(path=str(OUT/'STATIC_RETURN.png'))
         check('static_controls_preserve_relation',snap(page)['currentAct']=='RETURN' and snap(page)['returnStage']=='proposed_design_criterion')
+        exercise_doorway(page,'STATIC_RETURN_DOORWAY')
+        page.set_viewport_size({'width':390,'height':844});wait_frame(page)
+        exercise_doorway(page,'MOBILE_STATIC_RETURN_DOORWAY')
+        check('all_depth_modes_no_external_requests',external==[],external)
         # The endpoints are checked against visible source/consumer elements,
         # not against a second copy of the implementation's chosen coordinates.
         for width,height,label in [(1440,900,'DESKTOP'),(390,844,'MOBILE')]:

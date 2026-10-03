@@ -1,0 +1,55 @@
+.semantic-entry{display:inline-flex;align-items:center;gap:14px;margin-top:18px;padding:9px 0;border-bottom:1px solid var(--line);color:var(--gold);font-size:12px;letter-spacing:.025em}
+.semantic-entry:hover{border-color:var(--gold)}
+.semantic-rail{background:#0a1926;color:var(--paper);border:1px solid var(--line);text-align:left;font-size:14px;line-height:1.65}
+.semantic-head{position:sticky;top:0;z-index:1;background:#0a1926;padding:20px 24px 18px;border-bottom:1px solid var(--line)}
+.semantic-close{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;padding:6px 0 18px;color:var(--muted);font-size:11px}
+.semantic-close span{font-size:22px;line-height:1}
+.semantic-head .eyebrow{margin:10px 0 12px;font-size:8px}
+.semantic-head h2{font-weight:300;font-size:30px;line-height:1.15;letter-spacing:-.015em;margin:0;max-width:330px;text-wrap:balance}
+.semantic-head h2:focus-visible{outline:2px solid var(--cyan);outline-offset:6px}
+.semantic-body{padding:0 24px 24px}
+.semantic-depths{display:flex;gap:12px;border-bottom:1px solid var(--line);margin-bottom:24px;padding:15px 0}
+.semantic-depths button{position:relative;padding:7px 2px;color:var(--muted);font-size:12px}
+.semantic-depths button[aria-pressed=true]{color:var(--gold)}
+.semantic-depths button[aria-pressed=true]::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--gold)}
+#semantic-content h3{font-weight:400;font-size:19px;line-height:1.35;margin:0 0 16px;text-wrap:balance}
+#semantic-content p{color:#bac9d1;margin:0 0 16px}
+.semantic-context{margin-top:26px;padding-top:19px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.semantic-context p{margin:0 0 12px}
+.semantic-context .semantic-label{color:var(--gold);font-size:8px;letter-spacing:.1em;line-height:1.6}
+.semantic-knowledge{padding-top:6px}
+.semantic-evidence{margin:24px 0;font-size:12px}
+.semantic-evidence dt{font-size:9px;color:var(--cyan);margin-top:15px;letter-spacing:.06em}
+.semantic-evidence dd{margin:3px 0 0;color:var(--paper)}
+.semantic-sources{list-style:none;padding:0;margin:0}
+.semantic-sources li{padding:16px 0;border-top:1px solid var(--line)}
+.semantic-sources a{color:var(--gold);text-decoration:none;text-underline-offset:4px;font-size:13px}
+.semantic-sources a:hover{text-decoration:underline}
+.semantic-sources li p{font-size:11px;line-height:1.6;margin:8px 0 0!important}
+#semantic-content .semantic-revision{font-size:10px;color:var(--muted);margin-top:18px}
+.silent .semantic-rail{visibility:hidden}
+@media(min-width:1100px){
+  :root{--semantic-rail-width:clamp(320px,27vw,390px)}
+  .semantic-rail{position:fixed;right:var(--pad);top:116px;bottom:24px;width:var(--semantic-rail-width);overflow-y:auto;z-index:7;scrollbar-gutter:stable}
+  .semantic-open #experience{width:calc(100% - var(--semantic-rail-width) - var(--pad))}
+  .semantic-open header,.semantic-open footer{right:calc(var(--semantic-rail-width) + var(--pad) * 2)}
+  .semantic-open .intro{width:330px}
+  .semantic-open h1{font-size:36px}
+}
+@media(max-width:1099px){
+  body.semantic-open{overflow-y:auto}
+  .semantic-rail{position:relative;margin:0 var(--pad) var(--pad);max-width:720px}
+  .semantic-head{position:relative}
+}
+@media(max-width:600px){
+  .semantic-entry{margin-top:10px;font-size:11px;padding:7px 0}
+  .semantic-head{padding:18px 20px}
+  .semantic-head h2{font-size:28px}
+  .semantic-body{padding:0 20px 22px}
+  .semantic-depths{gap:8px}
+  .semantic-depths button{font-size:11px}
+}
+@media(max-height:700px) and (min-width:1100px){
+  .semantic-rail{top:98px;bottom:15px}
+  .semantic-head h2{font-size:25px}
+}

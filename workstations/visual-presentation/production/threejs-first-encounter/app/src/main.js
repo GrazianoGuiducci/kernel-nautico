@@ -1,6 +1,7 @@
 import { createWorld } from './scene/world.js';
 import { createTimeline, DURATION, actTime, smooth, clamp } from './core/timeline.js';
 import { RETURN_EXAMPLE } from './data/story.js';
+import { createReturnDoorway } from './ui/return-doorway.js';
 
 const $=id=>document.getElementById(id), params=new URLSearchParams(location.search);
 const preference=matchMedia('(prefers-reduced-motion: reduce)');
@@ -16,16 +17,18 @@ const reviewer=document.createElementNS(svgNS,'g');reviewer.id='review-person';
 reviewer.innerHTML='<circle cx="0" cy="-3" r="2"/><path d="M-4 5Q-4 0 0 0Q4 0 4 5"/>';
 $('relation').appendChild(reviewer);
 function invalidate(){if(!pending){pending=true;requestAnimationFrame(tick);}}
+const doorway=createReturnDoorway({onChange(open){if(open)timeline.pause();previous=0;invalidate();}});
 function closeInspection(){inspection=false;document.body.classList.remove('inspection');$('inspect').setAttribute('aria-pressed','false');world?.setInspect(false);}
-function selectAct(id){closeInspection();timeline.seek(actTime(id,id==='RETURN'?.90:.68));invalidate();}
+function selectAct(id){doorway.close({restoreFocus:false});closeInspection();timeline.seek(actTime(id,id==='RETURN'?.90:.68));invalidate();}
 function drawRelation(frame){
-  const w=innerWidth,h=innerHeight,mobile=w<600;
+  const bounds=$('experience').getBoundingClientRect();
+  const w=bounds.width,h=bounds.height,mobile=w<600;
   // Both carriers project a real visible anchor. A fallback must not detach the
   // relation from its source by substituting a viewport percentage.
   const fallbackAnchor = fallback ? $('fallback').querySelector('circle').getBoundingClientRect() : null;
   const point = world ? world.projectAnchor() : {
-    x: fallbackAnchor.x + fallbackAnchor.width / 2,
-    y: fallbackAnchor.y + fallbackAnchor.height / 2, visible: true
+    x: fallbackAnchor.x + fallbackAnchor.width / 2 - bounds.x,
+    y: fallbackAnchor.y + fallbackAnchor.height / 2 - bounds.y, visible: true
   };
   const note=$('design-note');
   const isReturn=frame.index===3, p=frame.progress;
@@ -35,7 +38,7 @@ function drawRelation(frame){
   $('note-title').textContent=isReturn?'Verificare l’accessibilità nel prossimo progetto.':'L’accesso entra nel progetto.';
   $('note-status').textContent=isReturn?'Proposta da valutare, non applicazione automatica.':'Uno schema, non dati ingegneristici.';
   const circle=$('access-diagram').querySelector('circle').getBoundingClientRect();
-  const destination={x:circle.x+circle.width/2,y:circle.y+circle.height/2};
+  const destination={x:circle.x+circle.width/2-bounds.x,y:circle.y+circle.height/2-bounds.y};
   relationEndpoints={source:point,destination};
   const review={x:destination.x+(point.x-destination.x)*.52,y:Math.min(point.y,destination.y)-(mobile?42:45)};
   const curve=`M${point.x},${point.y} Q${point.x-30},${review.y} ${review.x},${review.y} T${destination.x},${destination.y}`;
@@ -65,6 +68,7 @@ function drawRelation(frame){
   witness.style.visibility=inspection?'hidden':'';
 }
 function updateUI(frame){
+  doorway.update(frame.currentAct==='RETURN'&&!inspection);
   if(lastAct!==frame.currentAct){lastAct=frame.currentAct;
     $('act-title').textContent=frame.act.title;$('act-text').textContent=frame.act.text;$('act-number').textContent=frame.act.number;
     $('live-status').textContent=`${frame.currentAct}. ${frame.act.title} ${frame.act.text}`;
@@ -85,13 +89,13 @@ function tick(now){pending=false;const start=performance.now();
   lastFrameMS=performance.now()-start;
   if(ready&&timeline.playing){renderSamples.push({act:frame.currentAct,frameMS:lastFrameMS,intervalMS:actualInterval});if(renderSamples.length>600)renderSamples.shift();invalidate();}
 }
-$('play').onclick=()=>{closeInspection();timeline.playing?timeline.pause():timeline.play();previous=0;invalidate();};
-$('replay').onclick=()=>{closeInspection();timeline.replay();if(preference.matches)timeline.seek(actTime('FORM'));previous=0;invalidate();};
+$('play').onclick=()=>{doorway.close({restoreFocus:false});closeInspection();timeline.playing?timeline.pause():timeline.play();previous=0;invalidate();};
+$('replay').onclick=()=>{doorway.close({restoreFocus:false});closeInspection();timeline.replay();if(preference.matches)timeline.seek(actTime('FORM'));previous=0;invalidate();};
 for(const b of phaseButtons)b.onclick=()=>selectAct(b.dataset.act);
-$('timeline').oninput=e=>{closeInspection();timeline.seek(Number(e.target.value));invalidate();};
-$('inspect').onclick=()=>{if(!world)return;timeline.pause();inspection=!inspection;
+$('timeline').oninput=e=>{doorway.close({restoreFocus:false});closeInspection();timeline.seek(Number(e.target.value));invalidate();};
+$('inspect').onclick=()=>{if(!world)return;doorway.close({restoreFocus:false});timeline.pause();inspection=!inspection;
   document.body.classList.toggle('inspection',inspection);$('inspect').setAttribute('aria-pressed',String(inspection));world.setInspect(inspection);invalidate();};
-$('about').onclick=()=>{timeline.pause();$('details').showModal();invalidate();};
+$('about').onclick=()=>{doorway.close({restoreFocus:false});timeline.pause();$('details').showModal();invalidate();};
 $('close-details').onclick=()=>$('details').close();
 $('details').addEventListener('close',()=>$('about').focus());
 preference.addEventListener('change',e=>{timeline.setReduced(e.matches);invalidate();});
@@ -113,11 +117,11 @@ if(preference.matches||fallback||params.has('test'))timeline.seek(actTime('FORM'
 invalidate();
 // Read-only evidence and deterministic presentation controls, exposed only in test mode.
 if(params.has('test'))window.__KN_DEBUG__={
-  get ready(){return ready;},seekAct(id,p=.68){closeInspection();timeline.seek(actTime(id,p));invalidate();},
-  seek(t){closeInspection();timeline.seek(t);invalidate();},
+  get ready(){return ready;},seekAct(id,p=.68){doorway.close({restoreFocus:false});closeInspection();timeline.seek(actTime(id,p));invalidate();},
+  seek(t){doorway.close({restoreFocus:false});closeInspection();timeline.seek(t);invalidate();},
   silent(value){document.body.classList.toggle('silent',Boolean(value));invalidate();},
   snapshot(){return {ready,fallback,playing:timeline.playing,reducedMotion:preference.matches,
     currentAct:timeline.frame.currentAct,seconds:timeline.seconds,returnStage,relationEndpoints,
-    returnExample:RETURN_EXAMPLE,...world?.snapshot(),frameMS:lastFrameMS,
+    returnExample:RETURN_EXAMPLE,doorway:doorway.snapshot(),...world?.snapshot(),frameMS:lastFrameMS,
     performanceSamples:renderSamples,network:performance.getEntriesByType('resource').map(r=>({name:r.name,bytes:r.transferSize,duration:r.duration}))};}
 };

@@ -31,7 +31,15 @@ npm start
 
 Guided autoplay, pause, replay, phase selection and a time scrubber. Inspection pauses the narrative and enables bounded orbit. Reduced motion disables autoplay. An unavailable/unverified model or missing WebGL produces an explicit static alternative.
 
-`?test=1` exposes deterministic evidence controls under `window.__KN_DEBUG__`. `?static=1` exercises the static alternative. No external requests, telemetry or AI service calls occur at runtime. “Fonti e limiti” contains visible authorship and reality boundaries.
+`?test=1` exposes deterministic evidence controls under `window.__KN_DEBUG__`. `?static=1` exercises the static alternative. The presentation and its semantic depths load locally, without telemetry or AI service calls. External sources open only when a person follows a source link. “Fonti e limiti” contains visible authorship and reality boundaries.
+
+## RETURN: first semantic access
+
+In RETURN, “Comprendi RETURN” opens a non-modal region with meaning, mechanism and source depths. The invoking time is held; closing returns focus and scroll to the opener and keeps the presentation paused. Selecting a phase, scrubbing, replaying, resuming, inspecting the yacht or opening “Fonti e limiti” closes that region and follows the selected command. The entry is available in the guided RETURN scene, including static and reduced-motion modes.
+
+Wide viewports reserve scene space beside the region; viewports below 1100px put it in normal flow below the scene. The source depth distinguishes Lifecycle Return Qualification v0.2 (`exercised`, owner-native repository/reentry scope) from the invented stern-access example (`illustrative_not_observed`). Source links identify the closed base `e35403b`. The semantic data is independent of the renderer in `src/data/semantic.js` and reuses the existing illustrative example.
+
+This candidate's execution return is `../RETURN_DOORWAY_EXECUTION_RETURN.md`. The prior `../EXECUTION_RETURN.md` retains the closed first-encounter evidence; that proof is not attributed to this changed candidate.
 
 ```sh
 # Additional tooling, used only for browser evidence:
