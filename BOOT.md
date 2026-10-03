@@ -1,9 +1,10 @@
 # Kernel Nautico — Boot
 
 ~~~text
-version: 0.1.5
+version: 0.1.6
 formed: 2026-10-02
-status: owner_native_birth
+updated: 2026-10-03
+status: owner_native_branch_reentry
 kernel: Kernel Nautico
 domain: nautical / shipyard / yacht
 first_pressure_field: Pershing / Ferretti
@@ -17,7 +18,9 @@ external_effect_authorized_by_boot: false
 Boot reconstructs enough of the living nautical field for a fresh receiver to
 continue without rebuilding the creator conversation.
 
-Boot does not execute the stored next movement automatically.
+Boot does not execute the stored next movement automatically. The current user
+request selects the movement; CURRENT distinguishes completed work from open
+work and merely reachable possibilities.
 
 ## Entry
 
@@ -54,12 +57,9 @@ Read in this order only to the depth material to the current movement:
 9. LINEAGE.md
    migration/genealogy only when source history changes the movement
 
-10. workstations/visual-presentation/
-   only when visual/presentation work becomes material
-
-11. workstations/visual-presentation/production/threejs-first-encounter/
-   current selected execution field; new GPT Pro receiver must enter through
-   GPT_PRO_BOOTSTRAP.md before coding
+10. workstations/visual-presentation/CURRENT.md
+   when visual/presentation or semantic-focus/receiver work is selected;
+   follow its current production-state/receipt route, not a historical launch
 ~~~
 
 Do not preload everything.
@@ -130,43 +130,28 @@ pass N
 
 No reusable difference -> no forced mutation.
 
-## Current movement
+## Current movement and receiver entry
 
-Continue from CURRENT.md.
+Continue from CURRENT.md on the explicitly selected branch. Completed proofs
+stay completed. A changed candidate needs its own evidence; a passing historical
+run does not certify a successor or another receiver.
 
-I2 is closed at the owner-native repository/reentry-function level. Do not
-replay Ferretti or Wheelyboat merely to accumulate proof.
+For ChatGPT/GPT Pro, current host-kernel reentry and this domain Boot remain
+distinct. The task-local GPT_PRO_BOOTSTRAP.md retains that method and the
+owner-native learning/effect boundaries. Its first-encounter focus and older
+observed heads are genealogy, not automatic authority over a new task.
 
-The operator has now selected an **internal visual/product-presentation
-movement** before external encounter:
+On `work/semantic-focus-field-20261003`, the real-receiver exercise is now
+complete. Use the production CURRENT and REAL_AI_RECEIVER_EXECUTION_RETURN
+for its exact runtime, request/inference/replay distinction and transport
+limitations. Do not rerun an old launch merely because this Boot reaches it.
 
-~~~text
-new GPT Pro receiver
--> current tm7 / ChatGPT kernel reentry
--> Kernel Nautico BOOT / CURRENT
--> Three.js first-encounter execution field
--> one persistent yacht
--> FORM -> BUILD -> LIVE -> RETURN
--> perceptual/cognitive continuity proof
--> reusable learning returned to the correct owner(s)
-~~~
+I2 remains closed at the owner-native repository/reentry-function level;
+independent behavioral evidence and a real-company I3 are separate claims.
+R-01 remains a possible carrier of V-01, not selected architecture.
 
-Current execution entry:
-
-`workstations/visual-presentation/production/threejs-first-encounter/GPT_PRO_BOOTSTRAP.md`
-
-Then:
-
-`workstations/visual-presentation/production/threejs-first-encounter/GPT_PRO_EXECUTION_PROMPT.md`
-
-This movement does **not** claim I3. It creates a strong inspectable public
-encounter artifact that may later support Business/adoption or a real company
-conversation.
-
-R-01 remains a possible bounded carrier of V-01, not selected architecture.
-
-The current receiver may evolve internal owner-native methods/competences on
-dedicated branches when real execution exposes reusable learning. Source
+Internal owner-native learning can return on dedicated branches when the
+operator-selected movement and actual reusable difference require it. Source
 mutation, exercise and assimilation remain distinct.
 
 ## Effect boundary
@@ -176,4 +161,5 @@ runtime installation, commercial commitment, licensing commitment, repository
 release/tag, spend or autonomous external action.
 
 Ordinary internal understanding and owner-native repository formation may
-continue inside the selected movement.
+continue inside the selected movement. Restoring a completed state does not
+select its next effect.

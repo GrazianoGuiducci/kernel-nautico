@@ -1,37 +1,49 @@
-# Semantic Focus — candidate reentry
+# Real receiver — candidate reentry
 
-Date: 2026-10-03
+Updated: 2026-10-03
 Status: REVIEWABLE_CANDIDATE / STOP_CONDITION_REACHED
 Branch: `work/semantic-focus-field-20261003`
-Runtime: `1634de48c99391fbb9b8ae10b019a130d1a39187`
+Latest exercised runtime: `8c36f1d842d52a830d474f93ea2551399cfbd7cd`
+Task: `NEXT_MOVEMENT_REAL_AI_RECEIVER.md` — completed, not a pending launch.
 
-Read `SEMANTIC_FOCUS_EXECUTION_RETURN.md` for exact evidence and boundaries;
-`SEMANTIC_FOCUS_CONTRACT.md` describes use and the local receiver API.
+## Start here after interruption
 
-The four lifecycle addresses and existing stern-access anchor now resolve a
-shared read-only field across pointer, emulated touch, text and a simulated
-voice-transcript path. Source documents are linked at pinned revisions, not
-live-loaded. There is no LLM, microphone or operational integration.
+Read `REAL_AI_RECEIVER_EXECUTION_RETURN.md` for exact results and boundaries;
+then `app/src/receiver/HANDOFF.md` when continuing receiver work.
+`SEMANTIC_FOCUS_CONTRACT.md` remains the underlying focus contract.
 
-The predecessor `EXECUTION_RETURN.md` remains unchanged history of the first
-encounter at `e35403b...`; its runtime is `61a9b01...`. Its original branch and
-main were not moved. The separate earlier Design learning branch is not merged
-by this continuation.
+One visual context can now be exported as a question, consumed by a real
+source-reading assistant, and returned as a validated answer with optional
+explicit navigation. This ChatGPT receiver exercised the stern-access/LIVE and
+RETURN cases. Browser replay of the actual recorded answers tested their import
+and focus return. Transport is manual/file-mediated, not a live browser API.
 
-The semantic-focus exercise is closed at runtime `1634de48...`.
+Sources in the page remain pinned links. Actual source reads belong to the
+recorded receiver result; the page does not synchronize documentation or
+independently authenticate imported source claims.
 
-Next operator-selected movement is prepared but **not started**:
+## Preserved stages
 
-`GPT_PRO_NEXT_LAUNCH.md`
--> `NEXT_MOVEMENT_REAL_AI_RECEIVER.md`
+- First encounter: branch `work/visual-threejs-first-encounter-20261002`, head
+  `e35403bcc9213a6805a03c77ca9889adbef4ecc4`; runtime `61a9b01...`;
+  `EXECUTION_RETURN.md` unchanged.
+- Semantic focus: runtime `1634de48c99391fbb9b8ae10b019a130d1a39187`;
+  `SEMANTIC_FOCUS_EXECUTION_RETURN.md` unchanged.
+- Real receiver: capture `8a088f73...`, final exercised source `8c36f1d8...`;
+  60 unit and 152 browser checks passed. Actual inference and recorded browser
+  replay remain separate observations.
 
-The next proof uses GPT Pro itself as the first real AI receiver of the focus
-field: focus-derived envelope -> live owner-native source resolution -> situated
-answer -> optional existing semantic focus target returned as navigation only.
+The prior candidate, main and the earlier separate Design learning branch are
+not merged or rewritten. A later source-only state commit does not alter the
+executed runtime.
 
-Maps, real speech, authentication, CAD/QMS, command execution, provider/API
-infrastructure, company data and persistent sub-kernel formation remain outside
-that next movement unless its consequence makes one materially necessary.
+## Current boundary
 
-A subsequent implementation must produce proof for its changed identity rather
-than inherit closure from either candidate.
+No LLM API service, microphone, real route planning, login/authorization backend,
+CAD/QMS/company data, distributed concurrency or operational product mutation.
+A session-local focus is not a persistent kernel per element. Touch/voice/maps
+remain alternative input possibilities of the same semantic address relation,
+not reasons to build the whole platform now.
+
+Stop here. A new user-selected movement starts from this resultant. Do not
+re-execute GPT_PRO_NEXT_LAUNCH or the older first-encounter packet automatically.
