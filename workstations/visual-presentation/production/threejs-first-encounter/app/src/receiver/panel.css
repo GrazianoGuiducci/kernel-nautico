@@ -1,0 +1,9 @@
+#receiver-panel p{line-height:1.5;overflow-wrap:anywhere}
+#receiver-panel label{display:block;margin:12px 0 6px}
+#receiver-question{display:block;width:100%;resize:vertical;min-height:64px;background:#07121d;color:var(--paper);border:1px solid #607986;padding:10px;font:inherit}
+#receiver-panel button{min-height:44px;border:1px solid #607986;background:#18313f;color:var(--paper);padding:9px 12px;margin:8px 0;cursor:pointer}
+#receiver-panel button:disabled{opacity:.6;cursor:default}
+#receiver-import{max-width:100%;min-height:44px;color:var(--paper)}
+#receiver-status,#receiver-origin{font-size:12px;color:var(--gold)}
+#receiver-answer-text{white-space:pre-line}
+#receiver-panel ul{padding-left:18px}
