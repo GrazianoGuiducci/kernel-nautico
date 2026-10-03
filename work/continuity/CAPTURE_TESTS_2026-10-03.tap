@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: capture preserves original source wording and leaves input untouched
+ok 1 - capture preserves original source wording and leaves input untouched
+  ---
+  duration_ms: 3.000629
+  type: 'test'
+  ...
+# Subtest: illustration and documented competence keep their own evidence states
+ok 2 - illustration and documented competence keep their own evidence states
+  ---
+  duration_ms: 0.255194
+  type: 'test'
+  ...
+# Subtest: matching recorded identities do not claim that an asset was loaded
+ok 3 - matching recorded identities do not claim that an asset was loaded
+  ---
+  duration_ms: 0.249831
+  type: 'test'
+  ...
+# Subtest: same semantic name does not remap marks to replacement geometry
+ok 4 - same semantic name does not remap marks to replacement geometry
+  ---
+  duration_ms: 0.386904
+  type: 'test'
+  ...
+# Subtest: camera or view change requires an explicit new relation
+ok 5 - camera or view change requires an explicit new relation
+  ---
+  duration_ms: 0.182229
+  type: 'test'
+  ...
+# Subtest: normalized drawing coordinates preserve the original frame relation
+ok 6 - normalized drawing coordinates preserve the original frame relation
+  ---
+  duration_ms: 0.334697
+  type: 'test'
+  ...
+# Subtest: handoff separates source, operator request, and AI interpretation
+ok 7 - handoff separates source, operator request, and AI interpretation
+  ---
+  duration_ms: 0.301147
+  type: 'test'
+  ...
+# Subtest: export and import preserve the whole capture, including future contribution kinds
+ok 8 - export and import preserve the whole capture, including future contribution kinds
+  ---
+  duration_ms: 0.255621
+  type: 'test'
+  ...
+# Subtest: unknown schema version is not silently rewritten
+ok 9 - unknown schema version is not silently rewritten
+  ---
+  duration_ms: 0.385052
+  type: 'test'
+  ...
+# Subtest: ambiguous contribution identities and non-finite coordinates are rejected
+ok 10 - ambiguous contribution identities and non-finite coordinates are rejected
+  ---
+  duration_ms: 0.584778
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 79.50738

@@ -1,0 +1,26 @@
+{
+  "schema": "kn.local-proof.v0.1",
+  "date": "2026-10-03",
+  "host": "ChatGPT temporary container",
+  "node": "v22.16.0",
+  "command": "node --test workstations/visual-presentation/production/design-capture/capture.test.mjs",
+  "unit_tests": {
+    "pass": 10,
+    "fail": 0
+  },
+  "files": {
+    "capture.mjs": "90db1d0c9895bbdf48ddec5ea8cc392c6c40093f39d7b7701e09e8756fc95e02",
+    "capture.test.mjs": "c7f51012fca247b343bfb704ea67e5e1457cf24c727d0b7b6bd06381c416fe06"
+  },
+  "proof_scope": "Pure data capture and local handoff behavior on an illustrative fixture.",
+  "not_exercised": [
+    "browser canvas",
+    "image capture",
+    "asset generation",
+    "2D-to-3D correspondence",
+    "coder execution",
+    "enterprise or user adoption"
+  ],
+  "predecessor_app_unchanged": true,
+  "test_log": "work/continuity/CAPTURE_TESTS_2026-10-03.tap"
+}
