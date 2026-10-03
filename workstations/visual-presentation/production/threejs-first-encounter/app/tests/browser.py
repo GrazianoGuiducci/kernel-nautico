@@ -25,8 +25,12 @@ def exercise_doorway(page,label):
       const entry=document.getElementById('understand-return').getBoundingClientRect();
       const note=document.getElementById('design-note').getBoundingClientRect();
       const intersects=entry.left<note.right && entry.right>note.left && entry.top<note.bottom && entry.bottom>note.top;
-      return {intersects,inViewport:entry.left>=0 && entry.right<=innerWidth+1 && entry.top>=0 && entry.bottom<=innerHeight+1};
+      return {intersects,inViewport:entry.left>=0 && entry.right<=innerWidth+1 && entry.top>=0 && entry.bottom<=innerHeight+1,
+        entry:{left:entry.left,right:entry.right,top:entry.top,bottom:entry.bottom},
+        note:{left:note.left,right:note.right,top:note.top,bottom:note.bottom}};
     }''')
+    if entry_geometry['intersects'] or not entry_geometry['inViewport']:
+        page.screenshot(path=str(OUT/(label+'_ENTRY_COLLISION.png')))
     check(label+'_entry_clear_of_illustrative_note',not entry_geometry['intersects'] and entry_geometry['inViewport'],entry_geometry)
     page.locator('#understand-return').click();wait_frame(page)
     opened=snap(page)

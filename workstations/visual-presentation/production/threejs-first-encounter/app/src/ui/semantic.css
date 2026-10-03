@@ -53,6 +53,10 @@
   .semantic-rail{top:98px;bottom:15px}
   .semantic-head h2{font-size:25px}
 }
+@media(max-height:700px) and (min-width:601px){
+  .semantic-entry{margin-top:4px;padding:4px 0;font-size:11px}
+  .semantic-open h1{font-size:34px}
+}
 @media(max-height:650px) and (max-width:600px){
   /* Keep the new action below the existing diagram on short mobile scenes. */
   .semantic-entry{position:absolute;top:calc(100svh - 264px);left:0;margin:0}

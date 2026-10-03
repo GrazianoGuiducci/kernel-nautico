@@ -93,6 +93,12 @@ diagram on short mobile scenes, and an independent DOM-bounds check rejects
 that overlap. This changes the runtime identity: proof of the first runtime
 cannot close the corrected candidate.
 
+The independent CI at `7742720` then rejected the new clearance check on the
+1440×600 desktop frame, although the local browser had shown clearance. The
+short desktop layout now leaves more room between the entry and the diagram;
+the proof records both actual element bounds and captures any collision.
+Run `37123872236` remains a failed, qualified observation, not a passing receipt.
+
 ## Owner learning / limits / next movement
 
 Kernel Nautico owns this projection and its evidence. The domain competence is
