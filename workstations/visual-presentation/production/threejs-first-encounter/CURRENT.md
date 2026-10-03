@@ -1,23 +1,24 @@
-# First Encounter — candidate reentry
+# Semantic Focus — candidate reentry
 
-Date: 2026-10-02
+Date: 2026-10-03
 Status: REVIEWABLE_CANDIDATE / STOP_CONDITION_REACHED
-Branch: `work/visual-threejs-first-encounter-20261002`
-Runtime: `61a9b01ccc811e5ad5b3c1b0c7246b24fbb61b5c`
+Branch: `work/semantic-focus-field-20261003`
+Runtime: `1634de48c99391fbb9b8ae10b019a130d1a39187`
 
-Read `EXECUTION_RETURN.md` for exact evidence, limits and learning return;
-read `ASSET_PROVENANCE.md` before replacing or distributing the carrier.
-Run instructions are in the receipt and `app/README.md`.
+Read `SEMANTIC_FOCUS_EXECUTION_RETURN.md` for exact evidence and boundaries;
+`SEMANTIC_FOCUS_CONTRACT.md` describes use and the local receiver API.
 
-The earlier workstation readiness state is genealogy. This branch now contains
-a runnable four-act candidate and scoped evidence. No canonical main or root
-kernel maturity was promoted. The final documentation does not change the
-runtime pinned above.
+The four lifecycle addresses and existing stern-access anchor now resolve a
+shared read-only field across pointer, emulated touch, text and a simulated
+voice-transcript path. Source documents are linked at pinned revisions, not
+live-loaded. There is no LLM, microphone or operational integration.
 
-Design learning is on its separate, unmerged branch
-`GrazianoGuiducci/d-nd-ux-ai-seed:work/kn-first-encounter-anchor-parity-20261002`
-at `b874e1c1f2c988114efdeca4b4ebd2f30999b5e0`.
+The predecessor `EXECUTION_RETURN.md` remains unchanged history of the first
+encounter at `e35403b...`; its runtime is `61a9b01...`. Its original branch and
+main were not moved. The separate earlier Design learning branch is not merged
+by this continuation.
 
-Stop here for operator inspection. External comprehension is not tested.
-Operational Spatial UI, CAD/PLM, final superyacht geometry, public deployment
-and company contact remain outside this movement.
+Stop here. Maps, real speech, authentication, CAD/QMS, command execution,
+company data and persistent sub-kernel formation remain unselected horizons.
+A subsequent change requires proof for its changed identity, not inherited
+closure from either candidate.
