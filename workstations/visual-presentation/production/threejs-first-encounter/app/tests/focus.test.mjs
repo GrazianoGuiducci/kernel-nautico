@@ -28,6 +28,8 @@ test('resolver uses current timeline state, preserves spatial identity when stat
  assert.equal(next.field.address.semantic_id,ANCHOR_ID);
  assert.equal(next.field.state.presentation_act,'LIVE');assert.equal(next.event.modality,'timeline');
  assert.strictEqual(next.field.state.current_resultant,ACTS[2].text);
+ assert.equal(next.field.knowledge.explanation,ACTS[2].text);
+ assert.notEqual(next.field.knowledge.explanation,RETURN_EXAMPLE.observation);
 });
 test('phase focus follows presentation, not a duplicated phase store',()=>{
  const {c,state}=fixture('FORM');state.act='BUILD';c.sync();

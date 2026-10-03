@@ -80,7 +80,7 @@ export function resolveField(address, state) {
       geometry: state.fallback ? 'schematic_alternative' : 'licensed_carrier',
       spatial_anchor: target.spatial_anchor, current_resultant: act.text },
     knowledge: {
-      explanation: isAnchor ? RETURN_EXAMPLE.observation : act.text,
+      explanation: isAnchor && act.id === 'RETURN' ? RETURN_EXAMPLE.observation : act.text,
       example: isAnchor || act.id === 'RETURN' ? RETURN_EXAMPLE : null,
       sources: target.sources,
       competences: isAnchor || act.id === 'RETURN' ? [{

@@ -8,6 +8,7 @@
 #focus-close{font-size:12px;min-height:44px;padding:0 6px;white-space:nowrap}
 #focus-title{font-size:27px;font-weight:300;line-height:1.2;margin:15px 0 8px}
 #focus-position{font-size:10px;color:var(--muted);overflow-wrap:anywhere}
+#focus-reality{font-size:11px;color:var(--gold);line-height:1.5}
 #focus-explanation{margin:15px 0 22px}
 #focus-command label{display:block;color:var(--paper)}
 .focus-input-row{display:flex;gap:8px;margin:7px 0 12px}

@@ -21,7 +21,7 @@ export function mountFocus({ getState, seekAct, pause, invalidate, projectAnchor
   panel.innerHTML = `
     <div class="focus-head"><p>FOCUS CONDIVISO · SOLA LETTURA</p><button id="focus-close" aria-label="Chiudi il contesto">Chiudi ×</button></div>
     <h2 id="focus-title" tabindex="-1"></h2>
-    <p id="focus-position"></p><p id="focus-explanation"></p>
+    <p id="focus-position"></p><p id="focus-reality"></p><p id="focus-explanation"></p>
     <form id="focus-command"><label for="focus-input">Indica dove andare</label>
       <div class="focus-input-row"><input id="focus-input" maxlength="240" autocomplete="off" placeholder="Mostrami RETURN" aria-describedby="focus-hint"><button type="submit">Vai</button></div>
       <label class="focus-voice"><input id="focus-voice" type="checkbox"> Trascrizione vocale simulata</label>
@@ -39,6 +39,9 @@ export function mountFocus({ getState, seekAct, pause, invalidate, projectAnchor
     const snapshot = controller.snapshot(), f = snapshot.field;
     $('focus-title').textContent = f.label;
     $('focus-position').textContent = `${f.address.semantic_id} · ${f.state.presentation_act}`;
+    $('focus-reality').textContent = f.state.geometry === 'schematic_alternative'
+      ? 'Contesto illustrativo · schema alternativo, non dati di bordo.'
+      : 'Contesto illustrativo · non dati di bordo.';
     $('focus-explanation').textContent = f.knowledge.explanation;
     anchor.setAttribute('aria-pressed', String(f.address.semantic_id === ANCHOR_ID));
     toggle.setAttribute('aria-label', `Apri il contesto: ${f.label}`);
