@@ -1,9 +1,11 @@
 # RETURN — first semantic access execution return
 
 Date: 2026-10-03. Acting receiver: Codex/TM9.
-State: candidate implemented / local unit + browser exercise passed / controlled CI pending.
+State: reviewable source candidate / controlled runtime proof passed.
 Branch: `work/visual-return-semantic-doorway-20261003`.
 App: `0.1.0-candidate.3`.
+Proven runtime: `efe2e08188a9f8a8b5545993b073c250f31c727a`.
+Later documentation closure does not replace that execution identity.
 
 ## Selected object and authority
 
@@ -68,7 +70,8 @@ Windows / Node 22.14.0:
 - `npm ci --ignore-scripts --no-audit --no-fund`: one locked runtime dependency;
 - `npm test`: 18/18 passed;
 - `npm run build`: verified carrier, eight vendored Three.js modules;
-- browser test script compiles; controlled browser execution remains pending.
+- browser test script compiles; the controlled execution below supplies the
+  separate committed runtime proof.
 
 The local carrier was recovered from closed artifact `11246715566` after
 verifying archive SHA-256
@@ -99,6 +102,43 @@ short desktop layout now leaves more room between the entry and the diagram;
 the proof records both actual element bounds and captures any collision.
 Run `37123872236` remains a failed, qualified observation, not a passing receipt.
 
+## Controlled evidence — exact runtime
+
+[Run 37124306977](https://github.com/GrazianoGuiducci/kernel-nautico/actions/runs/37124306977)
+completed successfully at `efe2e08188a9f8a8b5545993b073c250f31c727a`.
+Clean acquisition/install, unit tests, build, browser exercise and artifact
+packaging all passed. Node 22.23.3 / Playwright 1.57.0 / Chromium 143.0.7499.4
+ran on Linux with software WebGL.
+
+- 18/18 unit tests; 195/195 browser checks, including the predecessor cases;
+- desktop 1440×900, low desktop 1440×600, tablet 1024×768, mobile 390×844,
+  short mobile 320×568, reduced motion, desktop static and mobile static;
+- actual DOM region/depth/state/source checks, invoking time, focus and scroll
+  recovery, public commands and rapid command convergence;
+- eight entry/illustration clearance checks passed after the two corrections;
+- no console errors and no implicit external requests in the exercise;
+- the same yacht root and continuity object persisted through FORM/BUILD/LIVE/
+  RETURN in the WebGL page; static checks exercised the alternative carrier.
+
+Artifact `11274512299` (`kn-threejs-proof`) contains executed sources, offline
+runtime, logs, JSON evidence and 34 screenshots. Its 22,715,292-byte archive has
+SHA-256 `d161c09a8ca505013f03e3c982102b0e1854183873f7ed3ac3bc24b7f2b714e5`.
+Remote retention expires at `2026-10-10T12:57:03Z`.
+
+Codex independently downloaded that archive, verified its digest and all 89
+manifest entries, confirmed the recorded HEAD, and compared 21 source/script/
+test/package blobs directly with the executed Git commit. The acquired carrier
+again matched the 4,134,868-byte model and SHA-256 recorded above. Visual readback
+of the low desktop, short mobile and mobile static source screenshots confirmed
+the corrected entry clearance and readable semantic region. The small animated
+scene retains its existing crowded yacht/diagram composition; clearance of the
+new entry does not claim to solve that visual grammar.
+
+The first passing run `37123383994` at `77f761c` describes the earlier layout.
+It was superseded by the subsequent visual failure and cannot close this runtime.
+The failed run and both corrections remain causal evidence. Documentation-only
+closure changes CURRENT and this return; it does not change the proven runtime.
+
 ## Owner learning / limits / next movement
 
 Kernel Nautico owns this projection and its evidence. The domain competence is
@@ -109,10 +149,11 @@ is the artifact's implementation of actual-anchor continuity. Semantic–Causal
 Incarnation remains `no_change`; this is a situated example of its existing
 receiver-relative relation, not a universal projection compiler.
 
-The first independent controlled browser run must qualify the runtime commit,
-screenshots, console/network result and known limitations. Then update this
-return and CURRENT with the exact evidence identity. A later material failure
-can change the implementation or its owning competence.
+The selected implementation and its controlled proof are complete as a review
+candidate. This return and CURRENT reach the exact runtime evidence. The next
+movement starts from review of this changed public encounter: a receiver
+consequence, new operator selection or material failure may change the artifact
+or its owning competence. Source availability is not receiver assimilation.
 
 Still unknown: human first-encounter understanding, later non-identical kernel
 reuse, enterprise adoption, and whether an actual receiver consequence warrants

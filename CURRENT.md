@@ -40,12 +40,16 @@ Qualification v0.2 without transferring the competence's exercise state to the
 invented example. Meaning, mechanism and source depths preserve scene/time,
 focus recovery, exact source identity and explicit source access.
 
-Current result: implementation + 18 local unit checks + local build and Codex
-browser exercise; controlled CI proof pending. The
+Current result: reviewable source candidate. Runtime
+`efe2e08188a9f8a8b5545993b073c250f31c727a` passed clean build, 18 unit tests and
+195 browser checks in
+[CI run 37124306977](https://github.com/GrazianoGuiducci/kernel-nautico/actions/runs/37124306977),
+with no console errors or implicit external requests. The artifact digest,
+source/manifest readback, responsive corrections and visual limits are in the
 [execution return](workstations/visual-presentation/production/threejs-first-encounter/RETURN_DOORWAY_EXECUTION_RETURN.md)
-owns behavior, evidence scope, learning dispositions, limits and continuation.
-The next movement qualifies the new runtime and closes the review candidate.
-I2's existing domain result and its evidence remain distinct.
+which owns behavior, evidence scope, learning dispositions and continuation.
+The next movement reviews the changed encounter; external human comprehension
+is still unverified. I2's existing domain result and evidence remain distinct.
 
 ## Domain continuity — V-01 Causal Product Continuity
 
