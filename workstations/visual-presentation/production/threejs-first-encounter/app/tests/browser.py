@@ -21,6 +21,13 @@ def exercise_doorway(page,label):
     origin_scroll=page.evaluate('scrollY')
     static_shape=page.locator('#fallback svg path').get_attribute('d')
     check(label+'_closed_by_default',not page.locator('#return-doorway').is_visible())
+    entry_geometry=page.evaluate('''() => {
+      const entry=document.getElementById('understand-return').getBoundingClientRect();
+      const note=document.getElementById('design-note').getBoundingClientRect();
+      const intersects=entry.left<note.right && entry.right>note.left && entry.top<note.bottom && entry.bottom>note.top;
+      return {intersects,inViewport:entry.left>=0 && entry.right<=innerWidth+1 && entry.top>=0 && entry.bottom<=innerHeight+1};
+    }''')
+    check(label+'_entry_clear_of_illustrative_note',not entry_geometry['intersects'] and entry_geometry['inViewport'],entry_geometry)
     page.locator('#understand-return').click();wait_frame(page)
     opened=snap(page)
     check(label+'_invoking_time_preserved',opened['seconds']==before['seconds'] and not opened['playing'])

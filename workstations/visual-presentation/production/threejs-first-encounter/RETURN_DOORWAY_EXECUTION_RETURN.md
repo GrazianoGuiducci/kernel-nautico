@@ -77,7 +77,8 @@ Only `dist/models/yacht.glb` was extracted; its 4,134,868 bytes matched
 `ea70c4d14ac31eb90d0dd2aee5a44b2e606ddd71dfd82aed97d82ee195f63d96`.
 This reuses qualified asset bytes, not the closed app's behavioral proof.
 
-Actual Codex in-app browser exercised the local build at 1440×900 and 390×844:
+Actual Codex in-app browser exercised the local build at 1440×900 and 390×844,
+including mobile static source access:
 RETURN time stayed at 44.6 through opening/depth/closing; the accessible region
 focused its title, exposed distinct knowledge/projection states and exact source
 links, and Escape restored `understand-return`. Desktop region and scene had
@@ -85,6 +86,12 @@ separate bounds; mobile placed the region after the scene with no horizontal
 overflow and closing recovered the scene. Visual inspection retained the yacht
 and contextual return illustration. These observations concern this worktree,
 not a committed CI identity or human zero-context comprehension.
+
+The first 320×568 visual observation exposed an entry/diagram collision that
+the taller mobile frame did not contain. The entry is now placed below the
+diagram on short mobile scenes, and an independent DOM-bounds check rejects
+that overlap. This changes the runtime identity: proof of the first runtime
+cannot close the corrected candidate.
 
 ## Owner learning / limits / next movement
 
