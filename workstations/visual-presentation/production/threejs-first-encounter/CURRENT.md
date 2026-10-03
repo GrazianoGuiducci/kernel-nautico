@@ -18,7 +18,20 @@ encounter at `e35403b...`; its runtime is `61a9b01...`. Its original branch and
 main were not moved. The separate earlier Design learning branch is not merged
 by this continuation.
 
-Stop here. Maps, real speech, authentication, CAD/QMS, command execution,
-company data and persistent sub-kernel formation remain unselected horizons.
-A subsequent change requires proof for its changed identity, not inherited
-closure from either candidate.
+The semantic-focus exercise is closed at runtime `1634de48...`.
+
+Next operator-selected movement is prepared but **not started**:
+
+`GPT_PRO_NEXT_LAUNCH.md`
+-> `NEXT_MOVEMENT_REAL_AI_RECEIVER.md`
+
+The next proof uses GPT Pro itself as the first real AI receiver of the focus
+field: focus-derived envelope -> live owner-native source resolution -> situated
+answer -> optional existing semantic focus target returned as navigation only.
+
+Maps, real speech, authentication, CAD/QMS, command execution, provider/API
+infrastructure, company data and persistent sub-kernel formation remain outside
+that next movement unless its consequence makes one materially necessary.
+
+A subsequent implementation must produce proof for its changed identity rather
+than inherit closure from either candidate.
