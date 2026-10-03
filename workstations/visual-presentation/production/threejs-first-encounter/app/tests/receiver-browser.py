@@ -39,7 +39,12 @@ try:
     # Exact original request, explicitly restored in test-only replay after state equality.
     page.evaluate('(r)=>window.__KN_RECEIVER_TEST__.restoreCaptured(r)',captured)
     check(case+'_captured_request_exact',page.evaluate('window.KN_RECEIVER.snapshot().request')==captured)
-    old=focus(page);import_result(page,result)
+    old=focus(page)
+    wrong=dict(result,request_id='wrong-request');import_result(page,wrong)
+    check(case+'_wrong_request_rejected',page.evaluate('window.KN_RECEIVER.snapshot().result') is None and focus(page)==old)
+    forbidden=dict(result,effect_class='execute');import_result(page,forbidden)
+    check(case+'_execution_rejected',page.evaluate('window.KN_RECEIVER.snapshot().result') is None and focus(page)==old)
+    import_result(page,result)
     page.wait_for_function('window.KN_RECEIVER.snapshot().result !== null')
     check(case+'_import_does_not_change_focus',focus(page)==old)
     check(case+'_answer_text_exact',page.locator('#receiver-answer-text').inner_text()==result['answer'])
@@ -49,6 +54,7 @@ try:
      check(case+'_returned_target_accepted',focus(page)['field']['address']['semantic_id']==result['focus_target'])
      check(case+'_no_product_effect',not focus(page)['field']['capabilities']['execute'])
      check(case+'_applied_once',page.evaluate('window.KN_RECEIVER.snapshot().applied'))
+     check(case+'_old_answer_cannot_reapply',page.locator('#receiver-show').is_disabled())
     # Explicitly tested as data-only, never proof of another model call.
     (OUT/f'REPLAY_{case}.json').write_text(json.dumps({'kind':'recorded_exchange_replay_not_new_inference','exchange_sha256':hashlib.sha256(record.read_bytes()).hexdigest(),'state':page.evaluate('window.KN_RECEIVER.snapshot()')},ensure_ascii=False,indent=2))
    page.close()
