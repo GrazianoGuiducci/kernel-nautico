@@ -1,0 +1,101 @@
+/* One work surface beside the existing yacht. The case owns the state; the
+   presentation remains a view and never acquires company authority. */
+#company-toggle{pointer-events:auto;margin-left:auto;margin-right:24px;min-height:40px;padding:9px 15px;border:1px solid var(--gold);color:var(--gold);background:#fff8e4;font-size:16px;line-height:1.4;white-space:nowrap}
+#company-toggle:hover,#company-toggle[aria-expanded=true]{background:var(--gold);color:var(--ink)}
+#company-panel{position:fixed;z-index:7;top:101px;right:24px;bottom:183px;width:min(700px,57vw);padding:25px 28px 28px;overflow:auto;overscroll-behavior:contain;background:#fff8e4;border:1px solid #718f87;color:var(--paper);font-size:16px;line-height:1.6;scrollbar-color:#607c8c #102332;scroll-margin-top:14px}
+.company-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.company-eyebrow{margin:0 0 11px;color:var(--cyan);font-size:14px;line-height:1.6;letter-spacing:.13em}
+#company-title{margin:0;font-weight:300;font-size:29px;line-height:1.18;letter-spacing:-.02em;text-wrap:balance}
+#company-panel p{overflow-wrap:anywhere}
+#company-panel .company-lead{font-size:16px;line-height:1.65;color:#35545c;margin:16px 0 20px}
+#company-panel h3{font-weight:400;font-size:24px;line-height:1.25;margin:7px 0 11px;letter-spacing:-.02em}
+#company-panel h4{font-weight:500;font-size:16px;color:#35545c;margin:20px 0 8px}
+#company-panel button,#company-panel .company-download{min-height:42px;border:1px solid #718f87;border-radius:2px;padding:9px 12px;background:#fff8e4;color:#35545c;font:inherit;font-size:16px;line-height:1.4;cursor:pointer;text-decoration:none}
+#company-panel button:hover,#company-panel .company-download:hover{color:#35545c;border-color:var(--gold);background:#fff8e4}
+#company-panel button:disabled{cursor:not-allowed;border-color:#718f87;background:#fff8e4;color:#35545c}
+#company-panel button.company-primary{background:var(--gold);border-color:var(--gold);color:#14313a;font-weight:600}
+#company-panel button.company-primary:hover{background:#c7ecec;color:#14313a}
+#company-panel button.company-primary:disabled{background:#fff8e4;border-color:#718f87;color:#35545c}
+#company-panel #company-close{border:0;background:none;padding:0;white-space:nowrap;flex-shrink:0;color:#35545c}
+#company-panel .company-link{border:0;background:none;padding:7px 0;color:var(--cyan);text-align:left}
+#company-panel button:focus-visible,#company-panel a:focus-visible,#company-panel input:focus-visible,#company-panel textarea:focus-visible,#company-panel select:focus-visible,#company-panel summary:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+.company-contexts{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:23px;padding-bottom:17px;border-bottom:1px solid var(--line)}
+#company-panel .company-contexts button{font-size:16px;min-height:39px;padding:8px 11px;border-color:#718f87;background:#fff8e4}
+#company-panel .company-contexts button[aria-pressed=true]{background:#fff8e4;border-color:var(--gold);color:#775000;box-shadow:inset 0 -2px 0 var(--gold)}
+.company-tag{color:var(--gold);font-size:14px;letter-spacing:.11em;line-height:1.7}
+#company-panel p.company-tag{margin:0 0 10px}
+#company-panel .company-question{color:#35545c;font-size:18px;line-height:1.55;margin:0 0 11px}
+#company-work{margin:0 0 16px;color:#35545c;font-size:16px}
+.company-actions{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:16px 0 0}
+.company-details{border-top:1px solid var(--line);margin:21px 0 0;padding-top:13px;font-size:16px;color:#35545c}
+.company-details summary{min-height:38px;cursor:pointer;line-height:1.6;color:#35545c;padding:3px 0}
+.company-details[open] summary{color:var(--gold);margin-bottom:10px}
+.company-details a{color:var(--cyan);text-underline-offset:3px;overflow-wrap:anywhere}
+.company-details p{margin:10px 0;line-height:1.7}
+.company-details ul{padding-left:20px;margin:15px 0}
+.company-details li+li{margin-top:9px}
+.company-relations{margin:12px 0}
+.company-relations dt{font-size:14px;letter-spacing:.06em;color:var(--gold);margin-top:15px}
+.company-relations dd{margin:5px 0 0;font-size:16px;line-height:1.65}
+#company-panel .company-hint{color:#35545c;font-size:16px;line-height:1.7;margin:10px 0 16px}
+.company-work-nav{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:13px}
+#company-panel .company-work-nav .company-tag{text-align:right}
+#company-case-form{padding-bottom:24px}
+#company-panel label{display:block;color:#35545c;font-size:16px;line-height:1.5;margin:13px 0 7px}
+#company-panel input,#company-panel textarea,#company-panel select{display:block;width:100%;min-height:42px;border:1px solid #718f87;border-radius:2px;background:#fff8e4;color:var(--paper);padding:10px 12px;font:inherit;font-size:16px;line-height:1.6;scroll-margin-top:20px}
+#company-panel textarea{resize:vertical;min-height:74px}
+#company-panel input::placeholder,#company-panel textarea::placeholder{color:#35545c;opacity:1}
+#company-panel textarea:read-only{background:#fff8e4;border-color:#718f87;color:#35545c}
+#company-panel select{color-scheme:light}
+.company-identity-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.company-definition{margin:18px 0;padding:14px 16px 12px;border:1px solid #718f87;min-width:0}
+.company-definition legend{padding:0 6px;color:#35545c;font-size:14px}
+#company-panel .company-definition label{margin-top:12px}
+#company-panel .company-definition button{margin-top:9px}
+.company-section{border-top:1px solid var(--line);padding:23px 0 25px;scroll-margin-top:20px}
+#company-panel .company-section h3{font-size:22px}
+.company-request-state{font-size:14px;line-height:1.6;color:var(--gold);overflow-wrap:anywhere}
+#company-panel .company-feedback{color:var(--gold);font-size:16px;line-height:1.6;margin:11px 0 0;white-space:pre-wrap}
+.company-feedback:empty{display:none}
+#company-panel .is-error{color:#775000}
+#company-panel textarea.company-json{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:14px;line-height:1.55;max-height:220px;margin:12px 0 14px;white-space:pre;overflow:auto}
+#company-panel #company-result-summary{font-size:16px;line-height:1.75;color:#35545c;white-space:pre-wrap}
+#company-result ul{padding-left:19px;color:#35545c;font-size:16px}
+#company-result li{margin-bottom:13px;white-space:pre-wrap;line-height:1.7;overflow-wrap:anywhere}
+#company-result-sources p{font-size:14px;white-space:pre-wrap}
+#company-panel .company-source-state{font-size:14px;color:#35545c;border-top:1px solid var(--line);margin:25px 0 0;padding-top:15px;line-height:1.65}
+#product-workspace .company-return-from-design{display:block;border:0;background:none;color:var(--cyan);padding:9px 0 0;font-size:14px;text-align:left;margin:6px 0 0}
+.company-open #stage{right:calc(min(700px,57vw) + 48px)}
+.company-open #fallback{right:calc(min(700px,57vw) + 48px);left:6%;top:34%}
+.company-open .intro,.company-open .act-index,.company-open .design-note,.company-open #relation,.company-open #anchor-label,.company-open #review-label,.company-open .scene-boundary{visibility:hidden}
+.company-open .atmosphere{background:linear-gradient(0deg,#fff8e4f5 0%,transparent 40%,transparent 77%,#fff8e480 100%)}
+.company-open #focus-anchor{z-index:4}
+.silent #company-panel,.silent #company-toggle{visibility:hidden}
+@media(min-width:1550px){#company-panel{width:740px}.company-open #stage{right:788px}.company-open #fallback{right:788px}}
+@media(max-width:1060px){#company-panel{right:16px;width:59vw;padding:22px 21px}.company-open #stage{right:calc(59vw + 32px)}.company-open #fallback{right:calc(59vw + 32px)}#company-title{font-size:26px}#company-panel h3{font-size:22px}.company-head{gap:13px}#company-toggle{margin-right:18px}}
+@media(max-width:800px){header .edition{display:none}#company-toggle{margin-right:0}header{gap:16px}}
+@media(max-width:760px),(max-height:640px){
+ body.company-open{overflow:auto;overflow-x:hidden}
+ .company-open #experience{height:275px;min-height:230px}
+ .company-open #stage{inset:0}
+ .company-open header{z-index:5;top:20px;left:22px;right:22px;padding-bottom:14px}
+ .company-open header .edition{display:none}
+ .company-open #fallback{left:12%;right:12%;top:82px;height:175px}
+ .company-open #fallback svg{height:100%;max-height:175px}
+ .company-open #fallback-reason{display:none}
+ .company-open .atmosphere{background:linear-gradient(0deg,#fff8e4 0%,transparent 27%,transparent 62%,#fff8e490 100%)}
+ #company-panel{position:relative;inset:auto;width:auto;margin:0 18px;padding:22px 20px 26px;max-height:none;overflow:visible;overscroll-behavior:auto}
+ #company-title{font-size:27px}
+ .company-contexts{margin-bottom:22px;gap:7px}
+ #company-panel .company-contexts button{min-height:42px}
+ .company-head{gap:18px}
+ #company-panel .company-lead{font-size:16px}
+ .company-open footer{position:relative;left:auto;right:auto;bottom:auto;margin:22px 20px 25px}
+ .company-open footer .transport{padding-top:10px}
+ #company-panel h3{font-size:24px}
+}
+@media(max-height:640px) and (min-width:761px){#company-panel{max-width:940px;margin-inline:auto}.company-open #experience{height:250px}.company-open footer{max-width:940px;margin:22px auto 25px}}
+@media(max-width:600px){header{align-items:center;gap:10px}header .brand{font-size:clamp(15px,4.1vw,19px);letter-spacing:.10em}#company-toggle{font-size:14px;min-height:36px;padding:8px 9px;margin-left:auto}.company-contexts{gap:6px}.company-identity-grid{grid-template-columns:1fr;gap:0}}
+@media(max-width:380px){#company-panel{margin-inline:12px;padding-inline:15px}#company-title{font-size:24px}.company-head{gap:12px}.company-eyebrow{font-size:14px}#company-panel #company-close{font-size:14px}.company-work-nav{gap:10px}.company-work-nav .company-tag{max-width:100px}header .brand{font-size:18px}#company-toggle{font-size:14px;padding-inline:7px}}
+@media(prefers-reduced-motion:reduce){#company-panel *,#company-panel *::before,#company-panel *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media(forced-colors:active){#company-toggle,#company-panel button,#company-panel input,#company-panel textarea,#company-panel select{border-color:ButtonText}#company-panel .company-contexts button[aria-pressed=true],#company-panel button.company-primary{border:2px solid Highlight}#company-panel a{color:LinkText}}

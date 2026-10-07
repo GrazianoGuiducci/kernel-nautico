@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Accesso a poppa — pianta illustrativa</title>
+  <desc id="description">Una zona di accesso centrale fra due volumi laterali, vista dall'alto. La poppa è in basso. Schema senza scala metrica per conservare e confrontare contributi di progetto.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#24414f" stroke-width=".7"/></pattern>
+  </defs>
+  <path fill="#081722" d="M0 0h640v360H0z"/>
+  <path fill="url(#grid)" opacity=".52" d="M0 0h640v360H0z"/>
+  <g fill="none" stroke="#8db6c7" stroke-width="2">
+    <path fill="#102735" d="M73 54H567L591 271Q593 303 548 318H92Q47 303 49 271Z"/>
+    <path d="M91 76H549M70 287H275M365 287H570" stroke="#5c8192"/>
+    <rect x="104" y="108" width="154" height="127" rx="10" fill="#183340"/>
+    <rect x="382" y="108" width="154" height="127" rx="10" fill="#183340"/>
+    <path d="M118 124H244M396 124H520" stroke="#587d8e"/>
+    <path d="M289 96V286M351 96V286" stroke="#7392a0" stroke-dasharray="5 7"/>
+    <path d="M282 318H358" stroke="#dbb38b" stroke-width="4"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle" letter-spacing="2">
+    <text x="320" y="30" font-size="11" fill="#a9c0cb">VERSO PRUA</text>
+    <text x="320" y="345" font-size="11" fill="#dbb38b">POPPA · AREA DI ACCESSO</text>
+  </g>
+</svg>

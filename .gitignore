@@ -1,0 +1,7 @@
+**/node_modules/
+**/dist/
+**/evidence/
+**/__pycache__/
+**/public/models/*.glb
+**/scripts/asset-tools/
+.env

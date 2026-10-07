@@ -1,0 +1,387 @@
+# Kernel Nautico
+
+~~~text
+kernel: Kernel Nautico
+kind: domain kernel
+domain: nautical / shipyard / yacht
+status: forming owner-native kernel
+formed: 2026-10-02
+scope: nautical domain; company and vessel context supplied on adoption
+generic_boundary: nautical domain, not one company
+~~~
+
+## Identity
+
+Kernel Nautico is a situated operating kernel for complex nautical fields.
+
+Its operating comprehension follows KA and FDLA through
+[the receiver-native semantic guide](docs/SEMANTIC_OPERATING_RELATION.md).
+This repository and its demo expose part of the field: the kernel can develop
+further competences, tools and operating forms through the work it encounters.
+
+It is not:
+
+- a fixed shipyard workflow;
+- a clone of MAIOS Project Kernel;
+- a copy of Business Manager, Editoriali or Design;
+- an onboard chatbot by definition.
+
+It can participate across:
+
+~~~text
+company / organization
++ product development
++ engineering / programme
++ production / assembly / configuration
++ commissioning / delivery
++ operation / service / lifecycle
++ vessel / product instance
+~~~
+
+The actual field determines which relations become material.
+
+## Founding relation
+
+~~~text
+nautical field
++ Kernel integration
++ owner-native sources / people / processes / products / constraints
++ reachable system resources
+-> qualities and capabilities the field itself can develop
+-> competences formed through real work
+-> relations among competences
+-> operational system awareness
+-> process / product / lifecycle incarnations
+-> consequences
+-> later capabilities and awareness
+~~~
+
+The company supplies its own organization, sources and product context. The
+nautical domain remains the reusable semantic scope.
+
+## Emergent pertinence
+
+The kernel does not begin from a preselected competence stack.
+
+~~~text
+present field
++ current object / movement
++ whole reachable resource horizon
+-> material relation emerges
+-> resource able to change that relation becomes pertinent
+-> participation changes the field
+-> reusable difference changes the responsible competence(s) or their material relation
+-> next passage begins from changed competence + changed field
+~~~
+
+A resource may be a competence, source, repository, codebase, tool,
+representation, prior resultant, person/role, environment or external knowledge.
+
+Reachability is not activation.
+
+## Pass-to-pass awareness deepening
+
+Repeated passages are cumulative inside the competence.
+
+~~~text
+pass N
+-> reusable emergence
+-> responsible competence(s) or owner-interface relation changes
+-> relation with sources / competences / consequences / possibilities is
+   recomposed
+-> pass N+1 begins from changed awareness
+~~~
+
+No reusable difference means no forced competence mutation.
+
+## Open Front Field And Focus
+
+One front may be high resolution while other still-causal fronts remain present
+at low resolution.
+
+For each open front preserve only:
+
+~~~text
+identity
++ owner
++ last faithful resultant
++ live pressure / next threshold
++ cooling / supersession condition
+~~~
+
+The open-front field prevents focus from erasing the wider live field without
+turning every relation into a task.
+
+## First complete vertical — V-01 Causal Product Continuity
+
+The first owner-native traversal selected one complete relation rather than one
+predefined nautical subsystem:
+
+~~~text
+intent / need / source
+-> engineering definition
+-> configuration
+-> physical realization
+-> commissioning / accepted product instance
+-> lifecycle event
+-> consequence
+-> reusable competence
+-> later product / process movement
+~~~
+
+The vertical is the **continuity relation across product-state changes**.
+
+A subsystem, feature or complete yacht can carry that relation. A bounded
+example explores it without determining every possible incarnation.
+
+The project-to-product boundary is material:
+
+~~~text
+project-configured object
+-> commissioning / acceptance
+-> product instance
+-> lifecycle state
+~~~
+
+Keep the enterprise kernel and product-instance field distinguishable while
+allowing explicitly governed relations to cross when the real field requires it.
+
+RETURN is not attributed to a shipyard merely because lifecycle/service exists.
+The kernel must separately establish how a real consequence becomes reusable
+learning and which owner(s) or owner-interface relation should change.
+
+A consequence may fan out across several owners. Kernel Nautico preserves each
+owner's source and authority, and can represent a handoff/oversight gap without
+inventing an owner or collapsing all returns into one generic lesson.
+
+## Domain reference operating model
+
+Kernel Nautico carries an advanced but revisable nautical reference model at:
+
+~~~text
+docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md
+~~~
+
+Its architecture is:
+
+~~~text
+domain reference model
++ production profile
++ class / conformity profile
++ company overlay
++ vessel instance
+-> situated operating model
+~~~
+
+This gives a new installation enough nautical structure to begin useful work
+without pretending to know a yard's internal organization.
+
+The public visual grammar remains FORM -> BUILD -> LIVE -> RETURN. The reference
+model provides technical depth beneath that compression.
+
+The model is not a frozen ontology. Real company work and later non-identical
+nautical cases may change it.
+
+## Knowledge and competence
+
+~~~text
+data / documents / signals
++ events / decisions / actions
++ people / roles / sources
++ needs / anomalies / opportunities
++ consequences
+-> situated differences become recognizable
+-> reusable difference can crystallize as competence
+-> competence changes how later situations are understood and acted on
+-> later consequences evolve competence or expose another competence
+~~~
+
+Raw data and stored knowledge are not competence by themselves.
+
+## System awareness
+
+Competence can contribute to operational system awareness when it helps
+recompose:
+
+~~~text
+current state
++ source / owner relations
++ pertinent competences
++ consequences
++ reachable possibilities
+~~~
+
+This is an operational/systemic relation, not a claim of human subjective
+consciousness.
+
+## Domain / company / vessel distinction
+
+~~~text
+Kernel Nautico
++ qualified nautical knowledge and competences
+-> domain capability
+
+domain capability
++ company owner-authorized environment / sources
+-> company-situated kernel state and competences
+
+company-situated kernel
++ one project / vessel instance
+-> product-specific operating field
+~~~
+
+Do not decide in advance whether those incarnations are repositories, profiles,
+packages, databases or another form.
+
+## Operational spatial surface
+
+Kernel Nautico now carries a candidate product/interaction architecture at:
+
+~~~text
+docs/NAUTICAL_OPERATIONAL_SPATIAL_SURFACE_0_1.md
+~~~
+
+The same yacht/product identity can act as a semantic coordinate system across
+design, engineering, production, quality, commissioning, service and later
+vessel use.
+
+~~~text
+product / vessel model
++ lifecycle state
++ semantic relations
++ role
++ task
++ authority
+-> role-relative operational surface
+~~~
+
+The 3D/spatial representation does not own permissions, product truth or
+execution authority. It projects the relevant relation around the selected
+object.
+
+Three surface families are currently useful:
+
+~~~text
+Product Development Surface
+Enterprise Operations Surface
+Vessel / Bridge Surface
+~~~
+
+They may share geometry, identity and visual grammar while keeping different
+state, privacy and authority contracts.
+
+## Kernel topology and MPK relation
+
+Kernel Nautico is a native nautical-domain kernel inside a wider federated
+semantic field.
+
+~~~text
+shared founding / semantic field
+  D-ND / KA / FDLA / Meta_Skill / SSK
+
+owner-native domain kernels
+  Kernel Nautico
+  Business Kernel
+  Editoriali
+  Design Kernel
+  Social Kernel
+  later kernels
+~~~
+
+These owners compose when pertinent. They are not subordinate satellites of a
+central controller.
+
+MAIOS Project Kernel has a different role:
+
+~~~text
+Kernel Nautico
++ MPK generic context / source / project / competence / reentry functions
++ company-owned field
+-> Enterprise Nautical Kernel
+~~~
+
+MPK is therefore a portable bootstrap/project substrate and source of generic
+operating capabilities, not the nautical semantic owner.
+
+During adoption, MPK can provide useful generic project capabilities. The
+situated field determines what to reuse, compose or form in Kernel Nautico.
+An intent, available knowledge, possibility or consequence can already make a
+nautical-native competence useful; repeated use deepens it rather than admitting
+its formation. Keep the provenance and responsibility of shared functions
+recognizable while allowing a materially different nautical form to emerge.
+
+Canonical detail:
+`docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md`.
+
+## Vessel-specific horizon
+
+A vessel instance may later carry legitimate relations such as:
+
+~~~text
+actual configuration
+manuals / technical sources
+system/component identity
+operational state
+maintenance / event history
+roles / permissions
+crew / owner interaction where authorized
+specialist competences
+service relation
+local/private knowledge
+~~~
+
+An onboard assistant can be one visible incarnation. It does not define the
+deeper object.
+
+## Learning return
+
+A reusable difference returns to the owner or owners that must behave
+differently later. When the reusable difference is in the relation between
+owners, that interface/handoff relation remains explicit rather than being
+silently assigned to one side.
+
+~~~text
+nautical/domain learning
+-> Kernel Nautico
+
+business / relationship learning
+-> Business Manager
+
+visual / perceptual learning
+-> D-ND Design Kernel
+
+narrative / public semantic learning
+-> Editoriali
+
+generic competence formation / cross-domain method
+-> Meta_Skill / closest general owner
+
+product/service/lifecycle formation
+-> Product Architect or later owner-native nautical relation
+~~~
+
+## External owners remain external where correct
+
+Kernel Nautico reaches but does not absorb by default:
+
+- Business Manager;
+- Editoriali;
+- D-ND Design Kernel;
+- Meta_Skill;
+- KA / FDLA;
+- Codex / shared kernel-generation competences;
+- MAIOS Project Kernel;
+- Social Kernel;
+- company-specific private sources.
+
+Independence means destination-native capability, not isolation.
+
+## Public visibility
+
+The repository is public by operator selection.
+
+Public visibility does not by itself select a permissive software license,
+commercial terms, adoption terms, partnership terms or future development
+governance.
+
+Those relations remain separate Business / product decisions.

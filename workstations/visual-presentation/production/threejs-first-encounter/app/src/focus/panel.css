@@ -1,0 +1,49 @@
+/* Optional context depth; the closed first-encounter composition remains unchanged. */
+#focus-toggle{color:var(--cyan)}
+#focus-anchor{position:absolute;z-index:4;width:44px;height:44px;transform:translate(-50%,-50%);border:1px solid var(--gold);border-radius:50%;background:#07121d99;color:var(--gold);font-size:20px;touch-action:manipulation}
+#focus-anchor[aria-pressed=true]{outline:2px solid var(--cyan);outline-offset:4px}
+#focus-panel{position:fixed;z-index:5;right:24px;top:105px;bottom:188px;width:370px;padding:22px;overflow:auto;overscroll-behavior:contain;border:1px solid #526976;background:#0a1926;color:var(--paper);font-size:13px;line-height:1.5}
+.focus-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.focus-head p{font-size:9px;letter-spacing:.1em;color:var(--cyan);margin:0}
+#focus-close{font-size:12px;min-height:44px;padding:0 6px;white-space:nowrap}
+#focus-title{font-size:27px;font-weight:300;line-height:1.2;margin:15px 0 8px}
+#focus-position{font-size:10px;color:var(--muted);overflow-wrap:anywhere}
+#focus-reality{font-size:11px;color:var(--gold);line-height:1.5}
+#focus-explanation{margin:15px 0 22px}
+#focus-command label{display:block;color:var(--paper)}
+.focus-input-row{display:flex;gap:8px;margin:7px 0 12px}
+#focus-input{min-width:0;width:100%;min-height:44px;border:1px solid #607986;background:#07121d;color:var(--paper);padding:10px;font:inherit}
+.focus-input-row button{background:#18313f;border:1px solid #607986;min-width:50px;padding:8px}
+#focus-command .focus-voice{display:flex;align-items:center;gap:8px;font-size:12px;min-height:32px}
+#focus-hint,#focus-source-status{font-size:11px;color:var(--muted);line-height:1.5}
+#focus-feedback{font-size:12px;color:var(--gold);min-height:18px}
+#focus-panel details{border-top:1px solid var(--line);padding:13px 0}
+#focus-panel summary{cursor:pointer;min-height:30px}
+#focus-panel a{color:var(--cyan);overflow-wrap:anywhere}
+#focus-panel strong{font-weight:500}
+#focus-panel pre{font-size:11px;white-space:pre-wrap;overflow-wrap:anywhere}
+.focus-open #stage{right:418px}
+.focus-open #fallback{right:418px;left:30%}
+.focus-open .act-index{display:none}
+.silent #focus-anchor,.silent #focus-panel{visibility:hidden}
+@media(max-width:1000px){
+ #focus-panel{width:330px;right:16px;padding:18px}
+ .focus-open #stage{right:362px}
+ .focus-open #fallback{right:362px;left:10%}
+ .focus-open .intro{max-width:250px}
+ .focus-open .intro h1{font-size:28px}
+ .focus-open .design-note{display:none}
+ .focus-open #relation,.focus-open #review-label{visibility:hidden}
+}
+@media(max-width:700px){
+ #focus-panel{left:16px;right:16px;width:auto;top:33svh;bottom:161px;padding:16px}
+ .focus-open #stage{right:0;bottom:67svh}
+ .focus-open #fallback{left:8%;right:8%;top:10svh;height:21svh}
+ .focus-open #fallback svg{height:100%}
+ .focus-open #fallback-reason{display:none}
+ .focus-open .intro,.focus-open .act-index,.focus-open .design-note,.focus-open #relation,.focus-open #anchor-label,.focus-open #review-label,.focus-open .scene-boundary{visibility:hidden}
+ .focus-open .atmosphere{display:none}
+ #focus-panel h2{font-size:23px;margin-top:10px}
+ .transport{column-gap:11px}
+}
+@media(max-height:640px) and (min-width:701px){#focus-panel{top:80px;bottom:153px}}
