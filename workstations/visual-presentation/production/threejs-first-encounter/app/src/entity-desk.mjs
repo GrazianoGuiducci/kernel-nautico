@@ -38,7 +38,7 @@ let order = [...prefs.order], usage = { ...prefs.usage };
 let placement = prefs.placement, selectedTarget = null, confirmedTarget = null;
 let opener = null, frame = null, bridgeReady = false, requestSerial = 0;
 let pendingCommand = null, pendingTimeout = null, dragging = null;
-let moving = false, floating = null, announcedError = false;
+let moving = false, floating = null, announcedError = false, bridgeTimeout = null;
 const session = 'ed' + String(Date.now()) + Math.random().toString(36).slice(2, 11);
 const prefersLessMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const small = matchMedia('(max-width: 700px)');
@@ -160,6 +160,12 @@ function frameMount() {
     announcedError = true;
   });
   wrap.append(frame);
+  bridgeTimeout = setTimeout(() => {
+    if (!bridgeReady && !announcedError) {
+      note.textContent = 'Il collegamento con la demo non è ancora disponibile. Apri la presentazione classica se il problema persiste.';
+      setStatus('Ricevente non confermato');
+    }
+  }, 16000);
 }
 function choosePlacement(next) {
   if (!['floating', 'dock-left', 'dock-right', 'full'].includes(next)) return;
@@ -167,8 +173,9 @@ function choosePlacement(next) {
     const r = win.getBoundingClientRect();
     if (r.width > 0 && r.height > 0) floating = { left: r.left, top: r.top };
   }
-  placement = small.matches ? 'full' : next;
-  if (placement !== 'floating') {
+  placement = next;
+  const effective = small.matches ? 'full' : placement;
+  if (effective !== 'floating') {
     win.style.left = ''; win.style.top = '';
   } else {
     const x = floating?.left ?? innerWidth * .09;
@@ -176,7 +183,7 @@ function choosePlacement(next) {
     win.style.left = Math.round(Math.max(0, Math.min(x, innerWidth - 320))) + 'px';
     win.style.top = Math.round(Math.max(0, Math.min(y, innerHeight - 180))) + 'px';
   }
-  win.dataset.placement = placement;
+  win.dataset.placement = effective;
   persist();
 }
 function openTarget(target, origin = null) {
@@ -222,6 +229,8 @@ function receive(event) {
   if (msg.schema !== 'kn.public-view-state.v2' || msg.session !== session || msg.ready !== true) return;
   if (!bridgeReady) {
     bridgeReady = true;
+    if (bridgeTimeout !== null) clearTimeout(bridgeTimeout);
+    bridgeTimeout = null;
     note.hidden = true;
     if (selectedTarget) requestView(selectedTarget);
     return;
@@ -274,11 +283,11 @@ const handle = $('ed-window-handle');
 let drag = null;
 handle.addEventListener('pointerdown', event => {
   if (small.matches || event.button !== 0 || event.target.closest('button')) return;
-  const box = win.getBoundingClientRect();
   if (placement !== 'floating') {
-    floating = { left: Math.max(0, event.clientX - 160), top: 14 };
+    floating = { left: Math.max(0, event.clientX - 180), top: Math.max(0, event.clientY - 35) };
     choosePlacement('floating');
   }
+  const box = win.getBoundingClientRect();
   drag = { id: event.pointerId, x: event.clientX,
     y: event.clientY, left: box.left, top: box.top };
   handle.setPointerCapture(event.pointerId);
@@ -304,7 +313,7 @@ handle.addEventListener('pointercancel', release);
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && !win.hidden) closeWindow(false);
 });
-window.addEventListener('resize', () => { if (!win.hidden && small.matches) choosePlacement('full'); });
+window.addEventListener('resize', () => { if (!win.hidden) choosePlacement(placement); });
 drawBoard();
 const linkTarget = new URLSearchParams(location.search).get('target');
 if (isDeskTarget(linkTarget)) openTarget(linkTarget);
