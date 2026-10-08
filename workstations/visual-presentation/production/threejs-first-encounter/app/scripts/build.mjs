@@ -13,6 +13,8 @@ await mkdir(out,{recursive:true});
 await cp(resolve(root,'src'),resolve(out,'src'),{recursive:true});
 await cp(resolve(root,'public'),out,{recursive:true});
 await cp(resolve(root,'index.html'),resolve(out,'index.html'));
+// Additional private candidate entry; the original experience stays unchanged.
+await cp(resolve(root,'entity-desk.html'),resolve(out,'entity-desk.html'));
 // Preserve one source owner for design-capture; relocate its import only in the
 // offline browser distribution. Node tests import the canonical source module.
 const capture=resolve(root,'../..','design-capture/capture.mjs');
