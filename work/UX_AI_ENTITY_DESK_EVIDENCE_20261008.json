@@ -1,0 +1,57 @@
+{
+  "schema": "kn.ux-ai.entity-desk.private-source-check.v0.1",
+  "date": "2026-10-08",
+  "source_branch": "work/ux-ai-entity-desk-20261008",
+  "exact_registry": "workstations/visual-presentation/production/threejs-first-encounter/app/src/public-controls.js",
+  "target_count": 10,
+  "created_candidate_files": [
+    "workstations/visual-presentation/production/threejs-first-encounter/app/entity-desk.html",
+    "workstations/visual-presentation/production/threejs-first-encounter/app/src/entity-desk.css",
+    "workstations/visual-presentation/production/threejs-first-encounter/app/src/entity-desk.mjs",
+    "workstations/visual-presentation/production/threejs-first-encounter/app/src/entity-desk-model.mjs",
+    "workstations/visual-presentation/production/threejs-first-encounter/app/tests/entity-desk.test.mjs"
+  ],
+  "modified_build_script": "workstations/visual-presentation/production/threejs-first-encounter/app/scripts/build.mjs",
+  "attempted_qualification": {
+    "kind": "source-level JS/V8 inspection, no full browser or app bundling",
+    "observed_checks": 15,
+    "passed": 15,
+    "qualifications": [
+      "owner-native public targets and ten exact cards",
+      "presentation target exists",
+      "unknown entities rejected",
+      "titles from owner-native source",
+      "manual and opt-in ordering preserve ten ids",
+      "bounded stored preferences",
+      "edge docking model",
+      "entity desk module syntax parsed after ES import resolution",
+      "iframe target uses original Nautico ?public=1",
+      "public command schema and expected acknowledged session/request/target present",
+      "no case text serialized by the new bridge layer",
+      "required DOM ids present",
+      "build copies alternate entry",
+      "responsive and reduced motion rules present"
+    ]
+  },
+  "unverified": [
+    "npm test (Node suite) on checked-out branch",
+    "npm run assets, npm run build and npm start on exact app",
+    "real end-to-end iframe handshake and receipt for every target",
+    "actual 3D presentation rendering and play/pause in host",
+    "Chromium desktop/mobile visual layout, draggable input, focus and WCAG examination",
+    "effect of host chat placement/docking/forms",
+    "simultaneous two fully interactive domain panes",
+    "site deployment/public delivery",
+    "human understanding of the card field"
+  ],
+  "implemented_boundary": [
+    "alternate root HTML route, existing index.html untouched",
+    "same Nautico public bridge, no new domain controller",
+    "only local UI preference state for layout, distinct from case source state",
+    "one active source-owned iframe view at a time",
+    "manual window placement and explicit usage-based arrangement",
+    "chat is external to the Nautico iframe and not controlled by this candidate",
+    "no synthetic notifications or AI calls"
+  ],
+  "next_test": "Checkout branch, run existing npm setup/build/test and browser-flow exercise before considering merge or site integration."
+}
