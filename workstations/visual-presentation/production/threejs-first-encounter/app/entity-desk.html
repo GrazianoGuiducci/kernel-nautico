@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Kernel Nautico — dieci ingressi reali a presentazione, progetto e contesti aziendali.">
+  <title>Kernel Nautico — Il campo di lavoro</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./src/entity-desk.css">
+</head>
+<body class="ed-page">
+  <header class="ed-head">
+    <div class="ed-brand"><span class="ed-overline">MAIOS · PRIMO PRODOTTO DI DOMINIO</span><strong>KERNEL <em>NAUTICO</em></strong>
+      <p>Un prodotto, molte prospettive operative.</p></div>
+    <div class="ed-utility">
+      <button type="button" id="ed-organize">Organizza per uso</button>
+      <button type="button" id="ed-restore-order">Ordine iniziale</button>
+    </div>
+  </header>
+  <main class="ed-main">
+    <div class="ed-intro">
+      <div><span class="ed-overline">PRESENTAZIONE / ESPLORAZIONE / LAVORO</span>
+        <h1>Entra nel lavoro sullo yacht.</h1>
+        <p>Ogni scheda apre una vista della demo già esistente. Spostala per cambiare l'ordine o portala nell'area di lavoro. Il caso e le fonti restano proprietà del Kernel Nautico.</p>
+      </div>
+      <aside class="ed-disclosure" aria-label="Confini della demo">
+        <strong>Dimostrazione locale</strong>
+        <p>Scene illustrative. Note e casi restano nel browser o nei file esportati. Nessun controllo di imbarcazioni o sistemi aziendali e nessuna AI invocata automaticamente.</p>
+      </aside>
+    </div>
+    <section id="ed-board" class="ed-board" aria-label="Dieci accessi al Kernel Nautico"></section>
+    <div id="ed-focus-drop" class="ed-focus-drop" tabindex="0" role="button" aria-label="Porta la scheda selezionata nel focus">
+      <span aria-hidden="true">↗</span>
+      <span>Porta una scheda nel focus</span>
+      <span class="ed-drop-small">Trascina una scheda qui oppure aprila con il pulsante</span>
+    </div>
+    <p class="ed-caption">Le dimensioni delle schede sono una proposta di orientamento. Attività e notifiche verranno esposte solo quando il loro owner le renderà disponibili.</p>
+  </main>
+  <section id="ed-window" class="ed-window" data-placement="floating" role="dialog" aria-modal="false" aria-labelledby="ed-window-title" hidden>
+    <div id="ed-window-handle" class="ed-window-head">
+      <div class="ed-window-name"><span class="ed-overline">KERNEL NAUTICO · VISTA ORIGINALE</span>
+        <strong id="ed-window-title">Vista</strong><span id="ed-window-status" role="status">In preparazione</span></div>
+      <div class="ed-window-actions">
+        <button id="ed-dock-left" type="button" aria-label="Aggancia a sinistra" title="Aggancia a sinistra">◧</button>
+        <button id="ed-dock-right" type="button" aria-label="Aggancia a destra" title="Aggancia a destra">◨</button>
+        <button id="ed-maximize" type="button" aria-label="Espandi a tutto schermo" title="A tutto schermo">□</button>
+        <button id="ed-float" type="button" aria-label="Ripristina finestra" title="Finestra mobile">▣</button>
+        <button id="ed-minimize" type="button" aria-label="Riduci ad avatar" title="Riduci ad avatar">−</button>
+        <button id="ed-close" type="button" aria-label="Chiudi e torna alla home" title="Torna alla home">×</button>
+      </div>
+    </div>
+    <div class="ed-frame-wrap" id="ed-frame-wrap">
+      <div id="ed-load-note" class="ed-load-note">Collegamento alla vista originale in corso…</div>
+    </div>
+  </section>
+  <button id="ed-restore" class="ed-restore" type="button" hidden>↗ <span>Riprendi la vista</span></button>
+  <div id="ed-announcement" class="ed-sr" role="status" aria-live="polite"></div>
+  <noscript><p>Per usare le schede serve JavaScript. <a href="./index.html">Apri la presentazione classica del Kernel Nautico</a>.</p></noscript>
+  <script type="module" src="./src/entity-desk.mjs"></script>
+</body>
+</html>
