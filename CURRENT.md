@@ -1,5 +1,9 @@
 # Stato del prodotto
 
+## Raccordo host-site — owner identificato 10 ottobre 2026
+
+La preparazione precedente ha un seguito: il [readback Nautico](work/UX_AI_KUX_RECEIVER_READINESS_20261010.md#10-ottobre-2026--host-maios-candidato-realmente-raggiunto) raggiunge il ramo sorgente reale `GrazianoGuiducci/maios_it/codex/nautico-integrated-20261006` e il relativo [handoff site-owner](https://github.com/GrazianoGuiducci/maios_it/blob/codex/nautico-integrated-20261006/docs/NAUTICAL_KUX_V541_RECEIVER_HANDOFF_20261010.md). Il ramo contiene già pagina/chat/3D/bridge; il gate pubblico e l'export restano aperti. Nessuna integrazione effettiva, site runtime o deploy segue dalla documentazione.
+
 ## Rientro del branch candidato, 10 ottobre 2026
 
 Il branch `work/ux-ai-entity-desk-20261008` porta ora [un raccordo di ricezione K-UX-AI v5.4.1](work/UX_AI_KUX_RECEIVER_READINESS_20261010.md) al suo primo Entity Desk Nautico. Sono fonti candidate distinte: la Griglia generica KUX non sostituisce dieci target Nautico, la presentazione 3D o i loro controller. Il sito che l'operatore riferisce già attivo deve essere identificato e verificato da Codex prima dell'integrazione. Nessun aggiornamento del `main` Nautico né del sito, nessun permesso/account o nuova capacità AI sono stati implementati.
