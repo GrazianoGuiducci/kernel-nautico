@@ -1,5 +1,10 @@
 # Kernel Nautico — entity desk, first candidate return
 
+## 10 ottobre 2026 — raccordo K-UX-AI v5.4.1 / Codex / sito
+
+La [nuova nota di ricezione](UX_AI_KUX_RECEIVER_READINESS_20261010.md) raggiunge K-UX-AI v5.4.1, le sue prove 97/97 e la relazione con i dieci target Nautico già presenti in questo ramo. Conferma l'owner distinto del medium, della fonte nautica, del site host da verificare e del receiver Codex; nessun merge, deploy o chat reale è stato eseguito da questa preparazione.
+
+
 **8 ottobre 2026 · CANDIDATE_IN_SOURCE / NOT_DEPLOYED / NOT_BROWSER_VERIFIED**
 
 ## Present position
