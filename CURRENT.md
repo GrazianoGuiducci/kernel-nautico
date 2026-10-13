@@ -1,5 +1,16 @@
 # Stato del prodotto
 
+## 13 ottobre 2026 — introduzione e spazio di lavoro rivisti
+
+La Home della Griglia usa il nuovo header scelto dall'operatore: «Kernel
+Nautico» e «Interazione intelligente per il ciclo di vita del progetto».
+MAIOS Project Kernel portato nella nautica ne esprime la relazione funzionale;
+il profilo conserva configurazione e storia distinte di progetto e imbarcazione.
+La configurazione del canvas da notifiche resta una possibilità dell'adozione.
+Il titolo compatto e il pannello di preparazione senza spazio vuoto restituiscono
+spazio alle attività. Il sito ospitante orienta la persona al campo confermato.
+Home, schede, composizione, focus e bozze continuano il motore GPT.
+
 ## 13 ottobre 2026 — Griglia di presentazione e guida
 
 La nuova UI primaria è `workstations/public-griglia/demo/`, formata dal

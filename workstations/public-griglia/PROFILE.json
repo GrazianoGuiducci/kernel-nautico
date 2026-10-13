@@ -15,13 +15,13 @@
     "Competenze del kernel"
   ],
   "home": {
-    "eyebrow": "KERNEL NAUTICO · COMPETENZE AI PER I CANTIERI NAVALI",
-    "title": "Il sapere del cantiere diventa capacità di lavoro.",
-    "subtitle": "Dalla richiesta del cliente alla vita dell’imbarcazione.",
-    "intro": "Progettazione, costruzione, fornitori, equipaggio e assistenza lavorano sulla stessa imbarcazione. Kernel Nautico mette in relazione conoscenze, strumenti e ragioni delle scelte, e forma competenze attraverso l’esperienza.",
-    "method": "Il kernel di dominio porta il metodo nautico. Il cantiere lo fa operare con persone, documenti e sistemi propri; progetto e singola imbarcazione mantengono configurazione e storia distinte.",
-    "use": "Cominciamo da un caso illustrativo: un’esigenza dell’armatore sull’accesso di poppa. Le schede mostrano come esplorare alternative, collegare il lavoro e far continuare un riscontro.",
-    "scope": "La Griglia permette di usare schede, contributi e dialoghi sul caso pubblico. Gli eventi sono illustrativi; le domande inviate raggiungono MAIOS AI nel sito configurato. Sistemi del cantiere e strumentazione di bordo si collegano nell’adozione."
+    "eyebrow": "",
+    "title": "Kernel Nautico",
+    "subtitle": "Interazione intelligente per il ciclo di vita del progetto.",
+    "intro": "MAIOS Project Kernel portato nella nautica. Il cantiere lo fa operare con persone, documenti e sistemi propri; progetto e singola imbarcazione mantengono configurazione e storia distinte.",
+    "method": "Progettazione, costruzione, fornitori, equipaggio e assistenza lavorano sulla stessa imbarcazione. Kernel Nautico mette in relazione conoscenze, strumenti e ragioni delle scelte, e forma competenze che evolvono attraverso l’esperienza.",
+    "use": "Il canvas rende disponibili contesto, strumenti e possibilità di continuazione. Rispondendo a una notifica pertinente, il campo potrà configurarsi con gli strumenti adatti a comprendere e agire.",
+    "scope": "Nella demo un caso illustrativo: un’esigenza dell’armatore sull’accesso di poppa. Le schede mostrano come esplorare alternative, collegare il lavoro e far continuare un riscontro."
   },
   "presentationTitle": "Un’esigenza continua nel progetto e nella vita dell’imbarcazione.",
   "presentationMeaning": "Kernel Nautico conserva il sapere e le relazioni del dominio. K-UX-AI rende il lavoro percepibile e utilizzabile. Un riscontro può cambiare stato, metodo aziendale o competenza nautica secondo ciò che insegna.",

@@ -45,7 +45,16 @@ possibilità che quell'ambiente può rendere operative.
 
 ## Revisione del mezzo condiviso
 
-La derivata corrente usa K-UX-AI `6000380c1b9b8bd995e506eaa17be7316b21a8ea`, versione
+La Home presenta «Kernel Nautico — Interazione intelligente per il ciclo di
+vita del progetto». Il testo dell'operatore collega MAIOS Project Kernel,
+fonti del cantiere, progetto e singola imbarcazione. Il canvas configurabile
+rispondendo a notifiche descrive un potenziale da situare nell'adozione;
+questa demo non attiva notifiche tra postazioni. L'introduzione compatta
+lascia spazio alle attività e mantiene i testi della guida raggiungibili.
+Nel sito, le voci di presentazione e contesto portano al campo aperto dopo
+la conferma. Gli schermi più piccoli conservano lo scorrimento e schede leggibili.
+
+La derivata corrente usa K-UX-AI `c83bafe306848343b7f91a409bcb2d51b325e5a2`, versione
 0.2.0-alpha.3. BUILD.json conserva SHA di riferimento, profilo, runtime e
 HTML. La sorgente del mezzo resta in K-UX-AI; il profilo e le competenze di
 dominio appartengono a questo prodotto. Il receiver 3D separato è costruito
