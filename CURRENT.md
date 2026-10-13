@@ -15,6 +15,9 @@ Le pagine MAIOS candidate usano la nuova Griglia come UI primaria. Cantiere
 e il suo dialogo sono stati osservati con una fixture senza chiamate LLM.
 La [guida pubblica](docs/PUBLIC_GRIGLIA.md) conserva sorgenti e primo uso.
 La presentazione 3D è un riferimento separato; le sue prove restano proprie.
+Il receiver separato è rigenerato dal checkpoint `bb2b3f9d`, con otto binding
+prodotto e nove aziendali. Le 198 prove native passano; modello e licenze sono
+conservati. Le guide della Griglia sono collegate a sorgenti pubbliche precise.
 
 ## 13 ottobre 2026 — linguaggio del dominio
 

@@ -42,3 +42,11 @@ ruoli, strumentazione di bordo e azioni si compongono nell'adozione reale.
 La guida si può adattare al nuovo contesto senza perdere il nucleo di dominio.
 Plancia e collaborazione tra postazioni, automazioni e altri mezzi sono
 possibilità che quell'ambiente può rendere operative.
+
+## Revisione del mezzo condiviso
+
+La derivata corrente usa K-UX-AI `0c3b164fe2205db73b90e1df91c61bca1c2828ac`, versione
+0.2.0-alpha.3. BUILD.json conserva SHA di riferimento, profilo, runtime e
+HTML. La sorgente del mezzo resta in K-UX-AI; il profilo e le competenze di
+dominio appartengono a questo prodotto. Il receiver 3D separato è costruito
+dal checkpoint Nautico `bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd`.

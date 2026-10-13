@@ -89,19 +89,23 @@
   "documents": [
     {
       "label": "Kernel Nautico: scopo e logiche",
-      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/main/KERNEL.md"
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/KERNEL.md"
     },
     {
       "label": "Competenze e apprendimento",
-      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/main/COMPETENCE_FIELD.md"
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/COMPETENCE_FIELD.md"
     },
     {
       "label": "Azienda, progetto e imbarcazione",
-      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/main/docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md"
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md"
     },
     {
       "label": "Modello operativo nautico",
-      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/main/docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md"
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md"
+    },
+    {
+      "label": "Guida della presentazione interattiva",
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/docs/PUBLIC_GRIGLIA.md"
     }
   ],
   "contexts": {
