@@ -24,6 +24,11 @@ in [COMPETENCE_FORMATION](docs/COMPETENCE_FORMATION.md).
 
 ## Conoscenza nautica
 
+Il [linguaggio di dominio](docs/DOMAIN_LANGUAGE.md) collega terminologia,
+persone, oggetti e attività nautiche. UI, presentazione e scambio con l'AI
+usano lo stesso significato situato. La presentazione rende comprensibile il
+funzionamento del kernel a chi conosce il settore e incontra questo sistema.
+
 Il [modello di riferimento](docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
 collega intento, ingegneria, configurazione, costruzione, qualità, consegna,
 uso e assistenza. I profili produttivi restano adattabili alle fonti reali.

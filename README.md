@@ -8,9 +8,11 @@ forma competenze, compone strumenti e può organizzare, delegare e automatizzare
 il lavoro nell'ambiente che lo adotta. Le conseguenze ne affinano il sapere e
 il modo di apprendere.
 
-Il repository contiene un kernel di dominio in formazione, i suoi modelli
-operativi e una presentazione 3D con demo interattiva. La demo usa esempi
-illustrativi: non è collegata a gestionali, CAD o sistemi di bordo.
+Il prodotto è per tutti i cantieri navali. Il repository conserva il kernel
+di dominio, i suoi modelli operativi e una UI di presentazione/guida derivata
+dalla Griglia GPT tramite K-UX-AI. Le schede usano il lessico del settore e
+mostrano logiche, competenze e possibilità. Il primo caso yacht è illustrativo.
+La presentazione 3D conserva il proprio caso come riferimento distinto.
 
 ## Esplora il prodotto
 
@@ -19,7 +21,8 @@ illustrativi: non è collegata a gestionali, CAD o sistemi di bordo.
 - [Competenze e apprendimento](COMPETENCE_FIELD.md)
 - [Azienda, progetto e singola imbarcazione](docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md)
 - [Modello operativo nautico](docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
-- [Avvia la demo locale](workstations/visual-presentation/production/threejs-first-encounter/app/README.md)
+- [La Griglia di presentazione e guida](docs/PUBLIC_GRIGLIA.md)
+- [Avvia il riferimento 3D locale](workstations/visual-presentation/production/threejs-first-encounter/app/README.md)
 
 L’azienda definisce il proprio contesto, le fonti utilizzabili, le persone e le
 azioni autorizzate. La presentazione e la demo aiutano a comprendere e discutere

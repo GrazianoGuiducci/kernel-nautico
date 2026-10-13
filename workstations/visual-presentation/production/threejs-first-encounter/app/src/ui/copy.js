@@ -1,8 +1,8 @@
 /** Public wording only. Source methods, captured cases and exchange records keep their original bytes. */
 export const COMPANY_COPY = Object.freeze({
   "studio": {
-    "label": "Studio",
-    "title": "Il team progetta l’accesso a bordo.",
+    "label": "Ufficio tecnico",
+    "title": "L’ufficio tecnico progetta l’accesso a bordo.",
     "question": "Come cambia l’accesso a poppa se cambia il modo di usarlo?",
     "work": "Il cliente o il progettista descrive un’esigenza con una nota o uno schizzo. Il team e l’AI possono sviluppare requisiti e alternative, conservando le ragioni delle scelte.",
     "continuity": "Il progetto conserva la richiesta iniziale mentre il team precisa le soluzioni. Ogni scelta può coinvolgere anche i tecnici delle strutture, degli impianti e della costruzione.",

@@ -3,8 +3,8 @@
  */
 export const SCENES = Object.freeze([
   { id: 'intent', act: 'FORM', seconds: 11, label: 'Esigenza', title: 'Kernel Nautico collega\npersone, AI e conoscenza.',
-    text: 'Il cliente chiede un accesso a bordo più agevole. Kernel Nautico aiuta il team e l’AI a collegare questa esigenza alle informazioni necessarie per progettare.',
-    change: 'La richiesta del cliente diventa il punto di partenza del progetto.', roles: ['Cliente', 'Team di progetto', 'AI'],
+    text: 'Il cliente chiede un accesso a poppa più agevole. Kernel Nautico aiuta l’ufficio tecnico e l’AI a collegare questa esigenza ai disegni e alle informazioni necessarie per progettare.',
+    change: 'La richiesta del cliente diventa il punto di partenza del progetto.', roles: ['Cliente', 'Ufficio tecnico', 'AI'],
     detail: 'Questo prototipo mostra come conservare una richiesta e svilupparla con un assistente AI. Il team può iniziare anche prima di conoscere tutte le misure e le specifiche.' },
   { id: 'design', act: 'FORM', seconds: 11, label: 'Progettazione', title: 'Il team confronta\nle soluzioni di progetto.',
     text: 'Il progettista annota la pianta di poppa e chiede una variante all’AI. Kernel Nautico conserva l’originale, la proposta e il motivo della scelta.',

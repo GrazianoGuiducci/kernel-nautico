@@ -200,6 +200,12 @@ Raw data and stored knowledge are not competence by themselves.
 
 ## System awareness
 
+The [domain-language guide](docs/DOMAIN_LANGUAGE.md) makes nautical meanings
+available to this awareness and to its human/AI interaction. The host domain
+supplies terms, roles, objects and activities; the presentation explains kernel operation through the professional domain
+context. Company terminology enters through
+the company's qualified sources and retains its provenance.
+
 Competence can contribute to operational system awareness when it helps
 recompose:
 

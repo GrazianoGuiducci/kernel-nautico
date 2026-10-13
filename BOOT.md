@@ -11,8 +11,11 @@ il contenuto della distribuzione e le funzioni della UI non ne sono il confine.
 
 Mantieni distinti il kernel nautico, l’azienda che lo adotta, un progetto e la
 singola imbarcazione. Una rappresentazione non concede autorità su un sistema.
-Gli esempi della demo sono illustrativi e i dati immessi restano nel browser o
-nei file esportati. Non presumere integrazioni o accessi non esercitati.
+La [Griglia di presentazione/guida](docs/PUBLIC_GRIGLIA.md) usa il sapere del
+kernel nel proprio dominio. Il caso e gli eventi sono illustrativi; contributi
+e bozze restano nella sessione o nei file esportati. Le domande inviate
+esplicitamente al servizio MAIOS sono distinte da quei contributi. L'ambiente
+di adozione collega fonti, persone e strumenti del cantiere.
 
 Conserva intento, ragioni, fonti e conseguenze. Quando emerge un miglioramento
 riusabile, aggiorna il metodo o la competenza responsabile; una cronologia non
