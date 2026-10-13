@@ -45,7 +45,7 @@ possibilità che quell'ambiente può rendere operative.
 
 ## Revisione del mezzo condiviso
 
-La derivata corrente usa K-UX-AI `0c3b164fe2205db73b90e1df91c61bca1c2828ac`, versione
+La derivata corrente usa K-UX-AI `6000380c1b9b8bd995e506eaa17be7316b21a8ea`, versione
 0.2.0-alpha.3. BUILD.json conserva SHA di riferimento, profilo, runtime e
 HTML. La sorgente del mezzo resta in K-UX-AI; il profilo e le competenze di
 dominio appartengono a questo prodotto. Il receiver 3D separato è costruito
