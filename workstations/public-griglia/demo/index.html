@@ -1609,7 +1609,34 @@ body[data-kux-screen='work'][data-kux-activities='icons'] .intent-dock{
 }
 
 </style>
-<style>body[data-kux-product="k-ux-ai"] .kux-present-object{clip-path:none;border-radius:14px;width:55%;height:48%;background:linear-gradient(90deg,#c7ecec 36%,#fffaf0 36%);box-shadow:0 0 0 1px #527675} .kux-public-source a{color:inherit}.kux-ai-note{font-size:.82rem;line-height:1.45;color:#496667}.kux-source-diagram{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.kux-source-diagram>span{padding:18px 10px;border:1px solid #a9c7bc;border-radius:10px;background:#edf4e8;text-align:center}.kux-ai-error{color:#7b4a21}</style><style id="kux-nautical-home-space">
+<style id="kux-public-card-layout">
+.intent-grid .intent-tile{container-type:inline-size;border-radius:10px!important;padding:10px!important;gap:6px!important;justify-content:flex-start}
+.intent-grid .tile-head{align-items:center;gap:10px;flex:none}
+.intent-grid .tile-heading{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
+.intent-grid .tile-heading .tile-icon{flex:none;font-size:23px;line-height:1}
+.intent-grid.kux-home-packed>.intent-tile .tile-heading h3{margin:0!important;line-height:1.12;font-size:clamp(17px,1.45vw,25px);letter-spacing:-.035em;overflow-wrap:normal}
+.intent-grid.kux-home-packed>.intent-tile[data-home-role='principal'] .tile-heading h3{font-size:clamp(25px,2.2vw,36px)}
+.intent-grid .tile-sequence{flex:none;font-size:10px;letter-spacing:.07em}
+.intent-grid .tile-center{padding:0!important;margin:0 0 auto}
+.intent-grid .tile-desc{max-width:none;line-height:1.35}
+.intent-grid .tile-foot{flex:none;gap:8px;margin-top:4px}
+.intent-grid .tile-drag{font-size:9px;letter-spacing:.04em}
+.intent-grid .intent-tile[data-selected=true]{box-shadow:inset 0 0 0 1px #13886d,0 0 0 1px #13886d20!important}
+.intent-grid .intent-tile[data-selected=true]::after{display:none}
+@container(max-width:260px){.tile-head .tile-sequence{display:none}.tile-heading{gap:7px!important}.tile-heading h3{font-size:17px!important}.tile-heading .tile-icon{font-size:20px!important}}
+@media(min-width:781px){
+ .intent-grid.kux-home-packed{grid-auto-rows:minmax(108px,auto)}
+ .intent-grid.kux-home-packed>.intent-tile{min-height:108px}
+ .intent-grid.kux-home-packed>.intent-tile[data-featured='true']{min-height:224px}
+ body[data-kux-screen='home'] .home-screen[data-fit='false'] .intent-grid.kux-home-packed{grid-auto-rows:minmax(108px,auto)!important}
+ body[data-kux-screen='home'] .home-screen[data-fit='false'] .intent-grid.kux-home-packed>.intent-tile{min-height:108px!important}
+ body[data-kux-screen='home'] .home-screen[data-fit='false'] .intent-grid.kux-home-packed>.intent-tile[data-featured='true']{min-height:224px!important}
+}
+@media(min-width:1051px) and (min-height:680px){
+ body[data-kux-screen='home'] .home-screen[data-fit='true'] .intent-grid{grid-template-rows:repeat(var(--kux-home-rows,3),minmax(108px,1fr));grid-auto-rows:minmax(108px,1fr)}
+ body[data-kux-screen='home'] .home-screen[data-fit='true'] .intent-grid>.intent-tile{gap:6px}
+}
+</style><style>body[data-kux-product="k-ux-ai"] .kux-present-object{clip-path:none;border-radius:14px;width:55%;height:48%;background:linear-gradient(90deg,#c7ecec 36%,#fffaf0 36%);box-shadow:0 0 0 1px #527675} .kux-public-source a{color:inherit}.kux-ai-note{font-size:.82rem;line-height:1.45;color:#496667}.kux-source-diagram{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.kux-source-diagram>span{padding:18px 10px;border:1px solid #a9c7bc;border-radius:10px;background:#edf4e8;text-align:center}.kux-ai-error{color:#7b4a21}</style><style id="kux-nautical-home-space">
 body[data-kux-product="kernel-nautico"] .home-screen .home-intro .kux-home-story #homeTitle{font-size:clamp(28px,2.6vw,42px);line-height:1.08;margin:0 0 6px;letter-spacing:-.035em}
 body[data-kux-product="kernel-nautico"] .kux-home-story .kux-home-thesis{font-size:clamp(17px,1.35vw,22px);line-height:1.25;margin:0 0 10px}
 body[data-kux-product="kernel-nautico"] .home-screen .home-intro .kux-home-story .intro-desc,
@@ -2990,7 +3017,7 @@ function swapHomeSlots(moving,target,{announceMove=true}={}){
   announce('Scambio effettuato: '+readIntent(moving).verb+' nella '+role+'.');}
  return true;
 }
-function tile(intent,index){const count=state.events.filter(e=>e.status==='pending'&&e.intent===intent.id).length;const el=document.createElement('article');el.className='intent-tile';el.dataset.intent=intent.id;el.dataset.tone=intent.tone;el.dataset.weight=intent.id===state.homeFeatured?'hero':'quarter';el.draggable=true;el.dataset.selected=String(state.homeSelected.has(intent.id));el.innerHTML=`<div class="tile-head"><span class="tile-icon" aria-hidden="true">${esc(intent.icon)}</span><span class="tile-sequence">${String(index+1).padStart(2,'0')} / 10</span></div><div class="tile-center"><h3>${esc(intent.verb)}</h3><p class="tile-desc">${esc(intent.short)}</p></div><div class="tile-foot"><button type="button" class="tile-open" aria-pressed="${state.homeSelected.has(intent.id)}">${intent.id===state.homeFeatured?'Principale ✓':state.homeSelected.has(intent.id)?'Selezionata ✓':'Seleziona +'}</button><span class="tile-drag">TRASCINA · SCAMBIA</span></div>${count?`<span class="tile-count" aria-label="${count} eventi da esaminare">${count}</span>`:''}`;
+function tile(intent,index){const count=state.events.filter(e=>e.status==='pending'&&e.intent===intent.id).length;const el=document.createElement('article');el.className='intent-tile';el.dataset.intent=intent.id;el.dataset.tone=intent.tone;el.dataset.weight=intent.id===state.homeFeatured?'hero':'quarter';el.draggable=true;el.dataset.selected=String(state.homeSelected.has(intent.id));el.innerHTML=`<div class="tile-head"><div class="tile-heading"><span class="tile-icon" aria-hidden="true">${esc(intent.icon)}</span><h3>${esc(intent.verb)}</h3></div><span class="tile-sequence">${String(index+1).padStart(2,'0')} / 10</span></div><div class="tile-center"><p class="tile-desc">${esc(intent.short)}</p></div><div class="tile-foot"><button type="button" class="tile-open" aria-pressed="${state.homeSelected.has(intent.id)}">${intent.id===state.homeFeatured?'Principale ✓':state.homeSelected.has(intent.id)?'Selezionata ✓':'Seleziona +'}</button><span class="tile-drag">TRASCINA · SCAMBIA</span></div>${count?`<span class="tile-count" aria-label="${count} eventi da esaminare">${count}</span>`:''}`;
  if(intent.id===state.homeFeatured){
   const button=el.querySelector('.tile-open');button.setAttribute('aria-label',intent.verb+' · attività principale già inclusa; trascina per cambiare la principale');
  }
@@ -3559,6 +3586,14 @@ function switchToFreeFromCurrent(){
  state.layout='free';
  placePanels();
 }
+function preparePanelResize(p){
+ const el=p.el;el.getAnimations().forEach(animation=>animation.cancel());
+ const stage=shell.stage.getBoundingClientRect(),box=el.getBoundingClientRect();
+ const scaleX=stage.width/shell.stage.clientWidth||1,scaleY=stage.height/shell.stage.clientHeight||1;
+ Object.assign(p,screenRect({x:(box.left-stage.left)/scaleX,y:(box.top-stage.top)/scaleY,w:box.width/scaleX,h:box.height/scaleY}));
+ p.userSized=true;
+ return {scaleX,scaleY};
+}
 function moduleElement(p){
  const node=document.createElement('section');node.className='module';node.dataset.id=p.id;
  node.setAttribute('role','region');node.setAttribute('aria-label',`${readIntent(p.intent).verb} — ${ctxName(p.context)}`);
@@ -3578,12 +3613,13 @@ function moduleElement(p){
    e.preventDefault();e.stopPropagation();
    if(state.layout!=='free')switchToFreeFromCurrent();
    p.dock=null;p.maximized=false;p.manualPosition=true;focusPanel(p,{force:true});
-   const initial={x:e.clientX,y:e.clientY,w:p.w,h:p.h};
+   const scale=preparePanelResize(p);
+   const initial={x:e.clientX,y:e.clientY,w:p.w,h:p.h,...scale};
    handle.setPointerCapture(e.pointerId);
    const move=ev=>{
      if(ev.pointerId!==e.pointerId)return;
-     const size=screenRect({...p,w:initial.w+ev.clientX-initial.x,h:initial.h+ev.clientY-initial.y});
-     p.w=size.w;p.h=size.h;moduleStyles(p,screenRect(p));
+     const size=screenRect({...p,w:initial.w+(ev.clientX-initial.x)/initial.scaleX,h:initial.h+(ev.clientY-initial.y)/initial.scaleY});
+     Object.assign(p,size);moduleStyles(p,screenRect(p));
    };
    const end=ev=>{
      if(ev.pointerId!==e.pointerId)return;
@@ -3598,6 +3634,7 @@ function moduleElement(p){
    e.preventDefault();
    if(state.layout!=='free')switchToFreeFromCurrent();
    focusPanel(p,{force:true});p.dock=null;p.maximized=false;p.manualPosition=true;
+   preparePanelResize(p);
    const step=e.shiftKey?40:15;
    p.w+=e.key==='ArrowRight'?step:e.key==='ArrowLeft'?-step:0;
    p.h+=e.key==='ArrowDown'?step:e.key==='ArrowUp'?-step:0;
@@ -3617,7 +3654,7 @@ function moduleElement(p){
   if(op==='dialogue'){p.sectionOpen=true;p.sectionTab='dialogo';renderSection(p);p.el.querySelector('.kux-section-editor')?.focus({preventScroll:true});notice('Dialogo della scheda · '+readIntent(p.intent).verb+' / '+ctxName(p.context)+' · domanda esplicita a MAIOS AI nel sito configurato');return;}
   if(op==='compact'){
     if(p.slotRole==='small'&&state.layout!=='free'){p.compact=false;placeInSlot(p,'large');notice('Attività rapida portata in evidenza');return;}
-    p.compact=!p.compact; p.maximized=false; p.dock=null;
+    p.compact=!p.compact; p.userSized=false; p.maximized=false; p.dock=null;
     if(p.compact)node.querySelector('.module-head').focus({preventScroll:true});
     placePanels();notice(p.compact?'Attività in formato card rapido':'Funzioni complete ripristinate');return;
   }
@@ -3720,7 +3757,7 @@ function moduleStyles(p,rect){
  el.dataset.compact=String(!!p.compact);el.dataset.role=p.slotRole||'normal';
  const pr=el.querySelector('.module-preview');if(pr){pr.hidden=!(p.compact||(p.slotRole==='small'&&state.layout!=='free'));pr.querySelector('.module-preview-title').textContent=readIntent(p.intent).verb+' · '+ctxName(p.context);pr.querySelector('.module-preview-text').textContent=(contexts[p.context]?.next||'Esplora o continua il lavoro.');}
  const content=el.querySelector('.module-content');content.inert=!!p.compact||(p.slotRole==='small'&&state.layout!=='free');
- if(p.compact&&!p.maximized&&!p.dock&&state.layout==='free'){
+ if(p.compact&&!p.userSized&&!p.maximized&&!p.dock&&state.layout==='free'){
    el.style.width=Math.round(Math.min(350,rect.w))+'px';el.style.height=Math.round(Math.min(235,rect.h))+'px';
  }
  el.setAttribute('role','region');

@@ -84,3 +84,16 @@ Panoramica prepares activities; Lavoro in corso opens contextual cards.
 Guidance and tours describe shipyard work and explicit public questions.
 BUILD.json identifies reference, profile, runtime and HTML independently.
 The selected original and the separate 3D application remain unchanged.
+
+## Home and free-card resize — 14 October 2026
+
+Activity tiles place icon and title on one row, with description and controls
+grouped separately. Their desktop minimum heights follow this composition.
+The free compact-card resize now begins at displayed stage-relative bounds;
+explicit user sizing overrides the initial 350 × 235 compact cap and retains
+the card content. Keyboard and pointer resize preserve the user's geometry.
+The shared executable regression fails on the previous derivative and passes
+on this one. The selected original remains unchanged and attributed.
+
+The shared Home and free-card correction follows K-UX-AI `f4e5465524b1bdb5bb83c4d4f5d04743805ab9fd`.
+Native and site BUILD records qualify the resulting derivative separately.

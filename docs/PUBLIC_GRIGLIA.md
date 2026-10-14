@@ -22,6 +22,12 @@ contributi, organizzare il seguito e ritrovare ciò che era rimasto aperto.
 Le schede si affiancano o si portano al centro mantenendo focus e bozze.
 La presentazione e la guida restano disponibili durante l’esplorazione.
 
+Nelle tessere iniziali icona e titolo identificano insieme l’attività.
+Da Strumenti puoi scegliere Libero e adattare lo spazio delle schede:
+trascina l’angolo inferiore destro, anche nel formato compatto. Sullo stesso
+controllo le frecce della tastiera ridimensionano la scheda; Maiusc permette
+variazioni più ampie. Il contesto e le bozze restano collegati al lavoro.
+
 ## Chiedere alla guida AI
 
 Il dialogo della scheda conserva l’argomento del caso. La domanda inviata
