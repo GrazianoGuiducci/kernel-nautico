@@ -20,11 +20,11 @@
     "subtitle": "Interazione intelligente per il ciclo di vita del progetto.",
     "intro": "MAIOS Project Kernel portato nella nautica. Il cantiere lo fa operare con persone, documenti e sistemi propri; progetto e singola imbarcazione mantengono configurazione e storia distinte.",
     "method": "Progettazione, costruzione, fornitori, equipaggio e assistenza lavorano sulla stessa imbarcazione. Kernel Nautico mette in relazione conoscenze, strumenti e ragioni delle scelte, e forma competenze che evolvono attraverso l’esperienza.",
-    "use": "Lo spazio di lavoro rende disponibili contesto, strumenti e possibilità di continuazione. Rispondendo a una notifica pertinente, lo spazio potrà configurarsi con gli strumenti adatti a comprendere e agire.",
+    "use": "Operatore e sistema possono partecipare allo stesso spazio nello stesso momento: tu orienti e intervieni; il sistema mostra cambiamenti, requisiti e proposte. Una notifica pertinente può portare in vista gli strumenti adatti a comprendere e agire.",
     "scope": "Nella demo un caso illustrativo: un’esigenza dell’armatore sull’accesso di poppa. Le schede mostrano come esplorare alternative, collegare il lavoro e far continuare un riscontro."
   },
   "presentationTitle": "Un’esigenza continua nel progetto e nella vita dell’imbarcazione.",
-  "presentationMeaning": "Kernel Nautico mette in relazione sapere del cantiere, requisiti e configurazione dell’imbarcazione. Un riscontro può migliorare il lavoro, il metodo aziendale o la competenza nautica secondo ciò che insegna.",
+  "presentationMeaning": "L’operatore usa lo spazio per seguire revisioni, contribuire e orientare il lavoro sull’imbarcazione. Il sistema lo usa per mostrare requisiti, cambiamenti, relazioni e proposte. Le due attività possono svolgersi contemporaneamente nello stesso contesto; fonti di progetto e autorità sulle azioni restano al cantiere.",
   "presentationHref": "/kernel-nautico-demo/index.html?public=1",
   "exploreTitle": "La stessa imbarcazione, responsabilità differenti.",
   "exploreMeaning": "Il caso collega le esigenze dell’armatore al lavoro dell’ufficio tecnico, del cantiere, dei fornitori e dell’assistenza. Il cambio di contesto conserva l’oggetto e le ragioni.",
@@ -632,5 +632,18 @@
   "supported_locales": [
     "en",
     "it"
-  ]
+  ],
+  "interaction": {
+    "nature": "bidirectional_and_simultaneous",
+    "operator": "Comprendere il lavoro, orientare l’AI, intervenire e correggere.",
+    "system": "Rendere comprensibili informazioni, cambiamenti e proposte attraverso testo, immagini, movimento e strumenti.",
+    "timing": "Le due attività possono svolgersi contemporaneamente, mantenendo lo stesso contesto di lavoro."
+  },
+  "horizon": {
+    "title": "Una possibile estensione nell’ispezione dell’imbarcazione",
+    "body": "Occhiali con contenuti visivi interattivi in tempo reale potrebbero affiancare disegni di progetto, quote e differenze fra revisioni all’elemento dell’imbarcazione osservato. La rappresentazione potrebbe cambiare mentre l’operatore indica, chiede o si sposta. È una possibilità di sviluppo, con le fonti del cantiere e i mezzi dell’ambiente ricevente.",
+    "current_demo": "La demo attuale segue un caso illustrativo di accesso a poppa attraverso schede, strumenti e dialoghi.",
+    "status": "development_direction",
+    "demo_has_ar_surface": false
+  }
 }

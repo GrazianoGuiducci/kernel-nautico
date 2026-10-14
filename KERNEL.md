@@ -391,3 +391,12 @@ commercial terms, adoption terms, partnership terms or future development
 governance.
 
 Those relations remain separate Business / product decisions.
+
+## Partecipazione reciproca nell’interfaccia
+
+L’interfaccia sostiene intervento dell’operatore e comunicazione del sistema
+nello stesso contesto, anche simultaneamente. Mentre l’operatore segue una
+revisione, contribuisce o corregge, il sistema può rendere visibili requisiti,
+cambiamenti, relazioni e proposte riferiti alla stessa imbarcazione. Il cantiere
+conserva fonti e autorità sulle azioni; K-UX-AI forma il mezzo di interazione.
+Le estensioni percettive future mantengono il proprio stato di possibilità.

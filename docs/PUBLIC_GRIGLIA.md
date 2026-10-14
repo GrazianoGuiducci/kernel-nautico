@@ -74,3 +74,7 @@ The bilingual workspace is built from K-UX-AI `73b059d875234d3e283b81d4b36a95d46
 Each locale BUILD records the exact profile, catalogues, runtime and artifact.
 
 The shared dialogue display correction follows K-UX-AI `6076603eb9fa406ff893f9db2016dd3e008acf75`.
+
+## Operator and system participate together
+
+While you follow revisions, contribute or guide work on the vessel, the system can show requirements, changes, relationships and proposals in the same workspace. Both activities can take place at the same time. Presentation includes an optional possibility for interactive visual content during vessel inspection; the current demo follows the illustrative stern-access case through cards, tools and dialogue.

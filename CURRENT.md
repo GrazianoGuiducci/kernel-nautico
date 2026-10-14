@@ -1,5 +1,17 @@
 # Stato del prodotto
 
+## Reciprocal and simultaneous interaction — 14 October 2026
+
+Operator actions and system communication share the same work context and can
+take place at the same time. The sources, Home and Presentation now explain
+both roles. The visual horizon is a profile-owned, optional detail, preserving
+its development-direction status and the actual cards/tools/dialogue demo.
+English and Italian remain aligned; original reference and geometry are preserved.
+This is a semantic and expressive integration, without a new AR implementation.
+
+The shared interface follows K-UX-AI `f5e034de3e0dfb62264c7840e8e459696e3e4b1b`.
+Domain sources and actual actions remain with the adopting shipyard.
+
 ## English standard, Italian support — 14 October 2026
 
 The public interface defaults to English. `PROFILE.json` is canonical English;

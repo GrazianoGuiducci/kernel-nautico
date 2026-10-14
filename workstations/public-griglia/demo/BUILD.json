@@ -3,9 +3,9 @@
   "profile_id": "kernel-nautico",
   "semantic_owner": "GrazianoGuiducci/kernel-nautico",
   "reference_sha256": "1879dbe0d2ccba4c7db4701fe067c05ad1d20761aa2a6cf053f90b478118430b",
-  "profile_sha256": "ef44f483b0d851f23c92141239de85c9d981797c962d1a6fcff27d75935666c0",
-  "runtime_sha256": "d51a2add015e829dc764dbc8aa0cc7e5139055366639007d27a05b65da644b11",
-  "html_sha256": "9053f901426e2210596a7322d619d54c6bdd1fdebc05438611e8105914546d73",
+  "profile_sha256": "e0339ccb4de41131cd88b07ec26a10005f4cb677c5eb30941b813eab4f736964",
+  "runtime_sha256": "45869fd3175e616df51adefaffa38be27ff5c1025d9cb307154661ac7781ca19",
+  "html_sha256": "0a77b867d039f13b9977a2aa14f5cb6202cc8823511b41d34a921ee07f093983",
   "means": {
     "ui": "GPT Griglia v5.12 derived public incarnation",
     "dialogs": "explicit MAIOS public assistant requests when host configured",

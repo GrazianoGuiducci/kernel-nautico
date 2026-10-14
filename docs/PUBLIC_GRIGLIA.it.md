@@ -65,3 +65,7 @@ L’interfaccia è raggiungibile in `/workstations/public-griglia/demo/`.
 Il server statico non fornisce il servizio MAIOS AI. Il collegamento AI e
 le azioni sui sistemi del cantiere si configurano nell’ambiente che adotta
 il kernel, con le fonti e le responsabilità proprie di quell’ambiente.
+
+## Operatore e sistema partecipano insieme
+
+Mentre segui revisioni, contribuisci o orienti il lavoro sull’imbarcazione, il sistema può mostrare requisiti, cambiamenti, relazioni e proposte nello stesso spazio. Le due attività possono svolgersi contemporaneamente. La presentazione offre un approfondimento apribile su possibili contenuti visivi interattivi durante l’ispezione; la demo attuale segue il caso illustrativo di accesso a poppa attraverso schede, strumenti e dialoghi.

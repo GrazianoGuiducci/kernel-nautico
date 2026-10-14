@@ -20,11 +20,11 @@
     "subtitle": "Intelligent interaction throughout the project lifecycle.",
     "intro": "MAIOS Project Kernel applied to the marine sector. The shipyard operates it with its own people, documents and systems; the project and each vessel retain distinct configurations and histories.",
     "method": "Design, construction, suppliers, crew and service work on the same vessel. Kernel Nautico connects knowledge, tools and the reasons behind decisions, and forms competences that evolve through experience.",
-    "use": "The workspace makes context, tools and ways to continue available. In response to a relevant notification, it can take shape with the tools needed to understand and act.",
+    "use": "The operator and the system can take part in the same workspace at the same time: you guide and act; the system shows changes, requirements and proposals. A relevant notification can bring the tools needed to understand and act into view.",
     "scope": "The demo uses an illustrative case: an owner’s requirement for stern access. The cards show how to explore alternatives, connect work and carry an observation forward."
   },
   "presentationTitle": "A requirement continues through the project and the vessel’s life.",
-  "presentationMeaning": "Kernel Nautico connects shipyard knowledge with vessel requirements and configuration. An observation can improve work, the company’s method or a marine competence according to what it teaches.",
+  "presentationMeaning": "The operator uses the workspace to follow revisions, contribute and guide work on the vessel. The system uses it to show requirements, changes, relationships and proposals. Both can take part at the same time in the same work context; project sources and action authority stay with the shipyard.",
   "presentationHref": "/kernel-nautico-demo/index.html?public=1",
   "exploreTitle": "The same vessel, different responsibilities.",
   "exploreMeaning": "The case connects the owner’s requirements to the work of engineering, the shipyard, suppliers and service. Changing context preserves the subject and its reasons.",
@@ -632,5 +632,18 @@
     "monitorare": "Monitor",
     "confrontare": "Compare",
     "chat": "AI dialogue"
+  },
+  "interaction": {
+    "nature": "bidirectional_and_simultaneous",
+    "operator": "Understand the work, guide the AI, act and correct.",
+    "system": "Make information, changes and proposals understandable through text, images, motion and tools.",
+    "timing": "Both can take part at the same time while retaining the same work context."
+  },
+  "horizon": {
+    "title": "A possible extension during vessel inspection",
+    "body": "Glasses displaying interactive visual content in real time could bring project drawings, dimensions and revision differences alongside the vessel element being inspected. The representation could change as the operator points, asks or moves. This is a development possibility, using the shipyard’s sources and the receiving environment’s capabilities.",
+    "current_demo": "The current demo follows an illustrative stern-access case through cards, tools and dialogue.",
+    "status": "development_direction",
+    "demo_has_ar_surface": false
   }
 }
