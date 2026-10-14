@@ -1,61 +1,61 @@
-# Kernel Nautico nella Griglia K-UX-AI
+# Conoscere Kernel Nautico e usare le schede
 
-La UI presenta il kernel del settore e rimane una guida nel lavoro.
-Ufficio tecnico, cantiere, fornitori, bordo e assistenza partecipano al primo
-caso illustrativo di accesso a poppa. Requisiti dell'armatore, configurazioni,
-proposte e riscontri restano collegati. La funzione determina il tipo di
-scheda: presentazione, guida, contributo, verifica, confronto, organizzazione,
-monitoraggio, scenario, ripresa e dialogo.
+Kernel Nautico collega conoscenze, strumenti e ragioni delle scelte lungo
+il lavoro del cantiere e la vita dell’imbarcazione. La presentazione permette
+di esplorare un caso illustrativo: un’esigenza dell’armatore sull’accesso a poppa.
+Ufficio tecnico, reparti del cantiere, fornitori, equipaggio e assistenza
+partecipano in momenti diversi, conservando requisiti, configurazioni e riscontri.
 
-## Composizione delle sorgenti
+## Scegliere il contesto
 
-`workstations/public-griglia/PROFILE.json` è il profilo del kernel nautico.
-K-UX-AI fornisce il riferimento GPT invariato, l'adattatore pubblico e il
-builder. Nautico conserva il proprio kernel, competenze e significati di
-dominio. L'azienda, un programma/progetto e una singola imbarcazione hanno
-contesto, configurazione e continuità propri.
+La panoramica prepara uno spazio di lavoro per Ufficio tecnico, Cantiere,
+Fornitori, A bordo o Assistenza. Le voci della pagina permettono anche di
+conoscere il kernel, capire come impara, esplorare la collaborazione,
+presentare il lavoro all’armatore e preparare un contributo al progetto.
+Scegliendo una voce, il campo aperto viene portato in vista.
 
-Con un checkout K-UX-AI accanto a questo repository:
+## Seguire il lavoro nelle schede
+
+Una scheda chiarisce il contesto e i punti aperti; un’altra raccoglie una
+proposta o un riscontro. Si possono esplorare alternative, confrontare due
+contributi, organizzare il seguito e ritrovare ciò che era rimasto aperto.
+Le schede si affiancano o si portano al centro mantenendo focus e bozze.
+La presentazione e la guida restano disponibili durante l’esplorazione.
+
+## Chiedere alla guida AI
+
+Il dialogo della scheda conserva l’argomento del caso. La domanda inviata
+esplicitamente raggiunge MAIOS AI nel sito configurato con la propria
+conversazione e il contesto pubblico della scheda; le altre bozze restano
+locali. La chat generale può aiutare a scegliere il percorso. Se il servizio
+non è disponibile, l’interfaccia lo indica.
+
+## Dal caso illustrativo al lavoro del cantiere
+
+Il caso e gli eventi della presentazione sono illustrativi. Note e proposte
+restano nella sessione finché vengono esportate o trasferite. Nel cantiere,
+il kernel opera con documenti, persone, strumenti e sistemi collegati a quel
+contesto. Il progetto e la singola imbarcazione mantengono configurazione e
+storia proprie. Un riscontro può migliorare il metodo quando viene compreso
+e integrato nella competenza che continua il lavoro.
+
+La [guida di avvio](../BOOT.md) permette di partire dal proprio caso. Il
+[modello operativo nautico](NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
+approfondisce le relazioni tra le fasi e gli attori del lavoro.
+
+## Per l’integrazione tecnica
+
+Il profilo `workstations/public-griglia/PROFILE.json` contiene significati e
+primo assetto del dominio. K-UX-AI fornisce il builder e l’adattatore; BUILD.json
+registra le identità di riferimento, profilo, runtime e HTML. Con le sorgenti
+K-UX-AI accanto a questo repository:
 
 ```sh
 python ../k-ux-ai/tools/build_public_griglia.py --profile workstations/public-griglia/PROFILE.json --output workstations/public-griglia/demo
 python -m http.server 8080 --bind 127.0.0.1
 ```
 
-Apri `http://127.0.0.1:8080/workstations/public-griglia/demo/`.
-La Home prepara un campo di schede complementari. I gesti e le bozze
-continuano nel campo. La distribuzione porta anche `BUILD.json`, con
-l'identità dei file che hanno formato questa derivata.
-
-## Dialoghi e continuazione
-
-Su un host MAIOS configurato, la domanda inviata esplicitamente raggiunge
-il servizio AI con la propria storia e il contesto pubblico della scheda.
-Le altre bozze restano locali. Nel server statico semplice il servizio manca
-e la UI lo rende percepibile. Una fixture verifica il trasporto senza LLM.
-Una proposta può essere conservata ed esportata per chi continua il caso:
-quel trasferimento permette al kernel di comprendere il contributo e farne
-evolvere il metodo; il salvataggio locale da solo non realizza assimilazione.
-
-Il caso e gli eventi sono illustrativi. Fonti del cantiere, strumenti,
-ruoli, strumentazione di bordo e azioni si compongono nell'adozione reale.
-La guida si può adattare al nuovo contesto senza perdere il nucleo di dominio.
-Plancia e collaborazione tra postazioni, automazioni e altri mezzi sono
-possibilità che quell'ambiente può rendere operative.
-
-## Revisione del mezzo condiviso
-
-La Home presenta «Kernel Nautico — Interazione intelligente per il ciclo di
-vita del progetto». Il testo dell'operatore collega MAIOS Project Kernel,
-fonti del cantiere, progetto e singola imbarcazione. Il canvas configurabile
-rispondendo a notifiche descrive un potenziale da situare nell'adozione;
-questa demo non attiva notifiche tra postazioni. L'introduzione compatta
-lascia spazio alle attività e mantiene i testi della guida raggiungibili.
-Nel sito, le voci di presentazione e contesto portano al campo aperto dopo
-la conferma. Gli schermi più piccoli conservano lo scorrimento e schede leggibili.
-
-La derivata corrente usa K-UX-AI `c83bafe306848343b7f91a409bcb2d51b325e5a2`, versione
-0.2.0-alpha.3. BUILD.json conserva SHA di riferimento, profilo, runtime e
-HTML. La sorgente del mezzo resta in K-UX-AI; il profilo e le competenze di
-dominio appartengono a questo prodotto. Il receiver 3D separato è costruito
-dal checkpoint Nautico `bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd`.
+L’interfaccia è raggiungibile in `/workstations/public-griglia/demo/`.
+Il server statico non fornisce il servizio MAIOS AI. Il collegamento AI e
+le azioni sui sistemi del cantiere si configurano nell’ambiente che adotta
+il kernel, con le fonti e le responsabilità proprie di quell’ambiente.

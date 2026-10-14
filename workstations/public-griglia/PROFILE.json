@@ -20,11 +20,11 @@
     "subtitle": "Interazione intelligente per il ciclo di vita del progetto.",
     "intro": "MAIOS Project Kernel portato nella nautica. Il cantiere lo fa operare con persone, documenti e sistemi propri; progetto e singola imbarcazione mantengono configurazione e storia distinte.",
     "method": "Progettazione, costruzione, fornitori, equipaggio e assistenza lavorano sulla stessa imbarcazione. Kernel Nautico mette in relazione conoscenze, strumenti e ragioni delle scelte, e forma competenze che evolvono attraverso l’esperienza.",
-    "use": "Il canvas rende disponibili contesto, strumenti e possibilità di continuazione. Rispondendo a una notifica pertinente, il campo potrà configurarsi con gli strumenti adatti a comprendere e agire.",
+    "use": "Lo spazio di lavoro rende disponibili contesto, strumenti e possibilità di continuazione. Rispondendo a una notifica pertinente, lo spazio potrà configurarsi con gli strumenti adatti a comprendere e agire.",
     "scope": "Nella demo un caso illustrativo: un’esigenza dell’armatore sull’accesso di poppa. Le schede mostrano come esplorare alternative, collegare il lavoro e far continuare un riscontro."
   },
   "presentationTitle": "Un’esigenza continua nel progetto e nella vita dell’imbarcazione.",
-  "presentationMeaning": "Kernel Nautico conserva il sapere e le relazioni del dominio. K-UX-AI rende il lavoro percepibile e utilizzabile. Un riscontro può cambiare stato, metodo aziendale o competenza nautica secondo ciò che insegna.",
+  "presentationMeaning": "Kernel Nautico mette in relazione sapere del cantiere, requisiti e configurazione dell’imbarcazione. Un riscontro può migliorare il lavoro, il metodo aziendale o la competenza nautica secondo ciò che insegna.",
   "presentationHref": "/kernel-nautico-demo/index.html?public=1",
   "exploreTitle": "La stessa imbarcazione, responsabilità differenti.",
   "exploreMeaning": "Il caso collega le esigenze dell’armatore al lavoro dell’ufficio tecnico, del cantiere, dei fornitori e dell’assistenza. Il cambio di contesto conserva l’oggetto e le ragioni.",
@@ -89,23 +89,23 @@
   "documents": [
     {
       "label": "Kernel Nautico: scopo e logiche",
-      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/KERNEL.md"
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/KERNEL.md"
     },
     {
       "label": "Competenze e apprendimento",
-      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/COMPETENCE_FIELD.md"
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/COMPETENCE_FIELD.md"
     },
     {
       "label": "Azienda, progetto e imbarcazione",
-      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md"
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md"
     },
     {
       "label": "Modello operativo nautico",
-      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md"
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md"
     },
     {
-      "label": "Guida della presentazione interattiva",
-      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/bb2b3f9d5e6020bbc5291a1c7c5e5002013f99fd/docs/PUBLIC_GRIGLIA.md"
+      "label": "Guida all’uso delle schede",
+      "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/docs/PUBLIC_GRIGLIA.md"
     }
   ],
   "contexts": {

@@ -1,5 +1,16 @@
 # Stato del prodotto
 
+## Public presentation correction — 14 October 2026
+
+The product introduction retains the operator's nautical headers and domain
+meaning. Linked use guidance now starts with shipyard work, card activities,
+dialogue and continuation; construction details belong to its technical section.
+The shared interface uses purpose-owned guidance labels. The site explains
+the 3D case through requirements and alternatives, and assistant knowledge
+no longer supplies the development history as the public product frame.
+Original GPT and 3D artifacts retain their own source identities.
+
+
 ## 13 ottobre 2026 — introduzione e spazio di lavoro rivisti
 
 La Home della Griglia usa il nuovo header scelto dall'operatore: «Kernel
@@ -65,3 +76,11 @@ definiti nell’ambiente di adozione. La UX della superficie pubblica è ancora
 da affinare; [PUBLIC_PURPOSE](docs/PUBLIC_PURPOSE.md) ne conserva il compito.
 La competenza K-UX-AI forma anche la nuova Griglia di presentazione senza
 cambiare l’identità del kernel o attribuire capacità non esercitate.
+
+## Shared interface source — 14 October 2026
+
+The current derivative is formed by K-UX-AI `6ad22f39e2a93df847039d8e543503c0e65c0425`.
+Panoramica prepares activities; Lavoro in corso opens contextual cards.
+Guidance and tours describe shipyard work and explicit public questions.
+BUILD.json identifies reference, profile, runtime and HTML independently.
+The selected original and the separate 3D application remain unchanged.
