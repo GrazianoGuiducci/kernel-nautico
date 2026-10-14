@@ -10,6 +10,18 @@ English is the default interface and guide language. [Italiano](PUBLIC_GRIGLIA.i
 is supported. Page, embedded UI and dialogue use the selected language;
 drafts retain the words entered by their author.
 
+## Adopt with MPK; add a visual interface when useful
+
+Kernel Nautico can combine with [MAIOS Project Kernel (MPK)](https://github.com/GrazianoGuiducci/maios-project-kernel)
+for project startup, context, sources and continuity. The marine knowledge and
+method remain with Kernel Nautico; the shipyard provides its own configuration,
+people, documents and tools. These sources compose during adoption.
+
+The visual workspace is optional. An AI assistant can use the kernel through
+conversation and the tools already available in the adopting environment.
+K-UX-AI adds visual guidance, cards and workspace interaction when they serve
+the work. The interactive presentation illustrates this additional possibility.
+
 ## Select the context
 
 Overview prepares a workspace for the Engineering office, Shipyard, Suppliers,

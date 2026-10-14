@@ -6,6 +6,18 @@ di esplorare un caso illustrativo: un’esigenza dell’armatore sull’accesso 
 Ufficio tecnico, reparti del cantiere, fornitori, equipaggio e assistenza
 partecipano in momenti diversi, conservando requisiti, configurazioni e riscontri.
 
+## Adottare con MPK; aggiungere la UI quando serve
+
+Kernel Nautico può abbinarsi a [MAIOS Project Kernel (MPK)](https://github.com/GrazianoGuiducci/maios-project-kernel)
+per avvio, contesto, fonti e continuità del progetto. Il sapere e il metodo
+nautici restano al kernel di dominio; il cantiere porta configurazione, persone,
+documenti e strumenti propri. Le sorgenti si compongono nell’adozione.
+
+La UI visuale è facoltativa. L’assistente AI può usare il kernel attraverso
+la conversazione e gli strumenti già presenti nell’ambiente. K-UX-AI aggiunge
+guida, schede e interazione visuale quando servono al lavoro. La presentazione
+interattiva illustra questa possibilità aggiuntiva.
+
 ## Scegliere il contesto
 
 La panoramica prepara uno spazio di lavoro per Ufficio tecnico, Cantiere,

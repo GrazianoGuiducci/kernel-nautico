@@ -1,5 +1,14 @@
 # Stato del prodotto
 
+## Adoption and optional visual means — 14 October 2026
+
+The public sources and both profiles clarify MPK's generic project functions
+and the optional K-UX-AI workspace. Conversation and existing tools can carry
+the kernel. The domain method and shipyard sources retain their owners.
+The current cards no longer invite the separate 3D public route; the native
+3D sources remain preserved. This is adoption and access clarification, not
+a new core dependency, MPK copy or runtime deployment.
+
 ## Reciprocal and simultaneous interaction — 14 October 2026
 
 Operator actions and system communication share the same work context and can

@@ -18,8 +18,10 @@ il kernel può operare su altri prodotti e attività del cantiere.
 La Panoramica prepara le attività. Nel Lavoro in corso le schede permettono
 di comprendere il contesto, portare un contributo, confrontare possibilità,
 esaminare un riscontro e riprendere. La [guida all’uso](PUBLIC_GRIGLIA.md)
-spiega come muoversi e usare i dialoghi. Il caso è esplorabile anche nella
-presentazione 3D.
+spiega come muoversi e usare i dialoghi. La UI è una possibilità aggiuntiva: il
+kernel può operare anche nella conversazione con l’assistente AI e attraverso
+gli strumenti già disponibili. MPK può fornire avvio, contesto, fonti e
+continuità del progetto; il metodo nautico resta al kernel di dominio.
 
 Le domande inviate esplicitamente raggiungono MAIOS AI dove il servizio è
 configurato. Note, bozze e proposte restano nella sessione o nei file

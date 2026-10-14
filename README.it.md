@@ -16,6 +16,18 @@ usare le sue funzioni. Le schede usano il lessico del settore e
 mostrano logiche, competenze e possibilità. Il primo caso yacht è illustrativo.
 La presentazione 3D conserva il proprio caso come riferimento distinto.
 
+## Adottare con MPK; aggiungere la UI quando serve
+
+Kernel Nautico può abbinarsi a [MAIOS Project Kernel (MPK)](https://github.com/GrazianoGuiducci/maios-project-kernel)
+per avvio, contesto, fonti e continuità del progetto. Il sapere e il metodo
+nautici restano al kernel di dominio; il cantiere porta configurazione, persone,
+documenti e strumenti propri. Le sorgenti si compongono nell’adozione.
+
+La UI visuale è facoltativa. L’assistente AI può usare il kernel attraverso
+la conversazione e gli strumenti già presenti nell’ambiente. K-UX-AI aggiunge
+guida, schede e interazione visuale quando servono al lavoro. La presentazione
+interattiva illustra questa possibilità aggiuntiva.
+
 ## Esplora il prodotto
 
 - [Che cosa rappresentano presentazione e demo](docs/PUBLIC_PURPOSE.md)
@@ -24,7 +36,6 @@ La presentazione 3D conserva il proprio caso come riferimento distinto.
 - [Azienda, progetto e singola imbarcazione](docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md)
 - [Modello operativo nautico](docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
 - [La guida all’uso delle schede](docs/PUBLIC_GRIGLIA.it.md)
-- [Avvia il riferimento 3D locale](workstations/visual-presentation/production/threejs-first-encounter/app/README.md)
 
 L’azienda definisce il proprio contesto, le fonti utilizzabili, le persone e le
 azioni autorizzate. La presentazione e la demo aiutano a comprendere e discutere

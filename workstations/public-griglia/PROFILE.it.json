@@ -18,14 +18,14 @@
     "eyebrow": "",
     "title": "Kernel Nautico",
     "subtitle": "Interazione intelligente per il ciclo di vita del progetto.",
-    "intro": "MAIOS Project Kernel portato nella nautica. Il cantiere lo fa operare con persone, documenti e sistemi propri; progetto e singola imbarcazione mantengono configurazione e storia distinte.",
+    "intro": "Kernel Nautico può abbinarsi a MAIOS Project Kernel (MPK) per avvio, contesto e continuità. Il cantiere porta persone, documenti e sistemi propri; ogni progetto e imbarcazione conserva configurazione e storia distinte.",
     "method": "Progettazione, costruzione, fornitori, equipaggio e assistenza lavorano sulla stessa imbarcazione. Kernel Nautico mette in relazione conoscenze, strumenti e ragioni delle scelte, e forma competenze che evolvono attraverso l’esperienza.",
-    "use": "Operatore e sistema possono partecipare allo stesso spazio nello stesso momento: tu orienti e intervieni; il sistema mostra cambiamenti, requisiti e proposte. Una notifica pertinente può portare in vista gli strumenti adatti a comprendere e agire.",
+    "use": "Questo spazio visuale facoltativo permette a operatore e sistema di partecipare nello stesso momento: tu orienti e intervieni; il sistema mostra cambiamenti, requisiti e proposte. Una notifica pertinente può portare in vista gli strumenti utili.",
     "scope": "Nella demo un caso illustrativo: un’esigenza dell’armatore sull’accesso di poppa. Le schede mostrano come esplorare alternative, collegare il lavoro e far continuare un riscontro."
   },
   "presentationTitle": "Un’esigenza continua nel progetto e nella vita dell’imbarcazione.",
   "presentationMeaning": "L’operatore usa lo spazio per seguire revisioni, contribuire e orientare il lavoro sull’imbarcazione. Il sistema lo usa per mostrare requisiti, cambiamenti, relazioni e proposte. Le due attività possono svolgersi contemporaneamente nello stesso contesto; fonti di progetto e autorità sulle azioni restano al cantiere.",
-  "presentationHref": "/kernel-nautico-demo/index.html?public=1",
+  "presentationHref": "",
   "exploreTitle": "La stessa imbarcazione, responsabilità differenti.",
   "exploreMeaning": "Il caso collega le esigenze dell’armatore al lavoro dell’ufficio tecnico, del cantiere, dei fornitori e dell’assistenza. Il cambio di contesto conserva l’oggetto e le ragioni.",
   "phases": [
@@ -645,5 +645,11 @@
     "current_demo": "La demo attuale segue un caso illustrativo di accesso a poppa attraverso schede, strumenti e dialoghi.",
     "status": "development_direction",
     "demo_has_ar_surface": false
+  },
+  "adoption": {
+    "mpk_role": "Funzioni generiche di avvio, contesto, fonti e continuità del progetto, composte nell’adozione. Kernel Nautico possiede sapere e metodo nautici.",
+    "visual_ui_optional": true,
+    "other_means": "Conversazione con l’assistente AI e strumenti già disponibili nell’ambiente di adozione.",
+    "ui_role": "K-UX-AI aggiunge guida e interazione visuale quando utili."
   }
 }

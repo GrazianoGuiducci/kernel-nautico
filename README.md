@@ -10,11 +10,22 @@ refine its knowledge and its way of learning.
 The product serves all shipyards. The repository contains the domain kernel,
 operating models and a workspace for discovering and using its functions.
 Cards use the sector's terminology and show its logic, competences and
-possibilities. The first yacht case is illustrative. The 3D presentation
-retains its own case as a separate reference.
+possibilities. The first yacht case is illustrative.
 
 [Italiano](README.it.md) · [English workspace](workstations/public-griglia/demo/)
 · [Interfaccia italiana](workstations/public-griglia/demo/it/)
+
+## Adopt with MPK; add a visual interface when useful
+
+Kernel Nautico can combine with [MAIOS Project Kernel (MPK)](https://github.com/GrazianoGuiducci/maios-project-kernel)
+for project startup, context, sources and continuity. The marine knowledge and
+method remain with Kernel Nautico; the shipyard provides its own configuration,
+people, documents and tools. These sources compose during adoption.
+
+The visual workspace is optional. An AI assistant can use the kernel through
+conversation and the tools already available in the adopting environment.
+K-UX-AI adds visual guidance, cards and workspace interaction when they serve
+the work. The interactive presentation illustrates this additional possibility.
 
 ## Explore the product
 
@@ -24,7 +35,6 @@ retains its own case as a separate reference.
 - [Company, project and individual vessel](docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md)
 - [Marine operating model](docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
 - [Card guide](docs/PUBLIC_GRIGLIA.md)
-- [Local 3D reference](workstations/visual-presentation/production/threejs-first-encounter/app/README.md)
 
 The company defines its context, usable sources, people and authorised actions.
 The presentation and demo help people understand and discuss these possibilities;

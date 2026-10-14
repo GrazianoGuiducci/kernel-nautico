@@ -316,6 +316,11 @@ nautical-native competence useful; repeated use deepens it rather than admitting
 its formation. Keep the provenance and responsibility of shared functions
 recognizable while allowing a materially different nautical form to emerge.
 
+The visual interface is optional. An AI assistant can use the domain kernel
+through conversation and existing tools. K-UX-AI adds a visual medium when
+useful; MPK provides generic project capabilities composed during adoption.
+This relation does not make the presentation interface a core dependency.
+
 Canonical detail:
 `docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md`.
 
