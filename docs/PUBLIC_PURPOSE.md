@@ -1,36 +1,34 @@
-# La presentazione pubblica del Kernel Nautico
+# Conoscere Kernel Nautico attraverso il lavoro
 
-La presentazione permette a una persona di capire che cosa il kernel può
-rendere possibile nel ciclo nautico, chi partecipa e come le informazioni
-accompagnano il lavoro. La demo consente di esplorare un esempio coerente.
+Ufficio tecnico, cantiere, fornitori, equipaggio e assistenza intervengono
+sulla stessa imbarcazione in momenti diversi. Kernel Nautico collega il
+sapere, le ragioni delle scelte e i riscontri, perché il lavoro possa
+continuare e le competenze pertinenti possano imparare dall’esperienza.
 
-La superficie attuale è anche uno **strumento di comprensione e presentazione** per possibili utilizzatori, aziende, collaboratori e investitori: deve aiutare a vedere le dinamiche interne del kernel, le relazioni fra fonti, eventi, lavoro, competenze e conseguenze, e distinguere ciò che è mostrato da ciò che è realmente integrato. L'efficacia dell'incontro conta anche se il medium attuale non sarà la futura interfaccia operativa.
+Il prodotto è rivolto a tutti i cantieri navali. Ogni adozione può riguardare
+costruzione, refit, un programma di prodotto o la vita di un’imbarcazione.
+Il cantiere rende disponibili persone, documenti e sistemi propri; progetto
+e singola imbarcazione mantengono configurazione e storia distinte.
 
-La direzione UX-AI più evoluta prevede una forma d'interazione che il sistema stesso compone e governa dinamicamente nel contesto. Non si presume che i pannelli, la griglia o i controlli dell'attuale dimostratore diventino permanenti; la ricerca sul medium rimane utile e trasferibile. Questa direzione non dimostra ancora un sistema autonomo integrato.
+Il primo caso illustrativo riguarda un’esigenza dell’armatore sull’accesso
+di poppa di uno yacht. Si possono seguire requisiti, alternative progettuali,
+lavorazioni e riscontri. Il caso permette di esplorare queste relazioni;
+il kernel può operare su altri prodotti e attività del cantiere.
 
-Kernel Nautico è rivolto a tutti i cantieri navali. Il contesto di ogni adozione
-forma il lavoro pertinente: costruzione, refit, programmi di prodotto e vita
-dell'imbarcazione. Il caso yacht permette di comprendere una possibilità;
-non determina il perimetro del kernel. I materiali destinati a una specifica
-azienda vengono preparati separatamente dalla presentazione pubblica.
+La Panoramica prepara le attività. Nel Lavoro in corso le schede permettono
+di comprendere il contesto, portare un contributo, confrontare possibilità,
+esaminare un riscontro e riprendere. La [guida all’uso](PUBLIC_GRIGLIA.md)
+spiega come muoversi e usare i dialoghi. Il caso è esplorabile anche nella
+presentazione 3D.
 
-Il primo incontro collega l’esigenza del cliente, la progettazione, la
-costruzione, l’uso e l’assistenza, fino al sapere che cambia il caso successivo.
-L’accesso di poppa è un esempio illustrativo di questa continuità.
+Le domande inviate esplicitamente raggiungono MAIOS AI dove il servizio è
+configurato. Note, bozze e proposte restano nella sessione o nei file
+esportati, finché vengono trasferite al kernel che continua il lavoro.
+Gli eventi della demo sono illustrativi; documenti aziendali, sistemi di
+bordo e azioni effettive entrano attraverso l’adozione nel proprio ambiente.
 
-La UI primaria usa ora la Griglia costruita con GPT, composta da K-UX-AI con
-il profilo del kernel nautico. Home prepara il campo; le schede presentano,
-guidano, ricevono contributi e permettono verifiche, confronto, monitoraggio
-illustrativo e ripresa. Le domande inviate esplicitamente raggiungono MAIOS AI
-dove il servizio è configurato. La [guida della Griglia](PUBLIC_GRIGLIA.md)
-mantiene sorgenti e uso. La presentazione 3D rimane un riferimento separato.
-
-Il laboratorio approfondisce note, schizzi, importazione ed esportazione,
-riceventi e proposte di metodo. Una futura UI operativa potrà usare le stesse
-relazioni con dati, ruoli, sistemi e azioni definiti dall’azienda. Presentazione,
-demo, laboratorio e interfaccia aziendale hanno compiti riconoscibili.
-
-La navigazione e il mezzo percettivo possono evolvere attraverso il loro uso.
-Gli incontri commerciali e i materiali destinati a una specifica azienda sono
-preparati separatamente. Il visitatore trova qui il prodotto e gli esempi che
-può esplorare. Nessuna relazione commerciale è dichiarata dalla demo.
+L’interfaccia può evolvere con le esigenze del cantiere. Contesto, strumenti
+e attività possono comporsi intorno al lavoro; un sistema collegato può
+rendere disponibili notifiche e interventi pertinenti. Il metodo e le
+fonti del kernel guidano questa integrazione e conservano ciò che il suo
+uso insegna.

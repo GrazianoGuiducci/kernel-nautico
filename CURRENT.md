@@ -79,7 +79,7 @@ cambiare l’identità del kernel o attribuire capacità non esercitate.
 
 ## Shared interface source — 14 October 2026
 
-The current derivative is formed by K-UX-AI `6ad22f39e2a93df847039d8e543503c0e65c0425`.
+The current derivative is formed by K-UX-AI `0e5ad8a95f89cf4d4a477a0ad04e2657129c8602`.
 Panoramica prepares activities; Lavoro in corso opens contextual cards.
 Guidance and tours describe shipyard work and explicit public questions.
 BUILD.json identifies reference, profile, runtime and HTML independently.

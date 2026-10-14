@@ -11,7 +11,7 @@ il contenuto della distribuzione e le funzioni della UI non ne sono il confine.
 
 Mantieni distinti il kernel nautico, l’azienda che lo adotta, un progetto e la
 singola imbarcazione. Una rappresentazione non concede autorità su un sistema.
-La [Griglia di presentazione/guida](docs/PUBLIC_GRIGLIA.md) usa il sapere del
+La [guida all’uso delle schede](docs/PUBLIC_GRIGLIA.md) usa il sapere del
 kernel nel proprio dominio. Il caso e gli eventi sono illustrativi; contributi
 e bozze restano nella sessione o nei file esportati. Le domande inviate
 esplicitamente al servizio MAIOS sono distinte da quei contributi. L'ambiente
