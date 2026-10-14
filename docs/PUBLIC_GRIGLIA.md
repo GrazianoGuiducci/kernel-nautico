@@ -72,3 +72,5 @@ environment with its own sources and responsibilities.
 
 The bilingual workspace is built from K-UX-AI `73b059d875234d3e283b81d4b36a95d46a839035`.
 Each locale BUILD records the exact profile, catalogues, runtime and artifact.
+
+The shared dialogue display correction follows K-UX-AI `6076603eb9fa406ff893f9db2016dd3e008acf75`.

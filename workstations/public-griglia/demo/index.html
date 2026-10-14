@@ -1678,12 +1678,12 @@ body[data-kux-product="kernel-nautico"] .kux-home-setup{align-self:start}
     return {path: p.pagePath, hash: marker ? '#' + marker : '#kernel-guide', title: p.home.title,
       surface: p.id, expression: 'product', h1: p.home.title, headings: [c.name, c.subtitle],
       active_label: c.name + ' · ' + (p.activityLabels?.[intent] || intent), active_marker: marker,
-      visible_text: [c.goal, "Source pubblica: " + c.source, "Open point: " + c.unknown, 'Seguito: ' + c.next].join('\n')};
+      visible_text: [c.goal, "Public source: " + c.source, "Open point: " + c.unknown, 'Seguito: ' + c.next].join('\n')};
   }
 
   async function ask(text, context, intent, owner) {
     const messages = thread(owner), message = String(text || '').trim().slice(0, 6000);
-    if (!message) return {accepted: false, message: 'Scrivi una domanda prima di inviarla.'};
+    if (!message) return {accepted: false, message: "Write a question before sending it."};
     const history = messages.filter(x => ['user','assistant'].includes(x.role) && !['pending','unavailable'].includes(x.kind)).slice(-12).map(x => ({role:x.role,content:x.text}));
     if(history.at(-1)?.role==='user' && history.at(-1).content===message)history.pop();
     const requestId = uuid();
@@ -1704,8 +1704,8 @@ body[data-kux-product="kernel-nautico"] .kux-home-setup{align-self:start}
     const get = id => { if(!entries.has(id))entries.set(id,[]);return entries.get(id); };
     function post(id,text,context) {
       const clean=String(text||'').trim().slice(0,3000);if(!clean)return null;
-      const c=get(id), user={id:uuid(),role:'operator',text:clean,owner:id,context:context.name,source:"Contribution della persona",kind:'explicit-question'};
-      const pending={id:uuid(),role:'pending',text:'MAIOS AI sta leggendo la domanda e il contesto di questa scheda.',owner:id,context:context.name,source:context.source,kind:'pending'};
+      const c=get(id), user={id:uuid(),role:'operator',text:clean,owner:id,context:context.name,source:"Contribution from the person",kind:'explicit-question'};
+      const pending={id:uuid(),role:'pending',text:"MAIOS AI is reading the question and this card’s context.",owner:id,context:context.name,source:context.source,kind:'pending'};
       c.push(user,pending);
       const panel=core?.state.panels.find(x=>x.id===id);
       const contextId=panel?.context || Object.keys(profile().contexts).find(k=>profile().contexts[k].name===context.name) || 'poppa';
@@ -1761,7 +1761,7 @@ body[data-kux-product="kernel-nautico"] .kux-home-setup{align-self:start}
   async function sendChat(p,message) {
     const clean=String(message||'').trim();if(!clean)return;
     const owner='chat-'+p.id, messages=thread(owner);messages.push({role:'user',text:clean});
-    const pending={role:'assistant',kind:'pending',text:'MAIOS AI sta leggendo la domanda e il contesto.'};messages.push(pending);
+    const pending={role:'assistant',kind:'pending',text:"MAIOS AI is reading the question and context."};messages.push(pending);
     const input=p.el.querySelector('.chat-editor');if(input)input.value='';core.renderModule(p);
     try{const answer=await ask(clean,p.context,p.intent,owner);pending.text=answer.message;pending.kind='maios-response';pending.proposedActions=answer.proposedActions;}catch(error){pending.text=error.message;pending.kind='unavailable';}
     if(core.state.panels.includes(p))core.renderModule(p);
@@ -2273,7 +2273,7 @@ function createChatFormModule({
       const outcome=await onSubmit({...d});
       if(outcome?.accepted===true){setStatus(outcome.message||'Controller ha accettato la richiesta.');}
       else setStatus(outcome?.message||"The contribution was not retained. The draft remains available.",true);
-    }catch(e){setStatus('Richiesta non eseguita. La bozza resta disponibile.',true)}
+    }catch(e){setStatus("The request was not completed. Your draft is still available.",true)}
     finally{busy=false;submit.disabled=false}
   });
   const appendMessage=(role,text)=>{
@@ -2290,7 +2290,7 @@ function createChatFormModule({
       const result=await onAsk(msg);
       if(result?.reply)appendMessage('assistant',result.reply);
       else if(result?.accepted!==true)appendMessage('system',result?.message||'Nessun assistente connesso: richiesta registrata solo dal ricevente locale.');
-    }catch(e){appendMessage('system','Richiesta non eseguita. Nessuna risposta AI verificata.');}
+    }catch(e){appendMessage('system',"The request was not completed. No AI reply was verified.");}
     finally{busy=false;askButton.disabled=false}
   }
   askButton.addEventListener('click',send);ask.addEventListener('keydown',ev=>{if(ev.key==='Enter'&&!ev.shiftKey){ev.preventDefault();send();}});
@@ -2548,7 +2548,7 @@ const additional=[{id:'monitorare',verb:"Monitor",icon:'◉',short:"Several sour
 const allIntents=[...intents,...additional];const byIntent=Object.fromEntries(allIntents.map(x=>[x.id,x]));
 const contexts={"poppa":{"name":"Engineering office","subtitle":"Stern access","goal":"Make boarding easier while preserving the relationships between desired use, design and construction.","source":"Illustrative case · stern access","items":["Owner’s requirement","Boarding interface","Clearances and fixings"],"unknown":"Compatibility of the proposal with the vessel configuration","next":"Connect the alternative to the relevant checks and people."},"cantiere":{"name":"Shipyard","subtitle":"Configuration and construction work","goal":"Connect a change to interfaces, work and observations about the configuration.","source":"Illustrative case · shipyard work","items":["Current configuration","Work carried out","Quality observation"],"unknown":"Observation about the work to understand","next":"Relate the observation to the subject, configuration and responsibilities.","possibilities":[{"title":"Retain the configuration","detail":"Check the work against the current configuration."},{"title":"Propose a change","detail":"Understand which interfaces and work would change."}]},"fornitori":{"name":"Suppliers","subtitle":"A supply proposal","goal":"Compare a proposal with the project’s requirements and actual interfaces.","source":"Illustrative case · component proposal","items":["Project requirement","Supply proposal","Physical interface"],"unknown":"Fit between proposal and requirement","next":"Reach the technical comparison and retain its source.","possibilities":[{"title":"Reference component","detail":"Retain and assess the component in the case."},{"title":"Alternative proposal","detail":"Compare geometry, interface and function before choosing."}]},"bordo":{"name":"On board","subtitle":"Vessel use and configuration","goal":"Understand a use experience through the actual configuration and the conditions of the case.","source":"Illustrative case · onboard experience","items":["Use experience","Stated configuration","Observed conditions"],"unknown":"Relationship between use and configuration","next":"Connect experience, sources and observations before assigning a cause.","possibilities":[{"title":"Intended use","detail":"Understand the experience under the conditions intended in the case."},{"title":"Different condition","detail":"Explore which difference needs a new understanding."}]},"assistenza":{"name":"Service","subtitle":"An observation during the vessel’s life","goal":"Connect a report, configuration and interventions without losing the reasons behind the work.","source":"Illustrative case · service observation","items":["Report","Configuration","Intervention and observations"],"unknown":"Cause of the report to understand","next":"Carry the observation forward in the product and the relevant competence.","possibilities":[{"title":"Examine the observation","detail":"Reach the conditions and sources that explain the event."},{"title":"Form a proposal","detail":"State which consequence would make a change useful."}]}};
 const scenarios=[{"context":"fornitori","intent":"controllare","title":"A source adds a difference","description":"A new contribution appears in the case, to compare with the current subject.","source":"Illustrative event","next":"Reach the technical comparison and retain its source."},{"context":"cantiere","intent":"controllare","title":"An observation needs attention","description":"The case connects a new observation to its context and to the people who can understand it.","source":"Illustrative event","next":"Relate the observation to the subject, configuration and responsibilities."},{"context":"assistenza","intent":"controllare","title":"A consequence returns to the method","description":"A useful difference can continue in the relevant competence at its next use.","source":"Illustrative event","next":"Carry the observation forward in the product and the relevant competence."}];
-const state={homeSelected:new Set(),screen:'home',order:intents.map(x=>x.id),homeFeatured:intents.find(x=>x.weight==='hero')?.id||'capire',usage:{},layout:'auto',focusLocked:false,slotOrder:[],activeContext:'poppa',panels:[],focused:null,seq:0,z:1,events:[],nextEvent:0,notes:[],checks:{},selections:{},messages:[{role:'assistant',text:"Questo spazio presenta Kernel Nautico. The guide uses the kernel’s sources; explicitly submitted questions can reach MAIOS AI on the configured site."}],capabilities:new Set(cfg.profile.capabilities||[]),drafts:{},stageStep:0,lastNotice:null,manualOrder:false,contextFocus:{}};
+const state={homeSelected:new Set(),screen:'home',order:intents.map(x=>x.id),homeFeatured:intents.find(x=>x.weight==='hero')?.id||'capire',usage:{},layout:'auto',focusLocked:false,slotOrder:[],activeContext:'poppa',panels:[],focused:null,seq:0,z:1,events:[],nextEvent:0,notes:[],checks:{},selections:{},messages:[{role:'assistant',text:"This workspace introduces Kernel Nautico. The guide uses the kernel’s sources; explicitly submitted questions can reach MAIOS AI on the configured site."}],capabilities:new Set(cfg.profile.capabilities||[]),drafts:{},stageStep:0,lastNotice:null,manualOrder:false,contextFocus:{}};
 try{const prev=JSON.parse(localStorage.getItem('kux-public:' + cfg.profile.id + ':preferences')||'null');if(prev&&Array.isArray(prev.order)){const vals=prev.order.filter(id=>intents.some(x=>x.id===id));state.order=[...new Set([...vals,...intents.map(x=>x.id)])];}if(prev&&intents.some(x=>x.id===prev.homeFeatured))state.homeFeatured=prev.homeFeatured;if(prev&&prev.usage&&typeof prev.usage==='object'){for(const x of intents)state.usage[x.id]=Math.min(999,Math.max(0,Number(prev.usage[x.id])||0));}}catch{}
 // Home configurations are receiver-owned view plans, never Nautico work state.
 // Keep them separate by context; missing or unavailable storage leaves this

@@ -119,3 +119,12 @@ Native and site BUILD records qualify the resulting derivative separately.
 
 The bilingual workspace is built from K-UX-AI `73b059d875234d3e283b81d4b36a95d46a839035`.
 Each locale BUILD records the exact profile, catalogues, runtime and artifact.
+
+## Dialogue transition copy — CUR-36 live correction
+
+The real English dialogue exposed an Italian waiting message. Waiting, empty
+question, attribution and unavailable-request copy now follow the selected
+language. A regression exercises pending and busy states in both languages,
+preserving a submitted Italian question verbatim. This is a shared display-copy
+correction; conversation knowledge, provider routing and company authority retain
+their existing meaning. Italian artifact HTML is unchanged.
