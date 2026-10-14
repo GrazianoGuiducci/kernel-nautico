@@ -14,7 +14,6 @@ Il prodotto è per tutti i cantieri navali. Il repository conserva il kernel
 di dominio, i suoi modelli operativi e uno spazio di lavoro per conoscere e
 usare le sue funzioni. Le schede usano il lessico del settore e
 mostrano logiche, competenze e possibilità. Il primo caso yacht è illustrativo.
-La presentazione 3D conserva il proprio caso come riferimento distinto.
 
 ## Adottare con MPK; aggiungere la UI quando serve
 
