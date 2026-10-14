@@ -1,0 +1,22 @@
+{
+  "schema": "kux.public-griglia-build.v1",
+  "profile_id": "kernel-nautico",
+  "semantic_owner": "GrazianoGuiducci/kernel-nautico",
+  "reference_sha256": "1879dbe0d2ccba4c7db4701fe067c05ad1d20761aa2a6cf053f90b478118430b",
+  "profile_sha256": "dbd14c1320e4f5f69b5ea78e0a4109fd5e70c27f9d68009356a2357161e4d0a5",
+  "runtime_sha256": "d51a2add015e829dc764dbc8aa0cc7e5139055366639007d27a05b65da644b11",
+  "html_sha256": "3971f12cef50541ea8e4250efeadda45bafe99e72d768aecfa80b8ad80d4fcb4",
+  "means": {
+    "ui": "GPT Griglia v5.12 derived public incarnation",
+    "dialogs": "explicit MAIOS public assistant requests when host configured",
+    "company_integrations": false
+  },
+  "locale": "it",
+  "default_locale": "en",
+  "supported_locales": [
+    "en",
+    "it"
+  ],
+  "locale_catalog_sha256": "1c3dc7671fbc6cf3e185b70b8c67cd131339fbbc4bada188b1a3de03033ad81c",
+  "tour_catalog_sha256": "c1373483d210bc8d5540b79a45e03553bc09b48f7c953f2b05bb7ec89dacb38e"
+}

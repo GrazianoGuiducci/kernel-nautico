@@ -3,214 +3,214 @@
   "id": "kernel-nautico",
   "name": "Kernel Nautico",
   "semanticOwner": "GrazianoGuiducci/kernel-nautico",
-  "pagePath": "/kernel-nautico.html",
-  "locale": "it",
+  "pagePath": "/kernel-nautico-en.html",
+  "locale": "en",
   "bridge": "kn.public-view",
   "capabilities": [
     "compare"
   ],
   "actors": [
-    "Persone e fonti del cantiere",
-    "Imbarcazione e progetto",
-    "Competenze del kernel"
+    "Shipyard people and sources",
+    "Vessel and project",
+    "Kernel competences"
   ],
   "home": {
     "eyebrow": "",
     "title": "Kernel Nautico",
-    "subtitle": "Interazione intelligente per il ciclo di vita del progetto.",
-    "intro": "MAIOS Project Kernel portato nella nautica. Il cantiere lo fa operare con persone, documenti e sistemi propri; progetto e singola imbarcazione mantengono configurazione e storia distinte.",
-    "method": "Progettazione, costruzione, fornitori, equipaggio e assistenza lavorano sulla stessa imbarcazione. Kernel Nautico mette in relazione conoscenze, strumenti e ragioni delle scelte, e forma competenze che evolvono attraverso l’esperienza.",
-    "use": "Lo spazio di lavoro rende disponibili contesto, strumenti e possibilità di continuazione. Rispondendo a una notifica pertinente, lo spazio potrà configurarsi con gli strumenti adatti a comprendere e agire.",
-    "scope": "Nella demo un caso illustrativo: un’esigenza dell’armatore sull’accesso di poppa. Le schede mostrano come esplorare alternative, collegare il lavoro e far continuare un riscontro."
+    "subtitle": "Intelligent interaction throughout the project lifecycle.",
+    "intro": "MAIOS Project Kernel applied to the marine sector. The shipyard operates it with its own people, documents and systems; the project and each vessel retain distinct configurations and histories.",
+    "method": "Design, construction, suppliers, crew and service work on the same vessel. Kernel Nautico connects knowledge, tools and the reasons behind decisions, and forms competences that evolve through experience.",
+    "use": "The workspace makes context, tools and ways to continue available. In response to a relevant notification, it can take shape with the tools needed to understand and act.",
+    "scope": "The demo uses an illustrative case: an owner’s requirement for stern access. The cards show how to explore alternatives, connect work and carry an observation forward."
   },
-  "presentationTitle": "Un’esigenza continua nel progetto e nella vita dell’imbarcazione.",
-  "presentationMeaning": "Kernel Nautico mette in relazione sapere del cantiere, requisiti e configurazione dell’imbarcazione. Un riscontro può migliorare il lavoro, il metodo aziendale o la competenza nautica secondo ciò che insegna.",
+  "presentationTitle": "A requirement continues through the project and the vessel’s life.",
+  "presentationMeaning": "Kernel Nautico connects shipyard knowledge with vessel requirements and configuration. An observation can improve work, the company’s method or a marine competence according to what it teaches.",
   "presentationHref": "/kernel-nautico-demo/index.html?public=1",
-  "exploreTitle": "La stessa imbarcazione, responsabilità differenti.",
-  "exploreMeaning": "Il caso collega le esigenze dell’armatore al lavoro dell’ufficio tecnico, del cantiere, dei fornitori e dell’assistenza. Il cambio di contesto conserva l’oggetto e le ragioni.",
+  "exploreTitle": "The same vessel, different responsibilities.",
+  "exploreMeaning": "The case connects the owner’s requirements to the work of engineering, the shipyard, suppliers and service. Changing context preserves the subject and its reasons.",
   "phases": [
     {
-      "title": "Esigenza",
-      "text": "Un’esigenza dell’armatore rende presente un uso desiderato. Il kernel collega la richiesta al prodotto e alle fonti pertinenti."
+      "title": "Requirement",
+      "text": "An owner’s requirement expresses a desired use. The kernel connects the request to the product and relevant sources."
     },
     {
-      "title": "Progettazione",
-      "text": "L’ufficio tecnico esplora alternative, ingombri e interfacce, conservando le ragioni delle proposte e ciò che richiede una verifica."
+      "title": "Design",
+      "text": "Engineering explores alternatives, clearances and interfaces, retaining the reasons behind proposals and what needs verification."
     },
     {
-      "title": "Costruzione",
-      "text": "Cantiere e fornitori collegano configurazione, lavorazioni, componenti e riscontri sullo stesso oggetto."
+      "title": "Construction",
+      "text": "The shipyard and suppliers connect configuration, work, components and observations about the same subject."
     },
     {
-      "title": "Uso e assistenza",
-      "text": "Configurazione effettiva, equipaggio e assistenza fanno comprendere ciò che accade nella vita dell’imbarcazione."
+      "title": "Use and service",
+      "text": "The actual configuration, crew and service help explain what happens throughout the vessel’s life."
     },
     {
-      "title": "Apprendimento",
-      "text": "Il riscontro torna alla competenza pertinente: imbarcazione, cantiere, dominio nautico o metodo generale possono imparare conseguenze differenti."
+      "title": "Learning",
+      "text": "An observation returns to the relevant competence: the vessel, shipyard, marine domain or general method can learn different consequences."
     }
   ],
   "defaults": {
     "kind": "KERNEL NAUTICO · CASO ILLUSTRATIVO",
-    "object": "Accesso di poppa nell’imbarcazione del caso",
-    "method": "Fonti, oggetto, proposta e conseguenza mantengono le proprie relazioni. Il kernel compone il sapere pertinente e fa tornare il riscontro alla competenza che deve operare diversamente.",
-    "contributionTitle": "Un riscontro entra nel lavoro.",
-    "checkTitle": "Quali verifiche servono in questo punto?",
-    "checkMeaning": "Il caso rende visibili criteri e punti aperti. Le annotazioni della demo accompagnano l’esplorazione; le qualificazioni reali appartengono al cantiere.",
-    "designTitle": "Un’esigenza, alternative da confrontare.",
-    "organizeTitle": "Collega il seguito alle persone e alle fonti.",
-    "communicateTitle": "Rendi trasferibile il punto di lavoro.",
-    "communicationMeaning": "Oggetto, configurazione, riscontro e domanda permettono a ufficio tecnico, cantiere o assistenza di continuare dal punto pertinente.",
-    "reentryMeaning": "Il cantiere, il progetto e la singola imbarcazione mantengono storie proprie. Questa sessione conserva i contributi locali e rende raggiungibile il seguito del caso.",
-    "experimentTitle": "Esplora la conseguenza di un’alternativa.",
-    "experimentMeaning": "La proiezione collega una possibilità all’uso e alle verifiche che renderebbero praticabile la scelta.",
-    "monitorTitle": "Quale variazione richiede attenzione?",
-    "monitorMeaning": "Fonti, lavorazioni e riscontri possono rendere pertinente una nuova verifica. La demo mostra il rapporto attraverso eventi illustrativi.",
-    "monitorHorizon": "Nell’adozione il campo può comprendere sistemi del cantiere, strumentazione, manutenzione, navigazione e robotica, attraverso fonti e azioni realmente collegate.",
-    "compareTitle": "Confronta due contributi sul caso.",
+    "object": "Stern access on the vessel in the case",
+    "method": "Sources, subject, proposal and consequence retain their relationships. The kernel composes relevant knowledge and returns observations to the competence that must operate differently.",
+    "contributionTitle": "An observation becomes part of the work.",
+    "checkTitle": "Which checks are needed here?",
+    "checkMeaning": "The case reveals criteria and open points. Demo notes support exploration; actual assessments belong to the shipyard.",
+    "designTitle": "One requirement, alternatives to compare.",
+    "organizeTitle": "Connect the next step to people and sources.",
+    "communicateTitle": "Make the point of work transferable.",
+    "communicationMeaning": "Subject, configuration, observation and question let engineering, the shipyard or service continue from the relevant point.",
+    "reentryMeaning": "The shipyard, project and each vessel retain their own histories. This session retains local contributions and makes the next step of the case reachable.",
+    "experimentTitle": "Explore the consequence of an alternative.",
+    "experimentMeaning": "The projection connects a possibility to use and to the checks that would make the choice practicable.",
+    "monitorTitle": "Which change needs attention?",
+    "monitorMeaning": "Sources, work and observations can make a new check relevant. The demo shows that relationship through illustrative events.",
+    "monitorHorizon": "When adopted, the workspace can include shipyard systems, instrumentation, maintenance, navigation and robotics, through sources and actions actually connected.",
+    "compareTitle": "Compare two contributions about the case.",
     "compareTexts": [
-      "Accesso di poppa: ingombri e interfaccia di imbarco",
-      "Accesso di poppa: configurazione, fissaggi e condizioni di utilizzo"
+      "Stern access: clearances and boarding interface",
+      "Stern access: configuration, fixings and conditions of use"
     ],
-    "aiTitle": "Dialoga sul lavoro nautico presente.",
-    "aiMeaning": "La guida usa le fonti pubbliche del kernel e il contesto della scheda per comprendere il metodo e il seguito del caso.",
-    "aiPrompt": "Come può operare Kernel Nautico in questo punto del lavoro?"
+    "aiTitle": "Discuss the current marine work.",
+    "aiMeaning": "The guide uses the kernel’s public sources and the card context to explain the method and how to continue the case.",
+    "aiPrompt": "How can Kernel Nautico operate at this point in the work?"
   },
   "possibilities": [
     {
-      "title": "Passaggio continuo",
-      "detail": "Esplorare una transizione più graduale tra banchina e bordo."
+      "title": "Continuous transition",
+      "detail": "Explore a more gradual transition between quay and vessel."
     },
     {
-      "title": "Elemento mobile",
-      "detail": "Esplorare un elemento che accompagna l’imbarco e si ritrae."
+      "title": "Moving element",
+      "detail": "Explore an element that supports boarding and retracts."
     }
   ],
   "documents": [
     {
-      "label": "Kernel Nautico: scopo e logiche",
+      "label": "Kernel Nautico: purpose and operation",
       "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/KERNEL.md"
     },
     {
-      "label": "Competenze e apprendimento",
+      "label": "Competences and learning",
       "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/COMPETENCE_FIELD.md"
     },
     {
-      "label": "Azienda, progetto e imbarcazione",
+      "label": "Company, project and vessel",
       "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md"
     },
     {
-      "label": "Modello operativo nautico",
+      "label": "Marine operating model",
       "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md"
     },
     {
-      "label": "Guida all’uso delle schede",
+      "label": "Guide to using the cards",
       "href": "https://github.com/GrazianoGuiducci/kernel-nautico/blob/codex/public-kux-receiver-20261013/docs/PUBLIC_GRIGLIA.md"
     }
   ],
   "contexts": {
     "poppa": {
-      "name": "Ufficio tecnico",
-      "subtitle": "Accesso di poppa",
-      "goal": "Rendere più agevole l’imbarco conservando le relazioni fra uso desiderato, progettazione e costruzione.",
-      "source": "Caso illustrativo · accesso di poppa",
+      "name": "Engineering office",
+      "subtitle": "Stern access",
+      "goal": "Make boarding easier while preserving the relationships between desired use, design and construction.",
+      "source": "Illustrative case · stern access",
       "items": [
-        "Esigenza dell’armatore",
-        "Interfaccia di imbarco",
-        "Ingombri e fissaggi"
+        "Owner’s requirement",
+        "Boarding interface",
+        "Clearances and fixings"
       ],
-      "unknown": "Compatibilità della proposta con la configurazione dell’imbarcazione",
-      "next": "Collegare l’alternativa alle verifiche e alle persone pertinenti."
+      "unknown": "Compatibility of the proposal with the vessel configuration",
+      "next": "Connect the alternative to the relevant checks and people."
     },
     "cantiere": {
-      "name": "Cantiere",
-      "subtitle": "Configurazione e lavorazioni",
-      "goal": "Collegare una modifica alle interfacce, alle lavorazioni e ai riscontri sulla configurazione.",
-      "source": "Caso illustrativo · lavorazione in cantiere",
+      "name": "Shipyard",
+      "subtitle": "Configuration and construction work",
+      "goal": "Connect a change to interfaces, work and observations about the configuration.",
+      "source": "Illustrative case · shipyard work",
       "items": [
-        "Configurazione corrente",
-        "Lavorazione",
-        "Riscontro qualità"
+        "Current configuration",
+        "Work carried out",
+        "Quality observation"
       ],
-      "unknown": "Riscontro della lavorazione da comprendere",
-      "next": "Ricondurre il riscontro a oggetto, configurazione e responsabilità.",
+      "unknown": "Observation about the work to understand",
+      "next": "Relate the observation to the subject, configuration and responsibilities.",
       "possibilities": [
         {
-          "title": "Conservare la configurazione",
-          "detail": "Verificare la lavorazione rispetto alla configurazione corrente."
+          "title": "Retain the configuration",
+          "detail": "Check the work against the current configuration."
         },
         {
-          "title": "Proporre una variazione",
-          "detail": "Comprendere quali interfacce e lavorazioni cambierebbero."
+          "title": "Propose a change",
+          "detail": "Understand which interfaces and work would change."
         }
       ]
     },
     "fornitori": {
-      "name": "Fornitori",
-      "subtitle": "Una proposta di fornitura",
-      "goal": "Confrontare una proposta con le esigenze e le interfacce effettive del progetto.",
-      "source": "Caso illustrativo · proposta di componente",
+      "name": "Suppliers",
+      "subtitle": "A supply proposal",
+      "goal": "Compare a proposal with the project’s requirements and actual interfaces.",
+      "source": "Illustrative case · component proposal",
       "items": [
-        "Requisito del progetto",
-        "Proposta di fornitura",
-        "Interfaccia fisica"
+        "Project requirement",
+        "Supply proposal",
+        "Physical interface"
       ],
-      "unknown": "Corrispondenza fra proposta e requisito",
-      "next": "Raggiungere il confronto tecnico e conservare la sua fonte.",
+      "unknown": "Fit between proposal and requirement",
+      "next": "Reach the technical comparison and retain its source.",
       "possibilities": [
         {
-          "title": "Componente di riferimento",
-          "detail": "Conservare e qualificare il componente del caso."
+          "title": "Reference component",
+          "detail": "Retain and assess the component in the case."
         },
         {
-          "title": "Proposta alternativa",
-          "detail": "Confrontare geometria, interfaccia e funzione prima di una scelta."
+          "title": "Alternative proposal",
+          "detail": "Compare geometry, interface and function before choosing."
         }
       ]
     },
     "bordo": {
-      "name": "A bordo",
-      "subtitle": "Uso e configurazione dell’imbarcazione",
-      "goal": "Comprendere un’esperienza d’uso attraverso la configurazione effettiva e le condizioni del caso.",
-      "source": "Caso illustrativo · esperienza a bordo",
+      "name": "On board",
+      "subtitle": "Vessel use and configuration",
+      "goal": "Understand a use experience through the actual configuration and the conditions of the case.",
+      "source": "Illustrative case · onboard experience",
       "items": [
-        "Esperienza di utilizzo",
-        "Configurazione dichiarata",
-        "Condizioni osservate"
+        "Use experience",
+        "Stated configuration",
+        "Observed conditions"
       ],
-      "unknown": "Relazione fra utilizzo e configurazione",
-      "next": "Collegare esperienza, fonti e riscontro prima di attribuire una causa.",
+      "unknown": "Relationship between use and configuration",
+      "next": "Connect experience, sources and observations before assigning a cause.",
       "possibilities": [
         {
-          "title": "Uso previsto",
-          "detail": "Comprendere l’esperienza nelle condizioni previste dal caso."
+          "title": "Intended use",
+          "detail": "Understand the experience under the conditions intended in the case."
         },
         {
-          "title": "Condizione differente",
-          "detail": "Esplorare quale differenza richiede una nuova comprensione."
+          "title": "Different condition",
+          "detail": "Explore which difference needs a new understanding."
         }
       ]
     },
     "assistenza": {
-      "name": "Assistenza",
-      "subtitle": "Un riscontro nella vita dell’imbarcazione",
-      "goal": "Collegare una segnalazione, la configurazione e gli interventi senza perdere le ragioni del lavoro.",
-      "source": "Caso illustrativo · riscontro di assistenza",
+      "name": "Service",
+      "subtitle": "An observation during the vessel’s life",
+      "goal": "Connect a report, configuration and interventions without losing the reasons behind the work.",
+      "source": "Illustrative case · service observation",
       "items": [
-        "Segnalazione",
-        "Configurazione",
-        "Intervento e riscontri"
+        "Report",
+        "Configuration",
+        "Intervention and observations"
       ],
-      "unknown": "Causa della segnalazione da comprendere",
-      "next": "Far continuare il riscontro nel prodotto e nella competenza pertinente.",
+      "unknown": "Cause of the report to understand",
+      "next": "Carry the observation forward in the product and the relevant competence.",
       "possibilities": [
         {
-          "title": "Approfondire il riscontro",
-          "detail": "Raggiungere le condizioni e le fonti che spiegano l’evento."
+          "title": "Examine the observation",
+          "detail": "Reach the conditions and sources that explain the event."
         },
         {
-          "title": "Formare una proposta",
-          "detail": "Esplicitare quale conseguenza renderebbe utile un cambiamento."
+          "title": "Form a proposal",
+          "detail": "State which consequence would make a change useful."
         }
       ]
     }
@@ -219,26 +219,26 @@
     {
       "context": "fornitori",
       "intent": "controllare",
-      "title": "Una fonte aggiunge una differenza",
-      "description": "Nel caso compare un nuovo contributo da confrontare con l’oggetto presente.",
-      "source": "Evento illustrativo",
-      "next": "Raggiungere il confronto tecnico e conservare la sua fonte."
+      "title": "A source adds a difference",
+      "description": "A new contribution appears in the case, to compare with the current subject.",
+      "source": "Illustrative event",
+      "next": "Reach the technical comparison and retain its source."
     },
     {
       "context": "cantiere",
       "intent": "controllare",
-      "title": "Un riscontro chiede attenzione",
-      "description": "Il caso collega il nuovo riscontro al contesto e alle persone che possono comprenderlo.",
-      "source": "Evento illustrativo",
-      "next": "Ricondurre il riscontro a oggetto, configurazione e responsabilità."
+      "title": "An observation needs attention",
+      "description": "The case connects a new observation to its context and to the people who can understand it.",
+      "source": "Illustrative event",
+      "next": "Relate the observation to the subject, configuration and responsibilities."
     },
     {
       "context": "assistenza",
       "intent": "controllare",
-      "title": "Una conseguenza torna al metodo",
-      "description": "Una differenza utile può continuare nella competenza pertinente al prossimo uso.",
-      "source": "Evento illustrativo",
-      "next": "Far continuare il riscontro nel prodotto e nella competenza pertinente."
+      "title": "A consequence returns to the method",
+      "description": "A useful difference can continue in the relevant competence at its next use.",
+      "source": "Illustrative event",
+      "next": "Carry the observation forward in the product and the relevant competence."
     }
   ],
   "targets": {
@@ -612,5 +612,25 @@
     "kernel-nautico-memory": "nautico-apprendimento",
     "kernel-nautico-learning": "nautico-apprendimento",
     "kernel-guide": "nautico-presentazione"
+  },
+  "default_locale": "en",
+  "supported_locales": [
+    "en",
+    "it"
+  ],
+  "activityLabels": {
+    "capire": "Understand",
+    "fare": "Do",
+    "controllare": "Check",
+    "esplorare": "Explore",
+    "progettare": "Design",
+    "organizzare": "Organise",
+    "comunicare": "Communicate",
+    "presentare": "Present",
+    "riprendere": "Resume",
+    "sperimentare": "Experiment",
+    "monitorare": "Monitor",
+    "confrontare": "Compare",
+    "chat": "AI dialogue"
   }
 }

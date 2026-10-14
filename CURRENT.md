@@ -1,5 +1,24 @@
 # Stato del prodotto
 
+## English standard, Italian support — 14 October 2026
+
+The public interface defaults to English. `PROFILE.json` is canonical English;
+`PROFILE.it.json` supports Italian with the same semantic IDs and actions.
+The native `demo/` entry is English, `demo/it/` Italian. Each compiled variant
+has its own BUILD identity. Repository README and public card guide use English
+as their principal entrance and retain Italian counterparts.
+
+Page language selects the corresponding embedded UI and trusted interface
+knowledge. Submitted dialogues carry that locale and the matching product page;
+source language does not determine response language. The shared keyed copy and
+tour catalogues localise compiled interface text through Acorn syntax, preserving
+expressions and the selected original reference. Visitor drafts and model replies
+are never translated by the compiler. Each card keeps its own conversation.
+
+Locale work preserves activity IDs, transport targets, card geometry and draft
+behaviour. It changes neither the core, adoption configuration nor AI provider.
+The AI connection remains the public MAIOS service configured by the adopting site.
+
 ## Public presentation correction — 14 October 2026
 
 The product introduction retains the operator's nautical headers and domain
@@ -97,3 +116,6 @@ on this one. The selected original remains unchanged and attributed.
 
 The shared Home and free-card correction follows K-UX-AI `f4e5465524b1bdb5bb83c4d4f5d04743805ab9fd`.
 Native and site BUILD records qualify the resulting derivative separately.
+
+The bilingual workspace is built from K-UX-AI `73b059d875234d3e283b81d4b36a95d46a839035`.
+Each locale BUILD records the exact profile, catalogues, runtime and artifact.

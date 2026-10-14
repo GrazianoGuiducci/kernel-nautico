@@ -1,43 +1,45 @@
 # Kernel Nautico
 
-Kernel Nautico collega persone, AI e conoscenza lungo il ciclo di un prodotto
-nautico: dal desiderio del cliente alla progettazione, dalla costruzione all’uso
-e all’assistenza. Il kernel conserva le ragioni delle decisioni e rende il
-sapere riusabile nel lavoro successivo. Il kernel comprende il contesto,
-forma competenze, compone strumenti e può organizzare, delegare e automatizzare
-il lavoro nell'ambiente che lo adotta. Le conseguenze ne affinano il sapere e
-il modo di apprendere.
+Kernel Nautico connects people, AI and knowledge throughout a marine product's
+life: from the owner's requirements to design, construction, use and service.
+It retains the reasons for decisions and makes knowledge reusable in subsequent
+work. The kernel understands context, forms competences, composes tools and can
+organise, delegate and automate work in the adopting environment. Consequences
+refine its knowledge and its way of learning.
 
-Il prodotto è per tutti i cantieri navali. Il repository conserva il kernel
-di dominio, i suoi modelli operativi e uno spazio di lavoro per conoscere e
-usare le sue funzioni. Le schede usano il lessico del settore e
-mostrano logiche, competenze e possibilità. Il primo caso yacht è illustrativo.
-La presentazione 3D conserva il proprio caso come riferimento distinto.
+The product serves all shipyards. The repository contains the domain kernel,
+operating models and a workspace for discovering and using its functions.
+Cards use the sector's terminology and show its logic, competences and
+possibilities. The first yacht case is illustrative. The 3D presentation
+retains its own case as a separate reference.
 
-## Esplora il prodotto
+[Italiano](README.it.md) · [English workspace](workstations/public-griglia/demo/)
+· [Interfaccia italiana](workstations/public-griglia/demo/it/)
 
-- [Che cosa rappresentano presentazione e demo](docs/PUBLIC_PURPOSE.md)
-- [Il nucleo del kernel](KERNEL.md)
-- [Competenze e apprendimento](COMPETENCE_FIELD.md)
-- [Azienda, progetto e singola imbarcazione](docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md)
-- [Modello operativo nautico](docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
-- [La guida all’uso delle schede](docs/PUBLIC_GRIGLIA.md)
-- [Avvia il riferimento 3D locale](workstations/visual-presentation/production/threejs-first-encounter/app/README.md)
+## Explore the product
 
-L’azienda definisce il proprio contesto, le fonti utilizzabili, le persone e le
-azioni autorizzate. La presentazione e la demo aiutano a comprendere e discutere
-queste possibilità; l’integrazione operativa si realizza nel suo ambiente.
+- [Purpose of the presentation and demo](docs/PUBLIC_PURPOSE.md)
+- [Kernel core](KERNEL.md)
+- [Competences and learning](COMPETENCE_FIELD.md)
+- [Company, project and individual vessel](docs/ENTERPRISE_BOOTSTRAP_AND_KERNEL_TOPOLOGY_0_1.md)
+- [Marine operating model](docs/NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
+- [Card guide](docs/PUBLIC_GRIGLIA.md)
+- [Local 3D reference](workstations/visual-presentation/production/threejs-first-encounter/app/README.md)
 
-## Per continuare lo sviluppo
+The company defines its context, usable sources, people and authorised actions.
+The presentation and demo help people understand and discuss these possibilities;
+operational integration takes place in the company's own environment.
 
-Leggi [BOOT.md](BOOT.md), [CURRENT.md](CURRENT.md) e le fonti pertinenti al lavoro.
-I test verificano i contratti locali, la conservazione dei contributi originali,
-la qualificazione delle fonti e gli scambi espliciti con un assistente.
+## Continue development
 
-## Diritti e attribuzioni
+Read [BOOT.md](BOOT.md), [CURRENT.md](CURRENT.md) and the relevant work sources.
+Tests verify local contracts, preservation of original contributions, source
+qualification and explicit exchanges with an assistant.
 
-La visibilità pubblica non concede una licenza permissiva sul codice e sui
-documenti originali. Le condizioni d’uso e collaborazione sono da concordare.
-Le dipendenze e gli asset di terzi mantengono le proprie licenze: il modello
-dimostrativo è attribuito nel MODEL_NOTICE della demo; Three.js conserva il suo
-LICENSE nella distribuzione compilata.
+## Rights and attribution
+
+Public visibility does not grant a permissive licence for original code or
+documents. Terms of use and collaboration must be agreed. Third-party
+dependencies and assets retain their own licences: the illustrative model is
+attributed in the demo's MODEL_NOTICE; Three.js retains its LICENSE in the
+compiled distribution.

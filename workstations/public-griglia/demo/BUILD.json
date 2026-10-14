@@ -3,12 +3,20 @@
   "profile_id": "kernel-nautico",
   "semantic_owner": "GrazianoGuiducci/kernel-nautico",
   "reference_sha256": "1879dbe0d2ccba4c7db4701fe067c05ad1d20761aa2a6cf053f90b478118430b",
-  "profile_sha256": "16aa05eb69fcb761abb4d5b5200d5ad6ecca6e697ae5c009838cd864910a3676",
-  "runtime_sha256": "cf7ca0ea6425e371decaffee801197476e47bdf9f4ef7ad69ccc6545d0de37a4",
-  "html_sha256": "70e7627728d583fa02154980a54ee43071929aa574ef86e71214636093ae09c6",
+  "profile_sha256": "ef44f483b0d851f23c92141239de85c9d981797c962d1a6fcff27d75935666c0",
+  "runtime_sha256": "d51a2add015e829dc764dbc8aa0cc7e5139055366639007d27a05b65da644b11",
+  "html_sha256": "ce07244d0cd097952bc8cf0f385bda7bb040d576e96aa005e647181382858418",
   "means": {
     "ui": "GPT Griglia v5.12 derived public incarnation",
     "dialogs": "explicit MAIOS public assistant requests when host configured",
     "company_integrations": false
-  }
+  },
+  "locale": "en",
+  "default_locale": "en",
+  "supported_locales": [
+    "en",
+    "it"
+  ],
+  "locale_catalog_sha256": "1c3dc7671fbc6cf3e185b70b8c67cd131339fbbc4bada188b1a3de03033ad81c",
+  "tour_catalog_sha256": "c1373483d210bc8d5540b79a45e03553bc09b48f7c953f2b05bb7ec89dacb38e"
 }

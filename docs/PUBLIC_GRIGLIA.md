@@ -1,67 +1,74 @@
-# Conoscere Kernel Nautico e usare le schede
+# Discover Kernel Nautico and use the cards
 
-Kernel Nautico collega conoscenze, strumenti e ragioni delle scelte lungo
-il lavoro del cantiere e la vita dell’imbarcazione. La presentazione permette
-di esplorare un caso illustrativo: un’esigenza dell’armatore sull’accesso a poppa.
-Ufficio tecnico, reparti del cantiere, fornitori, equipaggio e assistenza
-partecipano in momenti diversi, conservando requisiti, configurazioni e riscontri.
+Kernel Nautico connects knowledge, tools and the reasons for decisions throughout
+shipyard work and vessel life. Its presentation explores an illustrative case:
+an owner's requirement for stern access. The engineering office, shipyard teams,
+suppliers, crew and service participate at different times while retaining
+requirements, configurations and observations.
 
-## Scegliere il contesto
+English is the default interface and guide language. [Italiano](PUBLIC_GRIGLIA.it.md)
+is supported. Page, embedded UI and dialogue use the selected language;
+drafts retain the words entered by their author.
 
-La panoramica prepara uno spazio di lavoro per Ufficio tecnico, Cantiere,
-Fornitori, A bordo o Assistenza. Le voci della pagina permettono anche di
-conoscere il kernel, capire come impara, esplorare la collaborazione,
-presentare il lavoro all’armatore e preparare un contributo al progetto.
-Scegliendo una voce, il campo aperto viene portato in vista.
+## Select the context
 
-## Seguire il lavoro nelle schede
+Overview prepares a workspace for the Engineering office, Shipyard, Suppliers,
+On board or Service. Page options also introduce the kernel, its learning and
+collaboration, presentation to the owner and contributions to the project.
+Selecting an option brings the opened work into view.
 
-Una scheda chiarisce il contesto e i punti aperti; un’altra raccoglie una
-proposta o un riscontro. Si possono esplorare alternative, confrontare due
-contributi, organizzare il seguito e ritrovare ciò che era rimasto aperto.
-Le schede si affiancano o si portano al centro mantenendo focus e bozze.
-La presentazione e la guida restano disponibili durante l’esplorazione.
+## Follow the work through cards
 
-Nelle tessere iniziali icona e titolo identificano insieme l’attività.
-Da Strumenti puoi scegliere Libero e adattare lo spazio delle schede:
-trascina l’angolo inferiore destro, anche nel formato compatto. Sullo stesso
-controllo le frecce della tastiera ridimensionano la scheda; Maiusc permette
-variazioni più ampie. Il contesto e le bozze restano collegati al lavoro.
+One card explains context and open points; another receives a proposal or
+observation. Explore alternatives, compare contributions, organise continuation
+and retrieve what remains open. Cards can sit alongside each other or move into
+focus while retaining drafts. Presentation and guidance stay available.
 
-## Chiedere alla guida AI
+Initial tiles identify activities through an icon and title. In Tools, select
+Free and drag the bottom-right corner to resize a card, including compact cards.
+The handle also supports arrow keys; Shift makes larger adjustments. Context
+and drafts remain attached to the work.
 
-Il dialogo della scheda conserva l’argomento del caso. La domanda inviata
-esplicitamente raggiunge MAIOS AI nel sito configurato con la propria
-conversazione e il contesto pubblico della scheda; le altre bozze restano
-locali. La chat generale può aiutare a scegliere il percorso. Se il servizio
-non è disponibile, l’interfaccia lo indica.
+## Ask the AI guide
 
-## Dal caso illustrativo al lavoro del cantiere
+Each card dialogue retains the case subject. An explicitly submitted question
+reaches MAIOS AI on a configured site with its own conversation and the card's
+public context; other drafts stay local. The general assistant helps select a
+path. The interface reports when the service is unavailable.
 
-Il caso e gli eventi della presentazione sono illustrativi. Note e proposte
-restano nella sessione finché vengono esportate o trasferite. Nel cantiere,
-il kernel opera con documenti, persone, strumenti e sistemi collegati a quel
-contesto. Il progetto e la singola imbarcazione mantengono configurazione e
-storia proprie. Un riscontro può migliorare il metodo quando viene compreso
-e integrato nella competenza che continua il lavoro.
+## From the illustrative case to shipyard work
 
-La [guida di avvio](../BOOT.md) permette di partire dal proprio caso. Il
-[modello operativo nautico](NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md)
-approfondisce le relazioni tra le fasi e gli attori del lavoro.
+The case and presentation events are illustrative. Notes and proposals remain
+in the session until exported or transferred. In a shipyard, the kernel operates
+with connected documents, people, tools and systems. The project and individual
+vessel retain their own configurations and histories. An observation improves
+the method when it is understood and integrated into the competence continuing
+the work.
 
-## Per l’integrazione tecnica
+The [entry guide](../BOOT.md) starts from your case. The [marine operating
+model](NAUTICAL_REFERENCE_OPERATING_MODEL_0_1.md) explains relationships between
+phases and participants.
 
-Il profilo `workstations/public-griglia/PROFILE.json` contiene significati e
-primo assetto del dominio. K-UX-AI fornisce il builder e l’adattatore; BUILD.json
-registra le identità di riferimento, profilo, runtime e HTML. Con le sorgenti
-K-UX-AI accanto a questo repository:
+## Technical integration
+
+`workstations/public-griglia/PROFILE.json` holds the English domain profile;
+`PROFILE.it.json` provides Italian support with the same semantic IDs. K-UX-AI
+supplies the builder and adapter. Each BUILD.json records reference, profile,
+runtime, locale and HTML identities. With K-UX-AI sources beside this repository:
 
 ```sh
+cd ../k-ux-ai
+npm ci --ignore-scripts
+cd ../kernel-nautico
 python ../k-ux-ai/tools/build_public_griglia.py --profile workstations/public-griglia/PROFILE.json --output workstations/public-griglia/demo
+python ../k-ux-ai/tools/build_public_griglia.py --profile workstations/public-griglia/PROFILE.json --output workstations/public-griglia/demo/it --locale it
 python -m http.server 8080 --bind 127.0.0.1
 ```
 
-L’interfaccia è raggiungibile in `/workstations/public-griglia/demo/`.
-Il server statico non fornisce il servizio MAIOS AI. Il collegamento AI e
-le azioni sui sistemi del cantiere si configurano nell’ambiente che adotta
-il kernel, con le fonti e le responsabilità proprie di quell’ambiente.
+English is available at `/workstations/public-griglia/demo/`, Italian at
+`/workstations/public-griglia/demo/it/`. The static server does not provide MAIOS
+AI. AI connections and shipyard actions are configured in the adopting
+environment with its own sources and responsibilities.
+
+The bilingual workspace is built from K-UX-AI `73b059d875234d3e283b81d4b36a95d46a839035`.
+Each locale BUILD records the exact profile, catalogues, runtime and artifact.
