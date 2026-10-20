@@ -3,9 +3,9 @@
   "profile_id": "kernel-nautico",
   "semantic_owner": "GrazianoGuiducci/kernel-nautico",
   "reference_sha256": "1879dbe0d2ccba4c7db4701fe067c05ad1d20761aa2a6cf053f90b478118430b",
-  "profile_sha256": "5c7ca35e0ef8703ef1aea5a4ba415796a21a5c128ef6b4413b63d76d295a589e",
+  "profile_sha256": "d0994d0aaf33eab03e2738b184112018e7992ec86c721eb0102b84a3d21fa53d",
   "runtime_sha256": "45869fd3175e616df51adefaffa38be27ff5c1025d9cb307154661ac7781ca19",
-  "html_sha256": "fac814d092d545a59b1507abc12a0e45582eec5d99700ea53e3121f04110b1d2",
+  "html_sha256": "cc870a222b4d3df08eebf12b78a6200a9e8f8ee1c250f1e68f0d846576e8567b",
   "means": {
     "ui": "GPT Griglia v5.12 derived public incarnation",
     "dialogs": "explicit MAIOS public assistant requests when host configured",
@@ -20,8 +20,8 @@
   "locale_catalog_sha256": "506b9bf8124661c77c973b78d5ccf5f6c970838d671d2c6061873da0ae875e17",
   "tour_catalog_sha256": "c1373483d210bc8d5540b79a45e03553bc09b48f7c953f2b05bb7ec89dacb38e",
   "activity_visuals": {
-    "runtime_sha256": "0c0de6ae9793edb56ff139b915e70c0f5ca3ff0de8de91055c4d557e1abf62f9",
-    "css_sha256": "c0e465ee09af6b33d52c19b2527e48ee487ac3c8628d8bddeddb8628e5fea7d3",
+    "runtime_sha256": "1def260b0094bc7d2c1e252e5fc4cf99d670ceb063847c942b1c4d8dc4c7e760",
+    "css_sha256": "78b8ec3afe242f630bf48b36c0b4931ad618bc39afb3e7851ce5f1add961f700",
     "assets": {
       "assets/activities/presentare.webp": "3ad0292c63a850e8b5044b0ed478b9f29cbf0080004ab42a6e53f34501b5b76d",
       "assets/activities/capire.webp": "577de9cd44b7f27e6db9381199b0e2ba7a5b8d8d8c3c46eea91a7419c6ba66e9",
@@ -32,7 +32,8 @@
       "assets/activities/organizzare.webp": "658fc3428c8f7d0818f43a1220d43703dfe56397c7636507067752b9df8e1b02",
       "assets/activities/comunicare.webp": "72ce87284a0bf16eef9a1d76e7060ac6aea836f56ebd236a4a36db1cce7ab3bd",
       "assets/activities/riprendere.webp": "c05a16a182df772e41755791574d424d9c447d65859c5b8ae81e764405c3511e",
-      "assets/activities/sperimentare.webp": "b28283fab9ae3052145ccb1467c5c5c39e88f10074f5a09bdf950377af93c445"
+      "assets/activities/sperimentare.webp": "b28283fab9ae3052145ccb1467c5c5c39e88f10074f5a09bdf950377af93c445",
+      "assets/canvas-empty.svg": "c0af349a10514a1801eabfcc53f4a305fbac2243d1158473709ef7b388008097"
     }
   }
 }

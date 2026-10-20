@@ -703,5 +703,8 @@
       "image": "assets/activities/sperimentare.webp",
       "position": "center"
     }
+  },
+  "emptyCanvas": {
+    "image": "assets/canvas-empty.svg"
   }
 }

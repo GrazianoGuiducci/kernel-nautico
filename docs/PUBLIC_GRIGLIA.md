@@ -102,3 +102,9 @@ The shared dialogue display correction follows K-UX-AI `6076603eb9fa406ff893f9db
 ## Operator and system participate together
 
 While you follow revisions, contribute or guide work on the vessel, the system can show requirements, changes, relationships and proposals in the same workspace. Both activities can take place at the same time. Presentation includes an optional possibility for interactive visual content during vessel inspection; the current demo follows the illustrative stern-access case through cards, tools and dialogue.
+
+The visual candidate includes a quiet original hull/waterline drawing when no
+cards are visible in the current workspace. This is decorative line art,
+separate from the illustrative case and from any real vessel specification.
+The existing invitation to open an activity remains visible; opening a card
+hides the drawing. Assets and source identities are recorded in each BUILD.

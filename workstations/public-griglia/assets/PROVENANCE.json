@@ -77,5 +77,15 @@
       "generation_sha256": "028d6d6282bccb1047451480b627e7b80aaecac65a78914019a688e1e0848d19",
       "subject": "Scale hull prototype in a water test tank"
     }
+  },
+  "decorations": {
+    "canvasEmpty": {
+      "file": "assets/canvas-empty.svg",
+      "method": "Original code-authored SVG line drawing",
+      "subject": "Generic hull and waterlines, decorative only; no vessel specification or navigation data",
+      "sha256": "c0af349a10514a1801eabfcc53f4a305fbac2243d1158473709ef7b388008097",
+      "bytes": 1797,
+      "animation": false
+    }
   }
 }

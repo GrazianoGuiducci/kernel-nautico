@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="220" viewBox="0 0 640 220" fill="none">
+  <g stroke="#56888B" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42 161c88-23 156-31 239-27 109 5 203 1 313-30" opacity=".16"/>
+    <path d="M55 178c89-23 162-31 242-26 105 6 194 0 289-22" opacity=".13"/>
+    <path d="M90 191c80-17 150-21 224-17 92 5 167-1 223-12" opacity=".1"/>
+    <path d="M117 63c120-33 272-41 407-8M108 72c-18 21-20 53 0 76" stroke-dasharray="2 7" opacity=".18"/>
+    <path d="M138 106c74-33 194-54 311-49 36 1 67 7 86 16-31 33-79 57-132 70-83 21-176 22-246 7z" fill="#C8E1D9" fill-opacity=".3" stroke-width="1.7" opacity=".8"/>
+    <path d="M158 111c71-29 184-46 286-42 27 1 50 4 67 9-28 26-65 44-111 56-77 19-162 21-228 8z" stroke-width="1.1" opacity=".5"/>
+    <path d="m236 87 12 61m135-79 9 66m-145-25 142-22m-137 42 143-21" opacity=".45"/>
+    <path d="m276 89 82-13 21 11-13 37-96 15-8-28z" fill="#EAF0DF" fill-opacity=".5" opacity=".6"/>
+    <path d="m279 97 70-11 17 6-10 24-78 12zM180 111l46-12 10 44-49 1z" opacity=".35"/>
+    <path d="m403 81 54-1 25 4-31 19-45 18z" opacity=".3"/>
+    <path d="m146 102 16 54m5-16 24 1m-26-9 23 1m-25-9 23 1" stroke="#B39A60" opacity=".65"/>
+    <path d="m414 146 29-8m-175 25 31-2" stroke="#8863BD" opacity=".38"/>
+  </g>
+  <g fill="#F5F2E7" stroke-width="1.5">
+    <circle cx="236" cy="87" r="3" stroke="#5175C5" opacity=".7"/>
+    <circle cx="392" cy="135" r="3" stroke="#329E72" opacity=".7"/>
+    <circle cx="162" cy="156" r="3" stroke="#BE9321" opacity=".65"/>
+  </g>
+  <g transform="translate(560 44)" stroke="#56888B" stroke-linecap="round" opacity=".3">
+    <path d="M0-12V12M-12 0H12m-18-6 12 12M-6 6 6-6"/>
+    <circle r="6"/>
+    <path d="m0-14-2 5h4z" fill="#56888B" stroke="none"/>
+  </g>
+</svg>
