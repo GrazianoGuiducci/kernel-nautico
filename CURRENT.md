@@ -1,14 +1,14 @@
 # Stato del prodotto
 
-## Visual identity candidate — 20 October 2026
+## Visual identity — 20 October 2026
 
 Ten original synthetic activity backgrounds and a differentiated palette now
 belong to the Nautico profiles. The shared K-UX-AI builder projects the same
 identity onto Overview, rail and headers, preserving the original card engine.
 English and Italian bind the same activity IDs and images. Image provenance is
-in workstations/public-griglia/assets/PROVENANCE.json. This is a development
-candidate for operator review; the production site remains on its prior build.
-Builder source: K-UX-AI `52759ea73c3fb487224434b0b6f2c7b75de617a0`.
+in workstations/public-griglia/assets/PROVENANCE.json. The operator accepted this visual result and selected publication on
+20 October. The site owner retains the exact live publication proof.
+Builder source: K-UX-AI `515ff6240906ba5d0a27d5c2f570c9247961d759`.
 
 The operator retained the soft palette and requested an essential empty-canvas
 decoration. Both profiles now own the same original SVG hull/waterline drawing.
