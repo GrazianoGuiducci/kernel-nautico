@@ -1,0 +1,81 @@
+{
+  "schema": "nautical.activity-images.v1",
+  "date": "2026-10-20",
+  "method": "OpenAI built-in image_gen, one independent generation per activity",
+  "inputs": "Text prompts only; no third-party photographs or cropped UI mockups",
+  "provenance": "Original synthetic illustrations commissioned for Kernel Nautico through the operator account. No company, actual vessel or engineering specification is depicted as observed evidence.",
+  "distribution": "Project-bound generated assets; no external stock-photo license or brand asset is inherited. Provider terms govern generated output.",
+  "optimization": "Aspect-preserving WebP export, at most 1100px wide, quality 80. No UI text baked into assets.",
+  "assets": {
+    "presentare": {
+      "file": "assets/activities/presentare.webp",
+      "sha256": "3ad0292c63a850e8b5044b0ed478b9f29cbf0080004ab42a6e53f34501b5b76d",
+      "bytes": 76564,
+      "generation_sha256": "6a99a1b8978048ee9d99454a691300a810f52aa90b31166310888ac538d83b04",
+      "subject": "Naval design briefing table, yacht model and marina view"
+    },
+    "capire": {
+      "file": "assets/activities/capire.webp",
+      "sha256": "577de9cd44b7f27e6db9381199b0e2ba7a5b8d8d8c3c46eea91a7419c6ba66e9",
+      "bytes": 63364,
+      "generation_sha256": "a88f2aedd557e5e8acc5553d7f09f3dea474796923f1bcb37aa78b2d2adfe28e",
+      "subject": "Technical boat section plans, magnifier and measuring dividers"
+    },
+    "fare": {
+      "file": "assets/activities/fare.webp",
+      "sha256": "e8360545bd4078b6473b5fd4b0861a76b8c6f6bae70f894c3356e8359905acda",
+      "bytes": 52056,
+      "generation_sha256": "a81bc5ae1392ec4994de41452cc80e13e5c6c5404c74c21b29156a80427807d7",
+      "subject": "Gloved craftsperson fitting teak deck panels"
+    },
+    "controllare": {
+      "file": "assets/activities/controllare.webp",
+      "sha256": "fa29d19ba25cb36c661118327998fcd8c13638178cf8e8052a479f22d6ef1e8d",
+      "bytes": 52016,
+      "generation_sha256": "9a23f6ab22666df412b5c11aa1208e263103f2e38379b565d15ca881350a71fd",
+      "subject": "Marine fitting inspection with caliper and gauge"
+    },
+    "esplorare": {
+      "file": "assets/activities/esplorare.webp",
+      "sha256": "2d47b58d24349caccd676e94f5179cff44110ee700907c0f067846ee92177e63",
+      "bytes": 46646,
+      "generation_sha256": "5e6b3423f79646e4a5cf1245c98e6b96bfc32f87f21005a3b4d6f458d7446224",
+      "subject": "Connected spaces inside a yacht"
+    },
+    "progettare": {
+      "file": "assets/activities/progettare.webp",
+      "sha256": "8986c533fd9cc4765fac2e6520b44e34e17f88f599f2641a3fdcf8a9dfba709d",
+      "bytes": 55752,
+      "generation_sha256": "4a7cfd0f2291d869e7db24cddff40f98d71bd5cdf00c6683bd6f9f7352d1b95b",
+      "subject": "Two alternative hull studies on tracing sheets"
+    },
+    "organizzare": {
+      "file": "assets/activities/organizzare.webp",
+      "sha256": "658fc3428c8f7d0818f43a1220d43703dfe56397c7636507067752b9df8e1b02",
+      "bytes": 74236,
+      "generation_sha256": "5312fa1eb7128cdfdd6c748272f1f5c1c8f31d5e07524050d9b7ff5b6249587d",
+      "subject": "Unmarked work planning board and hull model"
+    },
+    "comunicare": {
+      "file": "assets/activities/comunicare.webp",
+      "sha256": "72ce87284a0bf16eef9a1d76e7060ac6aea836f56ebd236a4a36db1cce7ab3bd",
+      "bytes": 51522,
+      "generation_sha256": "b3b0099a6b182a5e062d18e0d06ef89f3b97bbe8fc99780d06d09d570968c703",
+      "subject": "Two professionals exchanging contributions over boat plans"
+    },
+    "riprendere": {
+      "file": "assets/activities/riprendere.webp",
+      "sha256": "c05a16a182df772e41755791574d424d9c447d65859c5b8ae81e764405c3511e",
+      "bytes": 86282,
+      "generation_sha256": "07fd35a982bf77467e1499460ecb41f0a03aeb747deaf1c8b76ad3ea833dcd57",
+      "subject": "Marked drawing binder and unfinished hull work ready to resume"
+    },
+    "sperimentare": {
+      "file": "assets/activities/sperimentare.webp",
+      "sha256": "b28283fab9ae3052145ccb1467c5c5c39e88f10074f5a09bdf950377af93c445",
+      "bytes": 55468,
+      "generation_sha256": "028d6d6282bccb1047451480b627e7b80aaecac65a78914019a688e1e0848d19",
+      "subject": "Scale hull prototype in a water test tank"
+    }
+  }
+}

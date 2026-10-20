@@ -651,5 +651,57 @@
     "visual_ui_optional": true,
     "other_means": "AI conversation and tools already available in the adopting environment.",
     "ui_role": "K-UX-AI adds visual guidance and workspace interaction when useful."
+  },
+  "activityVisuals": {
+    "presentare": {
+      "color": "#5175C5",
+      "image": "assets/activities/presentare.webp",
+      "position": "center"
+    },
+    "capire": {
+      "color": "#237F83",
+      "image": "assets/activities/capire.webp",
+      "position": "center"
+    },
+    "fare": {
+      "color": "#65943E",
+      "image": "assets/activities/fare.webp",
+      "position": "center"
+    },
+    "controllare": {
+      "color": "#BE9321",
+      "image": "assets/activities/controllare.webp",
+      "position": "center"
+    },
+    "esplorare": {
+      "color": "#43A5CE",
+      "image": "assets/activities/esplorare.webp",
+      "position": "center"
+    },
+    "progettare": {
+      "color": "#8863BD",
+      "image": "assets/activities/progettare.webp",
+      "position": "center"
+    },
+    "organizzare": {
+      "color": "#CF7946",
+      "image": "assets/activities/organizzare.webp",
+      "position": "center"
+    },
+    "comunicare": {
+      "color": "#BE5F85",
+      "image": "assets/activities/comunicare.webp",
+      "position": "center"
+    },
+    "riprendere": {
+      "color": "#329E72",
+      "image": "assets/activities/riprendere.webp",
+      "position": "center"
+    },
+    "sperimentare": {
+      "color": "#91806A",
+      "image": "assets/activities/sperimentare.webp",
+      "position": "center"
+    }
   }
 }

@@ -1,5 +1,17 @@
 # Discover Kernel Nautico and use the cards
 
+The visual-identity candidate uses one colour and a nautical image per activity.
+That identity follows the activity into the rail and its open card header.
+The rail distinguishes open, minimized and focused cards; a separate marker
+signals a pending event in the current context. Icons, labels and accessible
+state descriptions complement colour. Work content stays plain; unavailable
+images and forced colours retain the usable interface.
+
+The ten images are original synthetic illustrations, not photographs of an
+observed vessel, actual shipyard or engineering evidence. Their provenance and
+prompt set are distributed with the profile assets. This candidate awaits
+operator review before production publication.
+
 Kernel Nautico connects knowledge, tools and the reasons for decisions throughout
 shipyard work and vessel life. Its presentation explores an illustrative case:
 an owner's requirement for stern access. The engineering office, shipyard teams,

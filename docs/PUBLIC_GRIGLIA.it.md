@@ -1,5 +1,17 @@
 # Conoscere Kernel Nautico e usare le schede
 
+La candidata visiva associa un colore e un'immagine nautica a ogni attività.
+La stessa identità continua nella barra laterale e nella toolbar della scheda.
+La barra distingue schede aperte, ridotte e in focus; un segno separato indica
+una notifica pertinente al contesto corrente. Icone, nomi e descrizioni
+accessibili accompagnano il colore. Il contenuto di lavoro resta piano;
+immagini indisponibili e modalità ad alto contrasto conservano l'uso della UI.
+
+Le dieci immagini sono illustrazioni sintetiche originali, non fotografie di
+un'imbarcazione o un cantiere osservati né evidenze ingegneristiche. Provenienza
+e prompt accompagnano gli asset del profilo. La candidata attende la valutazione
+dell'operatore prima della pubblicazione in produzione.
+
 Kernel Nautico collega conoscenze, strumenti e ragioni delle scelte lungo
 il lavoro del cantiere e la vita dell’imbarcazione. La presentazione permette
 di esplorare un caso illustrativo: un’esigenza dell’armatore sull’accesso a poppa.

@@ -1,5 +1,15 @@
 # Stato del prodotto
 
+## Visual identity candidate — 20 October 2026
+
+Ten original synthetic activity backgrounds and a differentiated palette now
+belong to the Nautico profiles. The shared K-UX-AI builder projects the same
+identity onto Overview, rail and headers, preserving the original card engine.
+English and Italian bind the same activity IDs and images. Image provenance is
+in workstations/public-griglia/assets/PROVENANCE.json. This is a development
+candidate for operator review; the production site remains on its prior build.
+Builder source: K-UX-AI `3eea1f381d5db4c655ce2916d3a9f0f4ad495ad2`.
+
 ## Adoption and optional visual means — 14 October 2026
 
 The public sources and both profiles clarify MPK's generic project functions
