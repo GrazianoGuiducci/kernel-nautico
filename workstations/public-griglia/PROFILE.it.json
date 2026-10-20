@@ -706,5 +706,6 @@
   },
   "emptyCanvas": {
     "image": "assets/canvas-empty.svg"
-  }
+  },
+  "exitDemo": true
 }

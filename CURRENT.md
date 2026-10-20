@@ -8,12 +8,15 @@ identity onto Overview, rail and headers, preserving the original card engine.
 English and Italian bind the same activity IDs and images. Image provenance is
 in workstations/public-griglia/assets/PROVENANCE.json. The operator accepted this visual result and selected publication on
 20 October. The site owner retains the exact live publication proof.
-Builder source: K-UX-AI `515ff6240906ba5d0a27d5c2f570c9247961d759`.
+Builder source: K-UX-AI `1d2742ae2865d400b43d5630b03b6959f37ff09c`.
 
 The operator retained the soft palette and requested an essential empty-canvas
 decoration. Both profiles now own the same original SVG hull/waterline drawing.
 It accompanies the native hint only when no cards are visible in the selected
 context, and disappears when an activity opens.
+
+The demo's top bar now includes an explicit localized return to the product
+page, in both Overview and work. This uses the shared optional exit setting.
 
 ## Adoption and optional visual means — 14 October 2026
 

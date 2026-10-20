@@ -108,3 +108,6 @@ cards are visible in the current workspace. This is decorative line art,
 separate from the illustrative case and from any real vessel specification.
 The existing invitation to open an activity remains visible; opening a card
 hides the drawing. Assets and source identities are recorded in each BUILD.
+
+Use **Exit demo** in the top bar to return to the Kernel Nautico product page.
+The control is available in Overview and work, including the full-page demo.
